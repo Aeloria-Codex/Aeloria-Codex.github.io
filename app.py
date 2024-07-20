@@ -21,7 +21,7 @@ def index():
     return render_template('index.html', mode=mode)
 
 # Crafter Leveling page
-@app.route('/crafter-leveling') 
+@app.route('/crafter-leveling.html') 
 def crafter_leveling():
     return render_template('crafter-leveling.html')
 
