@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="center-content">
+
+    <div id="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#section0">Getting Started </a></li>
+            <li><a href="#section1">Level 1-21 </a></li>
+            <li><a href="#section2">Level 21-41 </a></li>
+            <li><a href="#section3">Level 41-53 </a></li>
+            <li><a href="#section4">Level 53-63 </a></li>
+            <li><a href="#section5">Level 63-73 </a></li>
+            <li><a href="#section6">Level 71-78 </a></li>
+            <li><a href="#section7">Level 78-81 </a></li>
+            <li><a href="#section8">Level 80-85 </a></li>
+            <li><a href="#section9">Level 85-90 </a></li>
+            <li><a href="#section10">Level 91-95 </a></li>
+            <li><a href="#section11">Level 95-100 </a></li>
+        </ul>
+    </div>
+
+    <h1 id="section0">Getting Started</h1>
+    <p>Before getting started there are some things you can do speed up your leveling. Make sure to use food and Engineering Manuals.</p>
+    <p>Another Thing this guide wont cover the class quest for each job, if youre interested in that check out <a href="crafter-class-quest.html">Crafter Class Quest</a></p>
+
+    <h1 id="section1">Level 1-21</h1>
+    <p>It is recomended to Quick Synthesis this section.</p>
+    <div id="crafts">
+        <div class="dropdown-header" onclick="toggleDropdown()"><h3><span id="dropdown-status">➤ </span>Carpenter (CRP)</h3></div>
+        <div class="dropdown-content" id="dropdown-content">
+            <p><input type="checkbox" id="level1-6" name="level1-6"><label for="level1-6"><u>Level 1-6:</u><b> Maple Lumber (20)</b></label></p>
+                <li>Maple Log (60)</li>
+            <p><input type="checkbox" id="Level 6-13" name="Level 6-13"><label for="Level 6-13"><u>Level 6-13:</u><b> Ash Lumber (20)</b></label></p>
+                <li>Ash Log (60)</li>
+            <p><input type="checkbox" id="Level 13-18" name="Level 13-18"><label for="Level 13-18"><u>Level 13-18:</u><b> Elm Lumber (40)</b></label></p>
+                <li>Elm Log (120)</li>
+            <p><input type="checkbox" id="Level 18-21" name="Level 18-21"><label for="Level 18-21"><u>Level 18-21:</u><b> Yew Lumber (30)</b></label></p>
+                <li>Yew Log (90)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <div class="dropdown-header" onclick="toggleDropdown1()"><h3><span id="dropdown-status1">➤ </span>Blacksmith (BSM)</h3></div>
+        <div class="dropdown-content1" id="dropdown-content1">
+            <p><input type="checkbox" id="level1-7" name="level1-7"><label for="level1-7"><u>Level 1-7:</u><b> Bronze Ingot (30)</b></label></p>
+                <li>Copper Ore (90)</li>
+                <li>Tin Ore (30)</li>
+            <p><input type="checkbox" id="level7-12" name="level7-12"><label for="level7-12"><u>Level 7-12:</u><b> Bronze Baselards (15)</b></label></p>
+                <li>Bronze Ingot (30)</li>
+                <li>Ash Lumber (15)</li>
+            <p><input type="checkbox" id="level12-14" name="level12-14"><label for="level12-14"><u>Level 12-14:</u><b> Spiked Bronze Labrys (15)</b></label></p>
+                <li>Bronze Ingot (45)</li>
+                <li>Ash Lumber (15)</li>
+            <p><input type="checkbox" id="level14-18" name="level14-18"><label for="level14-18"><u>Level 14-18:</u><b> Iron Ingot (30)</b></label></p>
+                <li>Iron Ore (90)</li>
+            <p><input type="checkbox" id="level18-21" name="level18-21"><label for="level18-21"><u>Level 18-21:</u><b> Iron Rivets (30)</b></label></p>
+                <li>Iron Ingot (30)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <div class="dropdown-header" onclick="toggleDropdown2()"><h3><span id="dropdown-status1">➤ </span>Armorer (ARM)</h3></div>
+        <div class="dropdown-content2" id="dropdown-content2">
+            <p><input type="checkbox" id="level1-9" name="level1-9"><label for="level1-9"><u>Level 1-9:</u><b> Bronze Plate (30)</b></label></p>
+                <li>Bronze Ingot (60)</li>
+            <p><input type="checkbox" id="level9-13" name="level9-13"><label for="level9-13"><u>Level 9-13:</u><b> Iron Plate (30)</b></label></p>
+                <li>Iron Ingot (60)</li>
+            <p><input type="checkbox" id="level13-16" name="level13-16"><label for="level13-16"><u>Level 13-16:</u><b> Initiate's Skillet (30)</b></label></p>
+                <li>Iron Plate (30)</li>
+                <li>Elm Lumber (30)</li>
+            <p><input type="checkbox" id="level16-20" name="level16-20"><label for="level16-20"><u>Level 16-20:</u><b> Iron Gauntlets (80)</b></label></p>
+                <li>Iron Plate (160)</li>
+                <li>Iron Rings (80)</li>
+            <p><input type="checkbox" id="level20-21" name="level20-21"><label for="level20-21"><u>Level 20-21:</u><b> Heavy Iron Gauntlets (20)</b></label></p>
+                <li>Iron Plate (60)</li>
+                <li>Iron Rings (20)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <h3>Goldsmith (GSM)</h3>
+        <div class="dropdown-header" onclick="toggleDropdown1()"><h3><span id="dropdown-status1">➤ </span>Blacksmith (BSM)</h3></div>
+        <div class="dropdown-content1" id="dropdown-content1">
+            <p><input type="checkbox" id="level1-4" name="level1-4"><label for="level1-4"><u>Level 1-4:</u><b> Copper Ingot (1)</b></label></p>
+                <li>Copper Ore</li>
+            <p><input type="checkbox" id="level4-12" name="level4-12"><label for="level4-12"><u>Level 4-12:</u><b> Ragstone Whetstone (30)</b></label></p>
+                <li>Ragstone (60)</li>
+            <p><input type="checkbox" id="level12-16" name="level12-16"><label for="level12-16"><u>Level 12-16:</u><b> Brass Ingot (30)</b></label></p>
+                <li>Copper Ore (60)</li>
+                <li>Zinc Ore (30)</li>
+            <p><input type="checkbox" id="level16-19" name="level16-19"><label for="level16-19"><u>Level 16-19:</u><b> Brass Rings (30)</b></label></p>
+                <li>Brass Ingot (30)</li>
+            <p><input type="checkbox" id="level19-21" name="level19-21"><label for="level19-21"><u>Level 19-21:</u><b> Silver Ingot (20)</b></label></p>
+                <li>Silver Ore (60)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <h3>Leatherworker (LTW)</h3>
+        <div class="dropdown-header" onclick="toggleDropdown1()"><h3><span id="dropdown-status1">➤ </span>Blacksmith (BSM)</h3></div>
+        <div class="dropdown-content1" id="dropdown-content1">
+            <p><input type="checkbox" id="level1-3" name="level1-3"><label for="level1-3"><u>Level 1-3:</u><b> Leather (1)</b></label></p>
+                <li>Animal Skin (3)</li>
+            <p><input type="checkbox" id="level3-13" name="level3-13"><label for="level3-13"><u>Level 3-13:</u><b> Hard Leather (30)</b></label></p>
+                <li>Animal Hide (30)</li>
+            <p><input type="checkbox" id="level13-15" name="level13-15"><label for="level13-15"><u>Level 13-15:</u><b> Fingerless Hard Leather Gloves (15)</b></label></p>
+                <li>Hard Leather (30)</li>
+                <li>Iron Rivets (15)</li>
+            <p><input type="checkbox" id="level15-19" name="level15-19"><label for="level15-19"><u>Level 15-19:</u><b> Aldgoat Leather (30)</b></label></p>
+                <li>Aldgoat Skin (30)</li>
+                <li>Alumen (30)</li>
+            <p><input type="checkbox" id="level19-21" name="level19-21"><label for="level19-21"><u>Level 19-21:</u><b> Goatskin Wristguards (20)</b></label></p>
+                <li>Aldgoat Leather (20)</li>
+                <li>Beast Sinew (20)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <h3>Weaver (WVR)</h3>
+        <div class="dropdown-header" onclick="toggleDropdown1()"><h3><span id="dropdown-status1">➤ </span>Blacksmith (BSM)</h3></div>
+        <div class="dropdown-content1" id="dropdown-content1">
+            <p><input type="checkbox" id="level1-9" name="level1-9"><label for="level1-9"><u>Level 1-9:</u><b> Undyed Hempen Cloth (30)</b></label></p>
+                <li>Hempen Yarn (60)</li>
+            <p><input type="checkbox" id="level9-13" name="level9-13"><label for="level9-13"><u>Level 9-13:</u><b> Undyed Cotton Cloth (30)</b></label></p>
+                <li>Cotton Yarn (60)</li>
+            <p><input type="checkbox" id="level13-18" name="level13-18"><label for="level13-18"><u>Level 13-18:</u><b> Cotton Canvas (30)</b></label></p>
+                <li>Cotton Yarn (60)</li>
+                <li>Hempen Yarn (30)</li>
+                <li>Beeswax (30)</li>
+            <p><input type="checkbox" id="level18-19" name="level18-19"><label for="level18-19"><u>Level 18-19:</u><b> Dew Thread (10)</b></label></p>
+                <li>Diremite Web (20)</li>
+            <p><input type="checkbox" id="level19-21" name="level19-21"><label for="level19-21"><u>Level 19-21:</u><b> Undyed Velveteen (20)</b></label></p>
+                <li>Cotton Yarn (20)</li>
+                <li>Dew Thread (20)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <h3>Alchemist (ALC)</h3>
+        <div class="dropdown-header" onclick="toggleDropdown1()"><h3><span id="dropdown-status1">➤ </span>Blacksmith (BSM)</h3></div>
+        <div class="dropdown-content1" id="dropdown-content1">
+            <p><input type="checkbox" id="level1-3" name="level1-3"><label for="level1-3"><u>Level 1-3:</u><b> Distilled Water (1)</b></label></p>
+                <li>Muddy Water</li>
+            <p><input type="checkbox" id="level3-6" name="level3-6"><label for="level3-6"><u>Level 3-6:</u><b> Rubber (10)</b></label></p>
+                <li>Latex (10)</li>
+            <p><input type="checkbox" id="level6-13" name="level6-13"><label for="level6-13"><u>Level 6-13:</u><b> Beeswax (30)</b></label></p>
+                <li>Beehive Chip (90)</li>
+            <p><input type="checkbox" id="level13-20" name="level13-20"><label for="level13-20"><u>Level 13-20:</u><b> Firebricks (50)</b></label></p>
+                <li>Mudstone (100)</li>
+                <li>Potter's Clay (50)</li>
+            <p><input type="checkbox" id="level20-21" name="level20-21"><label for="level20-21"><u>Level 20-21:</u><b> Natron (10)</b></label></p>
+                <li>Rock Salt (10)</li>
+                <li>Effervescent Water (10)</li>
+        </div>
+    </div>
+    <div id="crafts">
+        <h3>Culinarian (CUL)</h3>
+        <div class="dropdown-header" onclick="toggleDropdown1()"><h3><span id="dropdown-status1">➤ </span>Blacksmith (BSM)</h3></div>
+        <div class="dropdown-content1" id="dropdown-content1">
+            <p><input type="checkbox" id="level1-3" name="level1-3"><label for="level1-3"><u>Level 1-3:</u><b> Maple Syrup (1)</b></label></p>
+                <li>Maple Sap</li>
+            <p><input type="checkbox" id="level3-12" name="level3-12"><label for="level3-12"><u>Level 3-12:</u><b> Smooth Butter (30)</b></label></p>
+                <li>Buffalo Milk (60)</li>
+            <p><input type="checkbox" id="level12-16" name="level12-16"><label for="level12-16"><u>Level 12-16:</u><b> Tomato Sauce (30)</b></label></p>
+                <li>Ruby Tomato (30)</li>
+                <li>Wild Onion (30)</li>
+                <li>Garlean Garlic (30)</li>
+            <p><input type="checkbox" id="level16-20" name="level16-20"><label for="level16-20"><u>Level 16-20:</u><b> Cider Vinegar (50)</b></label></p>
+                <li>Faerie Apple (50)</li>
+                <li>Mineral Water (50)</li>
+            <p><input type="checkbox" id="level20-21" name="level20-21"><label for="level20-21"><u>Level 20-21:</u><b> Dried Plums (10)</b></label></p>
+                <li>Pixie Plums (10)</li>
+        </div>
+    </div>
+
+    <h1 id="section2">Section 2</h1>
+    <p>This is the content of section 2.</p>
+
+    <h1 id="section3">Section 3</h1>
+    <p>This is the content of section 3.</p>
+
+</div>
+{% endblock %}

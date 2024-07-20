@@ -1,0 +1,55 @@
+#center-content {
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    padding: 10vh 25%; 
+}
+
+#toc {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+#toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+#toc ul li {
+    margin-bottom: 5px;
+}
+#toc a {
+    text-decoration: none;
+    color: #007BFF;
+}
+#toc a:hover {
+    text-decoration: underline;
+}
+
+#crafts {
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 5%; 
+}
+
+#crafts p{
+    padding: 0vh 5%; 
+}
+
+#crafts li{
+    padding: 0vh 10%; 
+}
+
+.dropdown-content, .dropdown-content1, .dropdown-content2 {
+    display: none;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dropdown-header {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+}
