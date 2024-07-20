@@ -1,0 +1,385 @@
+:root {
+  /* Light mode colors */
+  --light-background: #FDE9E0;
+  --light-secondary: #FADAB3;
+  --light-accent: #FBB67F;
+  --light-primary: #F08E4B;
+  --light-text: #DB5B20;
+
+  /* Dark mode colors */
+  --dark-background: #1B1C22;
+  --dark-secondary: #2D2E35;
+  --dark-accent: #9146FF;
+  --dark-primary: #4FA0F7;
+  --dark-text: #E8E7E3;
+}
+
+body {
+  margin: 0;
+  font-size: 12.8px; 
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+body.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 6%;
+  right: 1%;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #4B73B5;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.light-mode .btn-primary {
+  background-color: var(--light-primary);
+  color: var(--light-background);
+}
+
+.dark-mode .btn-primary {
+  background-color: var(--dark-primary);
+  color: var(--dark-background);
+}
+
+.light-mode .secondary-bg {
+  background-color: var(--light-secondary);
+}
+
+.dark-mode .secondary-bg {
+  background-color: var(--dark-secondary);
+}
+
+.light-mode .accent {
+  color: var(--light-accent);
+}
+
+.dark-mode .accent {
+  color: var(--dark-accent);
+}
+
+.content {
+  background: #fff;
+  padding: 1.6rem; 
+  border-radius: 12px; 
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.08); 
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3, 
+.light-mode h4, .light-mode h5, .light-mode h6 {
+  color: var(--light-primary);
+}
+
+.light-mode p {
+  color: var(--light-text);
+}
+
+.light-mode a {
+  color: var(--light-primary);
+}
+
+.light-mode a:hover {
+  color: var(--light-accent);
+}
+
+.light-mode button {
+  background-color: var(--light-primary);
+  color: var(--light-background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.light-mode button:hover {
+  background-color: var(--light-accent);
+}
+
+.light-mode input[type="text"], .light-mode textarea {
+  background-color: var(--light-background);
+  border: 1px solid var(--light-primary);
+  color: var(--light-text);
+  padding: 8px;
+}
+
+.light-mode table {
+  border-collapse: collapse;
+}
+
+.light-mode th, .light-mode td {
+  border: 1px solid var(--light-primary);
+  padding: 8px;
+}
+
+.light-mode th {
+  background-color: var(--light-secondary);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, 
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+  color: var(--dark-primary);
+}
+
+.dark-mode p {
+  color: var(--dark-text);
+}
+
+.dark-mode a {
+  color: var(--dark-primary);
+}
+
+.dark-mode a:hover {
+  color: var(--dark-accent);
+}
+
+.dark-mode button {
+  background-color: var(--dark-primary);
+  color: var(--dark-background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-mode button:hover {
+  background-color: var(--dark-accent);
+}
+
+.dark-mode input[type="text"], .dark-mode textarea {
+  background-color: var(--dark-secondary);
+  border: 1px solid var(--dark-primary);
+  color: var(--dark-text);
+  padding: 8px;
+}
+
+.dark-mode table {
+  border-collapse: collapse;
+}
+
+.dark-mode th, .dark-mode td {
+  border: 1px solid var(--dark-primary);
+  padding: 8px;
+}
+
+.dark-mode th {
+  background-color: var(--dark-secondary);
+}
+
+button {
+  background: #69c;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: 0.24s; 
+}
+
+button:hover {
+  background: #4a8ac7;
+}
+
+/* navbar */
+
+.navBar {
+  padding: 0.8rem 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background 0.24s ease, box-shadow 0.08s ease; 
+  z-index: 1000;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navBar a {
+  text-decoration: none;
+  padding: 0.4rem 0.8rem; 
+  margin: 0 0.4rem; 
+  transition: 0.24s; 
+  font-weight: 500;
+}
+
+.light-mode .navBar {
+  background: rgba(245, 245, 245, 0.8);
+}
+
+.dark-mode .navBar {
+  background: rgba(31, 41, 55, 0.8);
+}
+
+.light-mode .navBar a {
+  color: var(--light-text);
+}
+
+.dark-mode .navBar a {
+  color: var(--dark-text);
+}
+
+.light-mode .navBar a:hover {
+  color: var(--light-primary);
+}
+
+.dark-mode .navBar a:hover {
+  color: var(--dark-primary);
+}
+
+.navBar.scrolled {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .navBar.scrolled {
+  background: rgba(245, 245, 245, 0.9);
+}
+
+.dark-mode .navBar.scrolled {
+  background: rgba(31, 41, 55, 0.9);
+}
+
+.navBar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navBar-toggle {
+  display: none;
+}
+
+.navBar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navBar-search input {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.4rem;
+}
+
+.light-mode .navBar-search input {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+.dark-mode .navBar-search input {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navBar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navBar-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+
+  .navBar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navBar-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBar-search {
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+
+  .navBar-search input {
+    width: 100%;
+  }
+}
+
+
+
+/* 404 */
+.jumbotron {
+  padding-top: 5vh !important;
+}

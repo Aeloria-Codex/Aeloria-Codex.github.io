@@ -1,0 +1,66 @@
+<head>
+    <title>The Aeloria Codex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/master.scss">
+    <link rel="stylesheet" type="text/css" href="/css/index.scss">
+    <link rel="stylesheet" type="text/css" href="/css/crafter-leveling.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <script src="/js/script.js"></script>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+    <!-- navbar -->
+    <nav class="navBar">
+        <div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('crafter_leveling') }}">Crafter Leveling</a></li>
+            </ul>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+        </label>
+    </nav>
+    
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- bottom banner -->
+    <footer>
+    </footer>
+</body>
+</head>
+<!--script and css-->
+<link rel="stylesheet" type="text/css" href="/css/master.scss">
+<script src="/js/script.js"></script>
+<script>
+    const body = document.body;
+    const modeToggle = document.getElementById('modeToggle');
+
+    // Check for saved mode preference or use default (light-mode)
+    const currentMode = localStorage.getItem('mode') || 'light-mode';
+    body.classList.add(currentMode);
+        
+    // Set the switch state based on the current mode
+    modeToggle.checked = currentMode === 'dark-mode';
+
+    modeToggle.addEventListener('change', () => {
+        if (body.classList.contains('light-mode')) {
+            body.classList.replace('light-mode', 'dark-mode');
+            localStorage.setItem('mode', 'dark-mode');
+        } else {
+            body.classList.replace('dark-mode', 'light-mode');
+            localStorage.setItem('mode', 'light-mode');
+        }
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
