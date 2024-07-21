@@ -25,7 +25,6 @@ def index():
 def crafter_leveling():
     return render_template('crafter-leveling.html')
 
-
 @app.route('/toggle-mode', methods=['POST'])
 def toggle_mode():
     current_mode = request.cookies.get('mode', 'light-mode')

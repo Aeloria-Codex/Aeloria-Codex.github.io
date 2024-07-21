@@ -21,14 +21,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body.light-mode {
-  background-color: var(--light-background);
-  color: var(--light-text);
-}
-body.dark-mode {
-  background-color: var(--dark-background);
-  color: var(--dark-text);
-}
 .switch {
   position: relative;
   display: inline-block;
@@ -133,6 +125,10 @@ body.light-mode {
 
 .light-mode a:hover {
   color: var(--light-accent);
+}
+
+.light-mode li, ul {
+  color: var(--light-primary);
 }
 
 .light-mode button {
