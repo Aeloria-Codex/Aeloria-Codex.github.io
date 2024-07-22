@@ -101,6 +101,7 @@ function toggleDropdown85() { toggleDropdownById(85); }
 function toggleDropdown86() { toggleDropdownById(86); }
 function toggleDropdown87() { toggleDropdownById(87); }
 function toggleDropdown88() { toggleDropdownById(88); }
+function toggleDropdown89() { toggleDropdownById(89); }
 
 function toggleDropdownById(id) {
     var content = document.getElementById("dropdown-content" + id);
