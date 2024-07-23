@@ -131,6 +131,10 @@ body.light-mode {
   color: var(--light-primary);
 }
 
+.light-mode b {
+  color: var(--light-primary);
+}
+
 .light-mode button {
   background-color: var(--light-primary);
   color: var(--light-background);
@@ -186,6 +190,14 @@ body.dark-mode {
 
 .dark-mode a:hover {
   color: var(--dark-accent);
+}
+
+.dark-mode li, ul {
+  color: var(--dark-primary);
+}
+
+.dark-mode b {
+  color: var(--dark-primary);
 }
 
 .dark-mode button {

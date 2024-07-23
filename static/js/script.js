@@ -102,6 +102,15 @@ function toggleDropdown86() { toggleDropdownById(86); }
 function toggleDropdown87() { toggleDropdownById(87); }
 function toggleDropdown88() { toggleDropdownById(88); }
 function toggleDropdown89() { toggleDropdownById(89); }
+function toggleDropdown90() { toggleDropdownById(90); }
+function toggleDropdown91() { toggleDropdownById(91); }
+function toggleDropdown92() { toggleDropdownById(92); }
+function toggleDropdown93() { toggleDropdownById(93); }
+function toggleDropdown94() { toggleDropdownById(94); }
+function toggleDropdown95() { toggleDropdownById(95); }
+function toggleDropdown96() { toggleDropdownById(96); }
+function toggleDropdown97() { toggleDropdownById(97); }
+
 
 function toggleDropdownById(id) {
     var content = document.getElementById("dropdown-content" + id);
