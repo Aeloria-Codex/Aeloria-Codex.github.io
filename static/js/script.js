@@ -110,6 +110,24 @@ function toggleDropdown94() { toggleDropdownById(94); }
 function toggleDropdown95() { toggleDropdownById(95); }
 function toggleDropdown96() { toggleDropdownById(96); }
 function toggleDropdown97() { toggleDropdownById(97); }
+function toggleDropdown98() { toggleDropdownById(98); }
+function toggleDropdown99() { toggleDropdownById(99); }
+function toggleDropdown100() { toggleDropdownById(100); }
+function toggleDropdown101() { toggleDropdownById(101); }
+function toggleDropdown102() { toggleDropdownById(102); }
+function toggleDropdown103() { toggleDropdownById(103); }
+function toggleDropdown104() { toggleDropdownById(104); }
+function toggleDropdown105() { toggleDropdownById(105); }
+function toggleDropdown106() { toggleDropdownById(106); }
+function toggleDropdown107() { toggleDropdownById(107); }
+function toggleDropdown108() { toggleDropdownById(108); }
+function toggleDropdown109() { toggleDropdownById(109); }
+function toggleDropdown110() { toggleDropdownById(110); }
+function toggleDropdown111() { toggleDropdownById(111); }
+function toggleDropdown112() { toggleDropdownById(112); }
+function toggleDropdown113() { toggleDropdownById(113); }
+function toggleDropdown114() { toggleDropdownById(114); }
+function toggleDropdown115() { toggleDropdownById(115); }
 
 
 function toggleDropdownById(id) {
@@ -123,3 +141,4 @@ function toggleDropdownById(id) {
         status.textContent = "➤ ";
     }
 }
+
