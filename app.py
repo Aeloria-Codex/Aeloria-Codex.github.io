@@ -25,6 +25,11 @@ def index():
 def crafter_leveling():
     return render_template('crafter-leveling.html')
 
+# Crafter Leveling page
+@app.route('/tank-pulling.html') 
+def tank_pulling():
+    return render_template('tank-pulling.html')
+
 @app.route('/toggle-mode', methods=['POST'])
 def toggle_mode():
     current_mode = request.cookies.get('mode', 'light-mode')
