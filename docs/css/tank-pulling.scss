@@ -8,6 +8,26 @@
     padding-right: 7%;
 }
 
+#toc {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+#toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+#toc ul li {
+    margin-bottom: 5px;
+}
+#toc a {
+    text-decoration: none;
+}
+#toc a:hover {
+    text-decoration: underline;
+}
+
 #tank_pulls {
     display: flex;
     flex-direction: column;
