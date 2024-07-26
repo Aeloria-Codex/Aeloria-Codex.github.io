@@ -1,0 +1,16 @@
+#center-content {
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    padding-top: 10vh;
+    min-width: 85%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#tank_pulls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
