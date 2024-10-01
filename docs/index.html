@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="/css/index.scss">
     <link rel="stylesheet" type="text/css" href="/css/crafter-leveling.scss">
     <link rel="stylesheet" type="text/css" href="/css/tank-pulling.scss">
+    <link rel="stylesheet" type="text/css" href="/css/404.scss">
+    <link rel="stylesheet" type="text/css" href="/css/job-leveling.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
@@ -18,6 +20,7 @@
         <div>
             <ul>
                 <li><a href="/">Home</a></li>
+                <li><a href="/job-leveling.html">Job Leveling</a></li>
                 <li><a href="/crafter-leveling.html">Crafter Leveling</a></li>
                 <li><a href="/tank-pulling.html">Tank Pulling Guide</a></li>
             </ul>
@@ -27,7 +30,6 @@
             <span class="slider"></span>
         </label>
     </nav>
-    
 
     
 
@@ -39,6 +41,10 @@
 </div>
 
 <div id="covers">
+    <a href="job-leveling.html">
+        <div id="job_leveling_cover">
+            <h1>Job Leveling</h1>
+        </div>
     <a href="crafter-leveling.html">
         <div id="crafter_leveling_cover">
             <h1>Crafter Leveling</h1>
@@ -68,7 +74,7 @@
     // Check for saved mode preference or use default (light-mode)
     const currentMode = localStorage.getItem('mode') || 'light-mode';
     body.classList.add(currentMode);
-        
+
     // Set the switch state based on the current mode
     modeToggle.checked = currentMode === 'dark-mode';
 
