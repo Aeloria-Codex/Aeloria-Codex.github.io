@@ -1,19 +1,18 @@
 :root {
   /* Light mode colors */
-  --light-background: #FDE9E0;
-  --light-secondary: #FADAB3;
-  --light-accent: #FBB67F;
-  --light-primary: #F08E4B;
-  --light-text: #DB5B20;
-
+  --light-background: #FFF8F5; 
+  --light-secondary: #FFE1C7;
+  --light-accent: #FFB586;    
+  --light-primary: #f47c3c;   
+  --light-text: #8C3B1D;        
+  
   /* Dark mode colors */
-  --dark-background: #1B1C22;
-  --dark-secondary: #2D2E35;
-  --dark-accent: #9146FF;
-  --dark-primary: #4FA0F7;
-  --dark-text: #E8E7E3;
+  --dark-background: #1E1E1E;
+  --dark-secondary: #292929;
+  --dark-accent: #FF7F50;
+  --dark-primary: #F39C12;
+  --dark-text: #F0E5D8;
 }
-
 body {
   margin: 0;
   font-size: 12.8px; 
@@ -21,6 +20,11 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/*********************************************************************************
+
+theme switcher 
+
+*********************************************************************************/
 .switch {
   position: relative;
   display: inline-block;
@@ -71,6 +75,12 @@ input:checked + .slider:before {
   transition: background-color 0.3s;
 }
 
+/*********************************************************************************
+
+? 
+
+*********************************************************************************/
+
 .light-mode .btn-primary {
   background-color: var(--light-primary);
   color: var(--light-background);
@@ -104,7 +114,11 @@ input:checked + .slider:before {
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.08); 
 }
 
-/* Light mode styles */
+/*********************************************************************************
+
+Light mode styles 
+
+*********************************************************************************/
 body.light-mode {
   background-color: var(--light-background);
   color: var(--light-text);
@@ -170,7 +184,97 @@ body.light-mode {
   background-color: var(--light-secondary);
 }
 
-/* Dark mode styles */
+.light-mode #left {
+  background-color: var(--light-secondary);
+  border: 1px solid;
+  border-radius: 4px;
+}
+.light-mode #toc {
+  background-color: var(--light-secondary);
+}
+
+/*********************************************************************************
+
+Light Mode background for job leveling backgrounds
+
+*********************************************************************************/
+
+.light-mode #paladin_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #warrior_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #dark_knight_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #gunbreaker_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #white_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #scholar_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #astrologian_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #sage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #monk_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #dragoon_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #ninja_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #samurai_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #reaper_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #viper_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #black_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #summoner_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #red_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #bard_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #machinist_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #dancer_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #blue_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #pictomancer_leveling_cover {
+  background-color: var(--light-secondary);
+}
+
+.light-mode #section_title h1 {
+  color: var(--light-primary);
+}
+/*********************************************************************************
+
+Dark mode styles 
+
+*********************************************************************************/
+
 body.dark-mode {
   background-color: var(--dark-background);
   color: var(--dark-text);
@@ -236,6 +340,101 @@ body.dark-mode {
   background-color: var(--dark-secondary);
 }
 
+.dark-mode #left {
+  background-color: var(--dark-secondary);
+  border: 1px solid;
+  border-radius: 4px;
+}
+.dark-mode #toc {
+  background-color: var(--dark-secondary);
+}
+
+/*********************************************************************************
+
+Dark Mode background for job leveling backgrounds
+
+*********************************************************************************/
+
+.dark-mode #paladin_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #warrior_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #dark_knight_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #gunbreaker_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #white_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #scholar_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #astrologian_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #sage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #monk_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #dragoon_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #ninja_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #samurai_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #reaper_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #viper_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #black_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #summoner_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #red_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #bard_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #machinist_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #dancer_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #blue_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #pictomancer_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+
+.dark-mode #section_title {
+  border-bottom: 15px white;
+}
+.dark-mode #section_title h1 {
+  color: var(--dark-primary);
+  border-bottom: 15px white;
+}
+/*********************************************************************************
+
+?
+
+*********************************************************************************/
+
 button {
   background: #69c;
   color: #fff;
@@ -250,7 +449,11 @@ button:hover {
   background: #4a8ac7;
 }
 
-/* navbar */
+/*********************************************************************************
+
+Navbar
+
+*********************************************************************************/
 
 .navBar {
   padding: 0.8rem 0; 
@@ -281,11 +484,11 @@ button:hover {
 }
 
 .light-mode .navBar {
-  background: rgba(245, 245, 245, 0.8);
+  background: #f5f5f5cc;
 }
 
 .dark-mode .navBar {
-  background: rgba(31, 41, 55, 0.8);
+  background: #292929;
 }
 
 .light-mode .navBar a {
@@ -310,11 +513,11 @@ button:hover {
 }
 
 .light-mode .navBar.scrolled {
-  background: rgba(245, 245, 245, 0.9);
+  background: #f5f5f5e6;
 }
 
 .dark-mode .navBar.scrolled {
-  background: rgba(31, 41, 55, 0.9);
+  background: #292929;
 }
 
 .navBar-logo {
@@ -389,7 +592,15 @@ button:hover {
 
 
 
-/* 404 */
+/*********************************************************************************
+
+404
+
+*********************************************************************************/
+
 .jumbotron {
-  padding-top: 5vh !important;
+  padding-top: 20% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

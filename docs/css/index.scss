@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; 
+    padding-top: 15%;
+    padding-bottom: 5%;
 }
 
 #covers {
@@ -27,6 +28,19 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
 }
 
+#job_leveling_cover {
+    background-image: url("../images/job_leveling_cover.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #crafter_leveling_cover {
     background-image: url("../images/crafter-leveling-cover.png");
     max-height: 500px;
@@ -38,12 +52,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#tank_cover h1 {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
 }
 
 #tank_cover {

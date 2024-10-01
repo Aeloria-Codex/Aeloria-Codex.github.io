@@ -1,0 +1,502 @@
+#top_sec{
+    padding: 5%;
+}
+
+#leveling_covers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#leveling_covers div {
+    margin: 10px;
+}
+#leveling_covers a {
+    text-decoration: none;
+}
+#leveling_covers h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+}
+#section_title h1{
+    text-shadow: none;
+}
+#tank_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#healer_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#melee_dps_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#physical_range_dps_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#magic_range_dps_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#paladin_leveling_cover {
+    background-image: url("../images/paladin.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#paladin_leveling_cover h1{
+    padding-top: 75%;
+}
+#warrior_leveling_cover {
+    background-image: url("../images/warrior.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#warrior_leveling_cover h1{
+    padding-top: 75%;
+}
+#dark_knight_leveling_cover {
+    background-image: url("../images/darkknight.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#dark_knight_leveling_cover h1{
+    padding-top: 75%;
+}
+#gunbreaker_leveling_cover {
+    background-image: url("../images/gunbreaker.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#gunbreaker_leveling_cover h1{
+    padding-top: 75%;
+}
+#white_mage_leveling_cover {
+    background-image: url("../images/whitemage.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#white_mage_leveling_cover h1{
+    padding-top: 75%;
+}
+#scholar_leveling_cover {
+    background-image: url("../images/scholar.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#scholar_leveling_cover h1{
+    padding-top: 75%;
+}
+#astrologian_leveling_cover {
+    background-image: url("../images/astrologian.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#astrologian_leveling_cover h1{
+    padding-top: 75%;
+}
+#sage_leveling_cover {
+    background-image: url("../images/sage.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#sage_leveling_cover h1{
+    padding-top: 75%;
+}
+#monk_leveling_cover {
+    background-image: url("../images/monk.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#monk_leveling_cover h1{
+    padding-top: 75%;
+}
+#dragoon_leveling_cover {
+    background-image: url("../images/dragoon.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#dragoon_leveling_cover h1{
+    padding-top: 75%;
+}
+#ninja_leveling_cover {
+    background-image: url("../images/ninja.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#ninja_leveling_cover h1{
+    padding-top: 75%;
+}
+#samurai_leveling_cover {
+    background-image: url("../images/samurai.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#samurai_leveling_cover h1{
+    padding-top: 75%;
+}
+#reaper_leveling_cover {
+    background-image: url("../images/reaper.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#reaper_leveling_cover h1{
+    padding-top: 75%;
+}
+#viper_leveling_cover {
+    background-image: url("../images/viper.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#viper_leveling_cover h1{
+    padding-top: 75%;
+}
+#black_mage_leveling_cover {
+    background-image: url("../images/blackmage.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#black_mage_leveling_cover h1{
+    padding-top: 75%;
+}
+#summoner_leveling_cover {
+    background-image: url("../images/summoner.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#summoner_leveling_cover h1{
+    padding-top: 75%;
+}
+#red_mage_leveling_cover {
+    background-image: url("../images/redmage.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#red_mage_leveling_cover h1{
+    padding-top: 75%;
+}
+#bard_leveling_cover {
+    background-image: url("../images/bard.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#bard_leveling_cover h1{
+    padding-top: 75%;
+}
+#machinist_leveling_cover {
+    background-image: url("../images/machinist.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#machinist_leveling_cover h1{
+    padding-top: 75%;
+}
+#dancer_leveling_cover {
+    background-image: url("../images/dancer.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#dancer_leveling_cover h1{
+    padding-top: 75%;
+}
+#blue_mage_leveling_cover {
+    background-image: url("../images/bluemage.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#blue_mage_leveling_cover h1{
+    padding-top: 75%;
+}
+#pictomancer_leveling_cover {
+    background-image: url("../images/pictomancer.png");
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 300px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#pictomancer_leveling_cover h1{
+    padding-top: 75%;
+}
