@@ -1,11 +1,12 @@
-#center-content {
-    justify-content: center;
-    align-items: center;
-    height: 80vh; 
-    padding-top: 10vh;
-    min-width: 85%;
-    padding-left: 7%;
-    padding-right: 7%;
+#left {
+    float: left;
+    width: 80%;
+    padding: 2%;
+}
+#right {
+    float: right;
+    width: 20%;
+    
 }
 
 #bottom_pad {
@@ -13,10 +14,12 @@
 }
 
 #toc {
+    float: right;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid;
     border-radius: 4px;
+
 }
 #toc ul {
     list-style-type: none;

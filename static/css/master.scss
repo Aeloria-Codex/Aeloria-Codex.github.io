@@ -590,7 +590,47 @@ Navbar
   }
 }
 
+/*********************************************************************************
 
+Center Content
+
+*********************************************************************************/
+
+#center-content {
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  padding-top: 10vh;
+  min-width: 85%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/*********************************************************************************
+
+Table of Contents
+
+*********************************************************************************/
+
+#toc {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+#toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#toc ul li {
+  margin-bottom: 5px;
+}
+#toc a {
+  text-decoration: none;
+}
+#toc a:hover {
+  text-decoration: underline;
+}
 
 /*********************************************************************************
 
