@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Get the navbar element
     const navBar = document.querySelector('.navBar');
+    const toc = document.querySelector('#toc');
 
     // Listen for scroll events
     window.addEventListener('scroll', () => {
         if (window.scrollY > 0) {
             navBar.classList.add('scrolled');
+            toc.classList.add("scrolled");
         } else {
             navBar.classList.remove('scrolled');
+            toc.classList.remove('scrolled');
         }
     });
 });

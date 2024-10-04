@@ -551,45 +551,6 @@ Navbar
   color: var(--dark-text);
 }
 
-@media (max-width: 768px) {
-  .navBar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navBar ul {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .navBar-toggle {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-    align-self: flex-end;
-  }
-
-  .navBar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navBar-links.active {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navBar-search {
-    width: 100%;
-    margin-top: 0.8rem;
-  }
-
-  .navBar-search input {
-    width: 100%;
-  }
-}
-
 /*********************************************************************************
 
 Center Content
@@ -601,9 +562,19 @@ Center Content
   align-items: center;
   height: 80vh; 
   padding-top: 10vh;
-  min-width: 85%;
+  min-width: 75%;
   padding-left: 7%;
-  padding-right: 7%;
+  padding-right: 25%;
+}
+
+#center-content-crafter-leveling {
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  padding-top: 10vh;
+  min-width: 70%;
+  padding-left: 7%;
+  padding-right: 25%;
 }
 
 /*********************************************************************************
@@ -613,6 +584,9 @@ Table of Contents
 *********************************************************************************/
 
 #toc {
+  left: 80%;
+  position: fixed;
+  top: 10%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid;
