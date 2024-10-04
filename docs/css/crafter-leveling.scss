@@ -1,6 +1,40 @@
+#left {
+    float: left;
+    width: 80%;
+    padding: 2%;
+}
+#right {
+    float: right;
+    width: 20%;
+    
+}
+
 #bottom_pad {
     padding-bottom: 10vh;
 }
+
+#toc {
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+
+}
+#toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+#toc ul li {
+    margin-bottom: 5px;
+}
+#toc a {
+    text-decoration: none;
+}
+#toc a:hover {
+    text-decoration: underline;
+}
+
 #crafter-sections {
     display: flex;
     flex-wrap: wrap;
