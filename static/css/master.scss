@@ -145,7 +145,7 @@ body.light-mode {
   color: var(--light-primary);
 }
 
-.light-mode b {
+.light-mode b,strong {
   color: var(--light-primary);
 }
 
@@ -301,7 +301,7 @@ body.dark-mode {
   color: var(--dark-primary);
 }
 
-.dark-mode b {
+.dark-mode b,strong {
   color: var(--dark-primary);
 }
 
@@ -562,7 +562,7 @@ Center Content
   align-items: center;
   height: 80vh; 
   padding-top: 10vh;
-  min-width: 75%;
+  min-width: 70%;
   padding-left: 7%;
   padding-right: 25%;
 }
@@ -573,6 +573,16 @@ Center Content
   height: 80vh; 
   padding-top: 10vh;
   min-width: 70%;
+  padding-left: 7%;
+  padding-right: 25%;
+}
+
+#center-content-jl {
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  padding-top: 10vh;
+  min-width: 75%;
   padding-left: 7%;
   padding-right: 25%;
 }
