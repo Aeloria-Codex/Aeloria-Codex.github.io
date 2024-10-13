@@ -1,0 +1,426 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div id="center-content">
+
+    <h1>Carpenter Quest</h1>
+
+    <table border="1">
+        <tr>
+            <th>Quest</th>
+            <th>Type</th>
+            <th>Level</th>
+            <th>Quest Giver</th>
+            <th>Required Items</th>
+            <th>Unlocks</th>
+            <th>Rewards</th>
+        </tr>
+        <tr>
+            <td>Way of the Carpenter</td>
+            <td>Feature quest</td>
+            <td>1</td>
+            <td>Corgg</td>
+            <td></td>
+            <td>Carpenter (Simple) Adventurer Plate</td>
+            <td>100 Wind Shard, 50 Ice Shard, 1 Weathered Saw</td>
+        </tr>
+        <tr>
+            <td>My First Saw</td>
+            <td>Feature quest</td>
+            <td>1</td>
+            <td>Beatin</td>
+            <td>1 Maple Lumber, 150 Wind Shard, 100 Ice Shard, 30 Maple Log, 1 Hempen Kurta</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>To Be the Wood</td>
+            <td>Feature quest</td>
+            <td>5</td>
+            <td>Beatin</td>
+            <td>3 Square Maple Shield, 200 Wind Shard, 150 Ice Shard, 1 Amateur's Claw Hammer</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Hempen Bandana</li>
+                    <li>1 Hempen Chausses</li>
+                    <li>1 Maple Pattens</li>
+                    <li>3 Allagan Tin Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Supplies for the Sick</td>
+            <td>Feature quest</td>
+            <td>10</td>
+            <td>Beatin</td>
+            <td>12 Ash Lumber, 250 Wind Shard, 200 Ice Shard, 1 Bronze Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Amateur's Headgear</li>
+                    <li>1 Amateur's Kurta</li>
+                    <li>1 Amateur's Smithing Gloves</li>
+                    <li>2 Allagan Bronze Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>A Carpenter in Need</td>
+            <td>Feature quest</td>
+            <td>15</td>
+            <td>Beatin</td>
+            <td>1 Ash Shortbow, 1 Feathered Harpoon, 1 Recruit's Claw Hammer</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Hempen Doublet Vest of Crafting</li>
+                    <li>1 Ash Pattens</li>
+                    <li>1 Allagan Bronze Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>The Lance's Lesson</td>
+            <td>Class quest</td>
+            <td>20</td>
+            <td>Beatin</td>
+            <td>1 Iron Lance, 1 Materia I, 1 Initiate's Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Initiate's Headgear</li>
+                    <li>1 Initiate's Gloves</li>
+                    <li>1 Cotton Breeches of Crafting</li>
+                    <li>4 Allagan Bronze Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>A Crisis of Confidence</td>
+            <td>Class quest</td>
+            <td>25</td>
+            <td>Beatin</td>
+            <td>1 Walnut Lumber HQ, 1 Initiate's Claw Hammer</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Silver Magnifiers</li>
+                    <li>1 Initiate's Gown</li>
+                    <li>1 Velveteen Halfgloves</li>
+                    <li>1 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Between Captain and Conjurer</td>
+            <td>Class quest</td>
+            <td>30</td>
+            <td>Beatin</td>
+            <td>1 Walnut Cane HQ, 1 Iron Chocobotail Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Velveteen Beret</li>
+                    <li>1 Velveteen Gown</li>
+                    <li>1 Velveteen Shortgloves</li>
+                    <li>6 Allagan Bronze Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Growing Apart</td>
+            <td>Class quest</td>
+            <td>35</td>
+            <td>Beatin</td>
+            <td>1 Oak Longbow HQ, 1 Crosscut Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Mythril Magnifiers</li>
+                    <li>1 Apprentice's Smock</li>
+                    <li>1 Linen Halfgloves</li>
+                    <li>4 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Memento Mori</td>
+            <td>Class quest</td>
+            <td>40</td>
+            <td>Beatin</td>
+            <td>1 Oak Composite Bow HQ, 1 Apprentice's Claw Hammer</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Linen Deerstalker</li>
+                    <li>1 Linen Smock</li>
+                    <li>1 Boarskin Smithy's Gloves</li>
+                    <li>6 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Gone till the Sixth Astral Moon</td>
+            <td>Class quest</td>
+            <td>45</td>
+            <td>Beatin</td>
+            <td>1 Cobalt Halberd HQ, 1 Jade Crook HQ, 1 Yew Longbow HQ, 1 Mythril Chocobotail Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Woolen Deerstalker</li>
+                    <li>1 Woolen Smock</li>
+                    <li>1 Raptorskin Smithy's Gloves</li>
+                    <li>8 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Saving Captain Gairhard</td>
+            <td>Class quest</td>
+            <td>50</td>
+            <td>Beatin</td>
+            <td>1 Rosewood Lumber HQ, 1 Crab Bow HQ, 1 Savage Aim Materia III</td>
+            <td>Carpenter - Part 1</td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Carpenter's Hood</li>
+                    <li>1 Carpenter's Gloves</li>
+                    <li>1 Carpenter's Workboots</li>
+                    <li>3 Allagan Gold Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Lance of a Lifetime</td>
+            <td>Class quest</td>
+            <td>50</td>
+            <td>Beatin</td>
+            <td>1 Broken Spear, 120 Wind Crystal, 3 Commercial Engineering Manual</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>A-hunting He Will Go</td>
+            <td>Class quest</td>
+            <td>53</td>
+            <td>Barthovieu</td>
+            <td>1 Holy Cedar Composite Bow HQ, 160 Wind Crystal, 1 Mythrite Claw Hammer</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Holy Rainbow Wedge Cap</li>
+                    <li>1 Holy Rainbow Coatee</li>
+                    <li>1 Holy Rainbow Gloves</li>
+                    <li>1 Holy Rainbow Bottoms</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Ministers of Grace Defend Him</td>
+            <td>Class quest</td>
+            <td>55</td>
+            <td>Barthovieu</td>
+            <td>1 Dark Chestnut Rod HQ, 200 Wind Crystal, 1 Hardsilver Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Ramie Hat of Crafting</li>
+                    <li>1 Ramie Doublet Vest of Crafting</li>
+                    <li>1 Ramie Skirt</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>A Blessing in Disguise</td>
+            <td>Class quest</td>
+            <td>58</td>
+            <td>Barthovieu</td>
+            <td>1 Adamantite Francesca HQ, 220 Wind Crystal, 1 Hardsilver Claw Hammer</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Ramie Turban of Crafting</li>
+                    <li>1 Ramie Tabard of Crafting</li>
+                    <li>1 Ramie Slops of Crafting</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>To Be Second Best</td>
+            <td>Class quest</td>
+            <td>60</td>
+            <td>Barthovieu</td>
+            <td>1 Birch Longbow HQ, 240 Wind Crystal, 1 Cloud Mica Grinding Wheel</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Kudzu Cap of Crafting</li>
+                    <li>1 Kudzu Coat of Crafting</li>
+                    <li>1 Kudzu Culottes of Crafting</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>A Lack of Panache</td>
+            <td>Class quest</td>
+            <td>63</td>
+            <td>Barthovieu</td>
+            <td>1 Palladium Bill HQ, 260 Wind Crystal, 1 Slate Grinding Wheel</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Flannel Beret of Crafting</li>
+                    <li>1 Flannel Vest of Crafting</li>
+                    <li>1 Flannel Bottoms</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>All You Can Handle</td>
+            <td>Class quest</td>
+            <td>65</td>
+            <td>Barthovieu</td>
+            <td>1 Palladium Halberd HQ, 280 Wind Crystal, 1 Bloodhempen Yarn, 1 Bluespirit Saw</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Bluespirit Saw</li>
+                    <li>1 Bluespirit Pliers</li>
+                    <li>1 Bluespirit Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Cutting His Craft Down to Size</td>
+            <td>Class quest</td>
+            <td>68</td>
+            <td>Barthovieu</td>
+            <td>1 Palladium Scythe HQ, 300 Wind Crystal, 1 Earth Cluster, 1 Tigerskin Spinning Wheel</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Tigerskin Spinning Wheel</li>
+                    <li>1 Tigerskin Pliers</li>
+                    <li>1 Tigerskin Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>In the Eye of the Beholder</td>
+            <td>Class quest</td>
+            <td>70</td>
+            <td>Barthovieu</td>
+            <td>1 Tigerskin Longbow HQ, 320 Wind Crystal, 1 Earth Cluster, 1 Beech Lumber</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Beech Lumber</li>
+                    <li>1 Beech Spinning Wheel</li>
+                    <li>1 Beech Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>The Path to Divinity</td>
+            <td>Class quest</td>
+            <td>73</td>
+            <td>Silvaint</td>
+            <td>1 Beech Wand HQ, 340 Wind Crystal, 1 Fire Cluster, 1 Ancient Lumber</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Ancient Lumber</li>
+                    <li>1 Ancient Spinning Wheel</li>
+                    <li>1 Ancient Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Grave Tidings</td>
+            <td>Class quest</td>
+            <td>75</td>
+            <td>Silvaint</td>
+            <td>1 Ancient Lumber HQ, 360 Wind Crystal, 1 Fire Cluster, 1 Horn Glue</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Horn Glue</li>
+                    <li>1 Horn Spinning Wheel</li>
+                    <li>1 Horn Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Sweet Smells of Sanctity</td>
+            <td>Class quest</td>
+            <td>78</td>
+            <td>Silvaint</td>
+            <td>1 White Ash Lumber HQ, 380 Wind Crystal, 1 Fire Cluster, 1 Constellation Spinning Wheel</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Constellation Spinning Wheel</li>
+                    <li>1 Constellation Pliers</li>
+                    <li>1 Constellation Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>The Hard and the Soft</td>
+            <td>Class quest</td>
+            <td>80</td>
+            <td>Silvaint</td>
+            <td>1 White Ash Composite Bow HQ, 400 Wind Crystal, 1 Fire Cluster, 1 Shark Oil</td>
+            <td></td>
+            <td>
+                Options:
+                <ul>
+                    <li>1 Shark Oil</li>
+                    <li>1 Shark Spinning Wheel</li>
+                    <li>1 Shark Grinding Wheel</li>
+                    <li>3 Allagan Silver Piece</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    
+
+</div>
+
+{% endblock %}
