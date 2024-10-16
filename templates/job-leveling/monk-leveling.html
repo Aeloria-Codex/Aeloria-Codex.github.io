@@ -2,35 +2,118 @@
 
 {% block content %}
 
+<div id="toc">
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#mnk_intro">Getting Started</a></li>
+        <li><a href="#mnk_videos">Video Resources</a></li>
+        <li><a href="#mnk_gear">Gear Recommendations</a></li>
+        <li><a href="#mnk_tips">General Tips</a></li>
+        <li><a href="#mnk_rotation">Skill and Rotation Guide</a></li>
+    </ul>
+</div>
+
 <div id="center-content">
-
-    <div id="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
-        </ul>
+    <div id="mnk_intro">
+        <h1>Getting Started</h1>
+        <div id="mnk_txt">
+            <p>Welcome to the Monk guide! Whether you're starting out as a Pugilist at level 1 or transitioning to Monk at level 30, this guide will help you optimize your gameplay as you progress. Monk is a highly mobile, fast-paced job that excels in continuous melee damage, offering players an engaging experience built around a fluid rotation and resource management.</p>
+            <p>This guide is designed for players leveling from 1 through to max level, offering advice on rotations, gear, and essential tips to enhance your experience.</p>
+            <p>Monk is all about chaining combos and managing the Chakra system, with an emphasis on positioning and timing to maximize damage. Let's dive into what makes Monk one of the most dynamic jobs in Final Fantasy XIV!</p>
+        </div>
     </div>
 
-    <div id="leveling_intro">
-
-    </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
-
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
+    <div id="mnk_videos">
+        <h1>Video Resources</h1>
+        <div id="mnk_txt">
+            <p>These video resources, curated from experienced players, provide helpful insights into playing the Monk effectively.</p>
+        </div>
+        <iframe class="video-iframe" width="560" height="315"
+                src="https://www.youtube.com/embed/AEQhxK7em74?si=lkY4MPsRKOkss-Ts"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video-iframe" width="560" height="315"
+                src="https://www.youtube.com/embed/91OGwOf0cUQ"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
+    <div id="mnk_gear">
+        <h1>Gear Recommendations</h1>
+        <div id="mnk_txt">
+            <p>Gear is critical to ensuring that your Monk performs well at all levels. Keeping your gear updated as you level will significantly improve your damage and survivability. While progressing through the Main Scenario Quest (MSQ), you will receive gear upgrades naturally, but gear from vendors, the Market Board, and Tomestones are also excellent sources.</p>
+
+            <h3>Gear Recommendations by Key Levels:</h3>
+            <ul>
+                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtainable from Auriana in Mor Dhona or Rowena's Representatives in main cities.</p></li>
+                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
+                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr's Reach.</p></li>
+                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
+                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
+                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mnk_tips">
+        <h1>General Tips for Monk</h1>
+        <div id="mnk_txt">
+            <p><strong>Master Your Positioning:</strong> Many of Monk's abilities have positional bonuses. To maximize your damage, always aim to hit the rear or flank of your enemies when using these skills.</p>
+            <p><strong>Keep Up Your Buffs:</strong> Always keep <strong>Twin Snakes</strong> active to maintain your damage buff. This is a key part of the Monk rotation, and forgetting to refresh it will drastically reduce your effectiveness.</p>
+            <p><strong>Utilize Chakra Efficiently:</strong> Use <strong>The Forbidden Chakra</strong> as soon as you reach five stacks of Chakra. Overcapping on Chakra (gaining additional Chakra while already at 5 stacks) is a waste of potential damage.</p>
+            <p><strong>Cooldown Management:</strong> Align <strong>Riddle of Fire</strong> with <strong>Brotherhood</strong> to maximize burst damage during windows where both are active. Weaving <strong>Perfect Balance</strong> and <strong>Masterful Blitz</strong> into these cooldowns is essential for high damage output.</p>
+            <p><strong>Mitigation:</strong> Don't forget that Monk has a few defensive tools, such as <strong>Riddle of Earth</strong>, to mitigate incoming damage and help the team survive tough encounters.</p>
+        </div>
+    </div>
+
+    <div id="mnk_rotation">
+        <h1>Rotation Overview</h1>
+        <div id="mnk_txt">
+            <p>Monk's rotation revolves around maintaining buffs, managing your Chakra system, and effectively using your abilities based on the encounter. Below are simplified rotations for both single-target and multi-target scenarios as you level up.</p>
+        </div>
+
+        <h3>Base GCD Weaponskill Rotation</h3>
+        <div id="mnk_txt">
+            <p>Monk's core rotation is built on a three-step combo, alternating between two sets of weaponskills based on positional bonuses:</p>
+            <ul>
+                <li><p>Start with <strong>Dragon Kick</strong> (or <strong>Leaping Opo</strong>), then alternate with <strong>Twin Snakes</strong> (or <strong>Rising Raptor</strong>), and use <strong>Demolish</strong> to finish the combo.</p></li>
+                <li><p>Refresh <strong>Twin Snakes</strong> every 15 seconds to keep the damage buff active.</p></li>
+                <li><p>Use <strong>Demolish</strong> whenever the DoT is about to expire.</p></li>
+            </ul>
+        </div>
+
+        <h3>Buffing Actions</h3>
+        <div id="mnk_txt">
+            <ul>
+                <li><p><strong>Perfect Balance:</strong> Use after an Opo-Opo form GCD to maximize your combo potential.</p></li>
+                <li><p><strong>Riddle of Fire:</strong> Time this cooldown with <strong>Brotherhood</strong> and <strong>Perfect Balance</strong> to deliver powerful bursts.</p></li>
+                <li><p><strong>Riddle of Wind:</strong> Use this strictly on cooldown, aligning it where possible with <strong>Riddle of Fire</strong>.</p></li>
+            </ul>
+        </div>
+
+        <h3>Chakra System</h3>
+        <div id="mnk_txt">
+            <ul>
+                <li><p>At level 74, <strong>Deep Meditation II</strong> gives a 100% chance to generate Chakra on a critical hit. This means you want to use <strong>The Forbidden Chakra</strong> or <strong>Enlightenment</strong> whenever you have 5 Chakra stacks.</p></li>
+                <li><p>Avoid overcapping on Chakra to prevent wasting potential damage output.</p></li>
+            </ul>
+        </div>
+
+        <h3>Multi-Target Rotation</h3>
+        <div id="mnk_txt">
+            <ul>
+                <li><p>For four or more targets, switch to AoE skills like <strong>Shadow of the Destroyer</strong>, <strong>Four-point Fury</strong>, and <strong>Rockbreaker</strong>.</p></li>
+            </ul>
+        </div>
+
+        <h3>Multi-Target Perfect Balance Usage</h3>
+        <div id="mnk_txt">
+            <ul>
+                <li><p>In multi-target situations, generate <strong>Elixir Burst</strong> and <strong>Tornado Kick</strong> by using three <strong>Shadow of the Destroyer</strong> actions within <strong>Perfect Balance</strong>.</p></li>
+                <li><p>Use <strong>Rising Phoenix</strong> whenever possible to deal massive AoE damage.</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bottom_pad"></div>
 </div>
 
 {% endblock %}
