@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, make_response
 from flask_frozen import Freezer
 from flask_session import Session
+from flask_minify import minify
 import os, requests, base64
 
 app = Flask(__name__,
@@ -119,6 +120,7 @@ def pictomancer_leveling():
 @app.route('/blue-mage-leveling.html')
 def blue_mage_leveling():
     return render_template('job-leveling/blue-mage-leveling.html')
+
 
 if __name__ == '__main__':
     freezer.freeze()

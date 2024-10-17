@@ -1,0 +1,14 @@
+{
+  "name": "aeloria-codex.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel watch src/js/*.js src/css/*.css src/images/*.jpeg src/images/*.png --public-url /static",
+    "build": "parcel build src/js/* src/css/* src/images/* --public-url /static"
+  },
+  "targets": {
+    "main": {
+      "distDir": "static",
+      "publicUrl": "/static"
+    }
+  }
+}
