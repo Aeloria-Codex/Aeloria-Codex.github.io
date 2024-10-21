@@ -1,6 +1,10 @@
 <head>
-    <title>The Aeloria Codex</title>
+    <title>{% block title %}The Aeloria Codex{% endblock %}</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}An FFXIV guide for all your needs!{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}FFXIV, Final Fantasy 14, Guide, Crafing, Leveling, Job{% endblock %}">
+    <meta name="author" content="The Aeloria Codex">
     <link rel="stylesheet" type="text/css" href="/css/master.scss">
     <link rel="stylesheet" type="text/css" href="/css/index.scss">
     <link rel="stylesheet" type="text/css" href="/css/crafter-leveling.scss">
@@ -9,12 +13,11 @@
     <link rel="stylesheet" type="text/css" href="/css/job-leveling.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
     <script src="/js/script.js"></script>
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
 <body>
 
     <!-- navbar -->
@@ -38,10 +41,44 @@
     {% endblock %}
 
     <!-- bottom banner -->
-    <footer>
+    <footer id="footer">
+        <div>
+          <div id="footer-div-top">
+            <!-- Logo / Branding -->
+            <div id="footer-column">
+              <h2>The Aeloria Codex</h2>
+              <p>Your source for Final Fantasy XIV leveling guides.</p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div id="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/job-leveling.html">Job Leveling</a></li>
+                <li><a href="/crafter-leveling.html">Crafter Leveling</a></li>
+                <li><a href="/tank-pulling.html">Tank Pulling Guide</a></li>
+                <!-- Add more guide links as needed -->
+              </ul>
+            </div>
+      
+            <!-- Social Media Icons -->
+            <div id="footer-column">
+              <h3>Follow Us</h3>
+              <a href="https://github.com/Aeloria-Codex/Aeloria-Codex.github.io"><img src="/images/github-icon.png" alt="Github" style="width: 24px;"></a>
+              <!-- Add more social icons as needed -->
+            </div>
+          </div>
+      
+          <hr>
+      
+          <!-- Copyright and Credits -->
+          <p>&copy; 2024 Aeloria Codex. All Rights Reserved.</p>
+          <p>Final Fantasy XIV is a trademark of Square Enix. This website is not affiliated with Square Enix.</p>
+          <p>This is an Open Sourced FFXIV Guide Website! If you wish to contribute fork the Main repo and push your changed back to the Main repo!</p>
+        </div>
     </footer>
+
 </body>
-</head>
 <!--script and css-->
 <link rel="stylesheet" type="text/css" href="/css/master.scss">
 <script src="/js/script.js"></script>

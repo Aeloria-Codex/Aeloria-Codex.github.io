@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, make_response
 from flask_frozen import Freezer
 from flask_session import Session
-from flask_minify import minify
-import os, requests, base64
+from flask_sitemap import Sitemap
+from flask_htmlmin import HTMLMIN
+from flask_sslify import SSLify
 
 app = Flask(__name__,
             static_url_path='',
@@ -12,8 +13,13 @@ app = Flask(__name__,
 app.config['SECRET_KEY'] = 'your_secret_key_here'
 app.config['FREEZER_DESTINATION'] = 'docs'
 app.config['SESSION_TYPE'] = 'filesystem'
+app.config['MINIFY_HTML'] = True
+app.config['MINIFY_PAGE'] = True
 freezer = Freezer(app)
 Session(app)
+ext = Sitemap(app=app)
+HTMLMIN(app)
+sslify = SSLify(app)
 
 # Home page
 @app.route('/')
@@ -121,6 +127,40 @@ def pictomancer_leveling():
 def blue_mage_leveling():
     return render_template('job-leveling/blue-mage-leveling.html')
 
+##################################################################################################################################
+# Sitemap
+##################################################################################################################################
+
+@ext.register_generator
+def sitemap():
+    yield 'index', {}
+    yield 'job_leveling', {}
+    yield 'crafter_leveling', {}
+    yield 'tank_pulling', {}
+    
+    # Job Leveling Sitemap
+    yield 'astrologian_leveling', {}
+    yield 'bard_leveling', {}
+    yield 'black_mage_leveling', {}
+    yield 'blue_mage_leveling', {}
+    yield 'dancer_leveling', {}
+    yield 'dark_knight_leveling', {}
+    yield 'dragoon_leveling', {}
+    yield 'gunbreaker_leveling', {}
+    yield 'machinist_leveling', {}
+    yield 'monk_leveling', {}
+    yield 'ninja_leveling', {}
+    yield 'paladin_leveling', {}
+    yield 'pictomancer_leveling', {}
+    yield 'reaper_leveling', {}
+    yield 'red_mage_leveling', {}
+    yield 'sage_leveling', {}
+    yield 'samurai_leveling', {}
+    yield 'scholar_leveling', {}
+    yield 'summoner_leveling', {}
+    yield 'viper_leveling', {}
+    yield 'warrior_leveling', {}
+    yield 'white_mage_leveling', {}
 
 if __name__ == '__main__':
     freezer.freeze()
