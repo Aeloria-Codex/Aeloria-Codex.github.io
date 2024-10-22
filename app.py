@@ -51,6 +51,11 @@ def toggle_mode():
     response.set_cookie('mode', new_mode, max_age=30*24*60*60)  # 30 days
     return response
 
+# References page
+@app.route('/references.html')
+def references():
+    return render_template('references.html')
+
 # 404 page
 @app.errorhandler(404)
 def page_not_found(e):
