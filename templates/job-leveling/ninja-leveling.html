@@ -2,61 +2,15 @@
 
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#leveling_intro">Introduction </a></li>
-        <li><a href="#leveling_videos">Videos </a></li>
-        <li><a href="#leveling_gear">Gear </a></li>
-        <li><a href="#leveling_tips">Tips </a></li>
-        <li><a href="#leveling_rotation">Rotation </a></li>
-    </ul>
-</div>
+{% set job_name = "Ninja" %}
+{% set job_name1 = "Ninja" %}
+{% set url1 = "https://www.youtube.com/embed/l06GHjyxi-c" %}
+{% set url2 = "https://www.youtube.com/embed/Uby5VR-Vhuw?si=y14JSuGvONaLb8Vu" %}
 
-<div id="center-content">
-    <div id="leveling_intro">
-        <h1>Getting Started</h1>
-        <div id="drk_txt">
-            <p>Welcome to the Dark Knight guide! This resource is designed to assist you in mastering the Dark Knight job in Final Fantasy XIV, providing core strategies, essential tips, and a detailed breakdown of your rotation.</p>
-            <p>Note: This guide isn't focused on advanced dungeons, trials, or raids, those will be left to their own specific guides. Instead, this guide introduces some foundational strategies for your job in FFXIV.</p>
-            <p>The goal is to help you grasp the mindset behind your job and to offer some useful approaches as you level.</p>
-        </div>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="leveling_videos">
-        <h1>Video Resources</h1>
-        <div id="drk_txt">
-            <p>These video resources from experienced players and content creators will provide additional perspectives on the Dark Knight playstyle.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/l06GHjyxi-c"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/Uby5VR-Vhuw?si=y14JSuGvONaLb8Vu"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="leveling_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="drk_txt">
-            <p>Keeping your equipment up-to-date is crucial. Insufficient gear can hinder your damage output and survivability. Aim to have gear that matches your current level or is only slightly lower.</p>
-            <p>While progressing through the Main Scenario Quest (MSQ), you will frequently acquire gear upgrades and coffers to keep your setup competitive.</p>
-            <p>For leveling outside the MSQ, gear can be obtained through vendors (using Gil), the Market Board, or by trading Tomestones and Poetics earned through roulettes and other activities.</p>
-
-            <h3>Gear Recommendations by Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtain from Auriana in Mor Dhona or Rowena's Representatives in the main cities.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr's Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-
-    <h2>Tips</h2>
-    <div id="leveling-tips">
+    <h2>Job Tips</h2>
+    <div id="leveling_tips">
         <ul>
             <li><p><strong>Kuani Gauge</strong> unlocks at level 45. Use <strong>Armor Crush</strong> to gain <strong>Kuani</strong> and <strong>Aeolian Edge</strong> to spend them.</p></li>
             <li><p><strong>Ninki Gauge</strong> unlocks at level 62. Utilize abilities during <strong>Mug</strong>, Dokumori, Trick Attack, and Kunai's Bane</strong> buffs, try to avvoid exceeding the gauge limit.</p></li>
@@ -92,5 +46,6 @@
 
     <div id="bottom_pad"></div>
 </div>
+
 
 {% endblock %}
