@@ -1,60 +1,18 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Machinist Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Machinist in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, Machinist, mch, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#mch_intro">Getting Started</a></li>
-        <li><a href="#mch_videos">Video Resources</a></li>
-        <li><a href="#mch_gear">Gear Recommendations</a></li>
-        <li><a href="#mch_tips">General Tips</a></li>
-        <li><a href="#mch_rotation">Skill and Rotation Guide</a></li>
-    </ul>
-</div>
+{% set job_name = "Machinist" %}
+{% set url1 = "https://www.youtube.com/embed/TmmW-4jamSA" %}
+{% set url2 = "https://www.youtube.com/embed/12aXWHeIjMo?si=caO5zVCSLDDb7WA3" %}
 
-<div id="center-content">
-    <div id="mch_intro">
-        <h1>Getting Started</h1>
-        <div id="mch_txt">
-            <p>Welcome to the Machinist guide! This guide is designed to help you understand and master the Machinist job in Final Fantasy XIV by providing essential tips and insights for gameplay. We will focus on how to effectively manage your abilities and resources as you level up.</p>
-            <p>This guide begins at level 15, the lowest duty level you can queue into as a Machinist, and introduces strategies to build your foundation with this job.</p>
-            <p>The aim is to equip you with key knowledge and strategies for managing your Machinist, so you can make the most of its capabilities as you progress through the game.</p>
-        </div>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="mch_videos">
-        <h1>Video Resources</h1>
-        <div id="mch_txt">
-            <p>These video resources, curated from experienced players, provide helpful insights into playing the Machinist effectively.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/TmmW-4jamSA"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/12aXWHeIjMo?si=caO5zVCSLDDb7WA3"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="mch_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="mch_txt">
-            <p>Gear plays a significant role in optimizing your performance. Ensure your gear is updated regularly to maintain strong damage output and survivability. As you progress through the Main Scenario Quest (MSQ), you will naturally receive gear upgrades.</p>
-            <p>Outside of MSQ, gear can be acquired via vendors, the Market Board, or by exchanging Tomestones and Poetics earned from roulettes and other activities.</p>
-
-            <h3>Gear Recommendations by Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtainable from Auriana in Mor Dhona or Rowena's Representatives in main cities.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr's Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="mch_tips">
+    <div id="leveling_tips">
         <h1>General Tips for Machinist</h1>
         <div id="mch_txt">
             <p><strong>Resource Management:</strong> Keep an eye on your Heat and Battery gauges to ensure you don't waste resources. Use Hypercharge before the Heat Gauge maxes out, and summon Automaton Queen before the Battery Gauge fills completely.</p>
@@ -64,7 +22,7 @@
         </div>
     </div>
 
-    <div id="mch_rotation">
+    <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="mch_txt">
             <p>The Machinist's rotation focuses on managing your resources, ensuring key abilities are used on cooldown, and dealing consistent damage. Below is an overview of single-target and multi-target rotations to guide you through different encounters.</p>

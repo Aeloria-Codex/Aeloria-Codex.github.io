@@ -1,59 +1,18 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Monk Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Monk in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, monk, mnk, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#mnk_intro">Getting Started</a></li>
-        <li><a href="#mnk_videos">Video Resources</a></li>
-        <li><a href="#mnk_gear">Gear Recommendations</a></li>
-        <li><a href="#mnk_tips">General Tips</a></li>
-        <li><a href="#mnk_rotation">Skill and Rotation Guide</a></li>
-    </ul>
-</div>
+{% set job_name = "Monk" %}
+{% set url1 = "https://www.youtube.com/embed/AEQhxK7em74?si=lkY4MPsRKOkss-Ts" %}
+{% set url2 = "https://www.youtube.com/embed/91OGwOf0cUQ" %}
 
-<div id="center-content">
-    <div id="mnk_intro">
-        <h1>Getting Started</h1>
-        <div id="mnk_txt">
-            <p>Welcome to the Monk guide! Whether you're starting out as a Pugilist at level 1 or transitioning to Monk at level 30, this guide will help you optimize your gameplay as you progress. Monk is a highly mobile, fast-paced job that excels in continuous melee damage, offering players an engaging experience built around a fluid rotation and resource management.</p>
-            <p>This guide is designed for players leveling from 1 through to max level, offering advice on rotations, gear, and essential tips to enhance your experience.</p>
-            <p>Monk is all about chaining combos and managing the Chakra system, with an emphasis on positioning and timing to maximize damage. Let's dive into what makes Monk one of the most dynamic jobs in Final Fantasy XIV!</p>
-        </div>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="mnk_videos">
-        <h1>Video Resources</h1>
-        <div id="mnk_txt">
-            <p>These video resources, curated from experienced players, provide helpful insights into playing the Monk effectively.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/AEQhxK7em74?si=lkY4MPsRKOkss-Ts"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/91OGwOf0cUQ"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="mnk_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="mnk_txt">
-            <p>Gear is critical to ensuring that your Monk performs well at all levels. Keeping your gear updated as you level will significantly improve your damage and survivability. While progressing through the Main Scenario Quest (MSQ), you will receive gear upgrades naturally, but gear from vendors, the Market Board, and Tomestones are also excellent sources.</p>
-
-            <h3>Gear Recommendations by Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtainable from Auriana in Mor Dhona or Rowena's Representatives in main cities.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr's Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="mnk_tips">
+    <div id="leveling_tips">
         <h1>General Tips for Monk</h1>
         <div id="mnk_txt">
             <p><strong>Master Your Positioning:</strong> Many of Monk's abilities have positional bonuses. To maximize your damage, always aim to hit the rear or flank of your enemies when using these skills.</p>
@@ -64,7 +23,7 @@
         </div>
     </div>
 
-    <div id="mnk_rotation">
+    <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="mnk_txt">
             <p>Monk's rotation revolves around maintaining buffs, managing your Chakra system, and effectively using your abilities based on the encounter. Below are simplified rotations for both single-target and multi-target scenarios as you level up.</p>

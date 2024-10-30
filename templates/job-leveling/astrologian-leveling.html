@@ -6,60 +6,13 @@
 
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#ast_intro">Getting Started</a></li>
-        <li><a href="#ast_videos">Video Resources</a></li>
-        <li><a href="#ast_gear">Gear Recommendations</a></li>
-        <li><a href="#ast_tips">General Tips</a></li>
-        <li><a href="#ast_rotation">Skill and Rotation Guide</a></li>
-    </ul>
-</div>
+{% set job_name = "Astrologian" %}
+{% set url1 = "https://www.youtube.com/embed/7n-VKY3wGm0" %}
+{% set url2 = "https://www.youtube.com/embed/fWqqdnn5g1s" %}
 
-<div id="center-content">
-    <div id="ast_intro">
-        <h1>Getting Started</h1>
-        <div id="ast_txt">
-            <p>Welcome to the Astrologian leveling guide! This resource will help you get your Astrologian through the leveling process while forming good habits early on.</p>
-            <p>Note: This guide isn’t focused on advanced dungeons, trials, or raids, those will be left to their own specific guides. Instead, this guide introduces some foundational strategies for your job in FFXIV.</p>
-            <p>The goal is to help you grasp the mindset behind your job and to offer some useful approaches as you level.</p>
-        </div>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="ast_videos">
-        <h1>Video Resources</h1>
-        <div id="ast_txt">
-            <p>These videos from various creators provide additional guidance and insight into the Astrologian job. They’re great tools for improving your gameplay.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/7n-VKY3wGm0"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/fWqqdnn5g1s"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="ast_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="ast_txt">
-            <p>Keeping your gear up-to-date is essential as a healer. Without proper gear, both your healing and damage contribution will suffer. Ideally, your equipment should match your current level, or be no more than a few levels behind.</p>
-            <p>If you’re progressing through the Main Scenario Quest (MSQ), you’ll regularly earn gear upgrades and coffers to keep your setup competitive.</p>
-            <p>For leveling outside the MSQ, you can acquire gear through merchants (using Gil), the Market Board, or by exchanging Tomestones and Poetics earned through roulettes and other activities.</p>
-
-            <h3>Gear Sources at Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtain from Auriana in Mor Dhona or Rowena's Representatives in the main cities.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr’s Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="ast_tips">
+    <div id="leveling_tips">
         <h1>General Tips for Astrologian</h1>
         <div id="ast_txt">
             <p><strong>Starting at level 30:</strong> Keep in mind that Astrologian begins at level 30, but your level may and will be synced down in lower-level content.</p>
@@ -72,7 +25,7 @@
         </div>
     </div>
 
-    <div id="ast_rotation">
+    <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="ast_txt">
             <h3>Card Management and Gauge Usage</h3>
@@ -119,9 +72,10 @@
                 <li><p><b>Horoscope</b> delivers a 200-potency heal on a short cooldown. While modest, it effectively bridges healing gaps between other off-global cooldown abilities.</p></li>
                 <li><p><b>Macrocosmos</b> functions as both a multi-target DPS increase and a potent AoE heal, capable of fully restoring a tank’s HP when under heavy damage.</p></li>                
             </ul> 
-    
+        </div>
+    </div>
     <div id="bottom_pad"></div>
-
+    
 </div>
 
 {% endblock %}
