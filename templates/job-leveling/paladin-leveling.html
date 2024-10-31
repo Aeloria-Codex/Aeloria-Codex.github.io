@@ -1,7 +1,53 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Paladin Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Paladin in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, pld, Paladin, gld, Gladiator, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
+{% set job_name = "Paladin" %}
+{% set url1 = "https://www.youtube.com/embed/ccbDLeIWsJA" %}
+{% set url2 = "https://www.youtube.com/embed/g1iLEpNUJnw" %}
+
 {% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Paladin</h1>
+    <div>
+        <p><strong>Tank Stance:</strong> Always ensure <strong>Iron Will</strong> is activated when tanking in dungeons or holding aggro in raids.</p>
+        <p><strong>Getting Agro:</strong> Make sure that you are running up to the mobs and using your AOE abilities to make sure you are securing agro.</p>
+        <p><strong>Mob Positioning:</strong> Make sure you are positioning all the mobs as tight as possible to make sure your dps and healers can using their AOE's effectively.</p>
+        <p><strong>Offensive Cooldowns:</strong> Make sure you are not burning all or too many of your Mits and that your are spreading them out correctly.</p>
+    </div>
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
+        <ul>
+            <li><p>Level 15-25: Alternate <strong>Fast Blade</strong> and <strong>Riot Blade</strong>. Use <strong>Fight or Flight</strong> late in the GCD after Fast Blade.</p></li>
+            <li><p>Level 26-59: Use the combo: <strong>Fast Blade</strong> → <strong>Riot Blade</strong> → <strong>Rage of Halone</strong></p></li>
+            <li><p>Level 54+: Add <strong>Goring Blade</strong> during <strong>Fight or Flight</strong> (doesn't break combo)</p></li>
+            <li><p>Level 60+: <strong>Rage of Halone</strong> upgrades to <strong>Royal Authority</strong></p></li>
+            <li><p>Level 64+: <strong>Royal Authority</strong> grants Divine Might for empowered <strong>Holy Spirit</strong></p></li>
+            <li><p>Level 68+: Use <strong>Requiescat</strong> inside <strong>Fight or Flight</strong>, followed by 4x <strong>Holy Spirit</strong></p></li>
+        </ul>
+    </div>
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p>Level 15-39: Spam <strong>Total Eclipse</strong></p></li>
+            <li><p>Level 40+: Use the combo: <strong>Total Eclipse</strong> → <strong>Prominence</strong></p></li>
+            <li><p>Level 72+: <strong>Prominence</strong> combo grants Divine Might</p></li>
+            <li><p>Level 72+: Use <strong>Holy Circle</strong> when you have Requiescat stacks or Divine Might</p></li>
+            <li><p>Level 80+: Replace first <strong>Holy Circle</strong> with <strong>Confiteor</strong></p></li>
+           </ul>
+    </div>
+</div>
+
+<div id="bottom_pad"></div>
+</div>
 
 {% endblock %}

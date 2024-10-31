@@ -25,7 +25,33 @@
         <div>
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('job_leveling') }}">Job Leveling</a></li>
+                <div class="nav-item has-dropdown">
+                    <a href="{{ url_for('job_leveling') }}" class="main-link">Job Leveling<span class="dropdown-icon">▼</span></a>
+                    <div class="dropdown-leveling-nav">
+                        <a href="{{ url_for('paladin_leveling') }}">Paladin</a>
+                        <a href="{{ url_for('warrior_leveling') }}">Warrior</a>
+                        <a href="{{ url_for('dark_knight_leveling') }}">Dark Knight</a>
+                        <a href="{{ url_for('gunbreaker_leveling') }}">Gunbreaker</a>
+                        <a href="{{ url_for('white_mage_leveling') }}">White Mage</a>
+                        <a href="{{ url_for('scholar_leveling') }}">Scholar</a>
+                        <a href="{{ url_for('astrologian_leveling') }}">Astrologian</a>
+                        <a href="{{ url_for('sage_leveling') }}">Sage</a>
+                        <a href="{{ url_for('monk_leveling') }}">Monk</a>
+                        <a href="{{ url_for('dragoon_leveling') }}">Dragoon</a>
+                        <a href="{{ url_for('ninja_leveling') }}">Ninja</a>
+                        <a href="{{ url_for('samurai_leveling') }}">Samurai</a>
+                        <a href="{{ url_for('reaper_leveling') }}">Reaper</a>
+                        <a href="{{ url_for('viper_leveling') }}">Viper</a>
+                        <a href="{{ url_for('bard_leveling') }}">Bard</a>
+                        <a href="{{ url_for('machinist_leveling') }}">Machinist</a>
+                        <a href="{{ url_for('dancer_leveling') }}">Dancer</a>
+                        <a href="{{ url_for('black_mage_leveling') }}">Black Mage</a>
+                        <a href="{{ url_for('summoner_leveling') }}">Summoner</a>
+                        <a href="{{ url_for('red_mage_leveling') }}">Red Mage</a>
+                        <a href="{{ url_for('pictomancer_leveling') }}">Pictomancer</a>
+                        <a href="{{ url_for('blue_mage_leveling') }}">Blue Mage</a>
+                    </div>
+                </div>
                 <li><a href="{{ url_for('crafter_leveling') }}">Crafter Leveling</a></li>
                 <li><a href="{{ url_for('tank_pulling') }}">Tank Pulling Guide</a></li>
             </ul>
