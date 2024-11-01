@@ -675,7 +675,7 @@ Nav dropdown
   display: none;
   position: absolute;
   top: 100%;
-  left: 10%;
+  left: 10vh;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   flex-direction: column;
@@ -702,6 +702,9 @@ Nav dropdown
   padding: 0.75rem 1rem;
 }
 
+.dropdown-leveling-nav hr{
+  margin-top: -2vh;
+}
 /*********************************************************************************
 
 404

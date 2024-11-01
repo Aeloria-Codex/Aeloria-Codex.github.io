@@ -1,36 +1,62 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Pictomancer Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Pictomancer in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, pct, Pictomancer, picto, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Pictomancer" %}
+{% set url1 = "https://www.youtube.com/embed/Vo3AybWfs28?si=ypbDxVq5-eFZGTUM" %}
+{% set url2 = "https://www.youtube.com/embed/VpKn9is_kCI?si=Hc5TdGU801rSlDHt" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Pictomancer</h1>
+    <div>
+        <p><strong>Resource Management:</strong> Keep a close eye on <strong>Ink</strong> reserves to ensure you’re ready to unleash powerful abilities. Use your basic spells to build ink without overspending on minor attacks.</p>
+        <p><strong>AoE Setup:</strong> Position yourself strategically to maximize the reach of AoE spells. Group enemies together when possible, allowing you to hit multiple targets and conserve Ink for high-priority skills.</p>
+        <p><strong>Cooldown Timing:</strong> Don’t stack cooldowns unnecessarily. Plan your spells to keep Ink-efficient spells active and reserve major cooldowns for peak damage moments.</p>
+        <p><strong>Positioning and Mobility:</strong> Use your movement abilities to maintain an ideal distance from bosses and avoid heavy damage zones while staying within casting range for your AoE.</p>
+    </div>    
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
         <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
+            <li><p>Sub-Level 30: Use Fire (Red) → Water (Blue) → Aero (Green). Employ Smudge for movement and Tempera Coat for damage reduction.</p></li>
+            <li><p>Level 30-50: Leverage Creature Muses strategically, prioritizing AoE damage while preventing overcapping.</p></li>
+            <li><p>Level 50-60: Implement Hammer Motif on cooldown, utilizing the 30-second window for optimal positioning.</p></li>
+            <li><p>Level 60-70: Incorporate longer cast spells like Blizzard (Cyan), Stone (Yellow), and Thunder (Magenta) during stationary phases.</p></li>
+            <li><p>Level 70-80: Maximize Starry Muse effectiveness by using in opener, on cooldown, and strategically within buff windows.</p></li>
+            <li><p>Level 80-90: Integrate Holy (White) for enhanced movement and supplemental damage during Starry Muse.</p></li>
+            <li><p>Level 90-92: Execute Comet (Black) following Subtractive Palette.</p></li>
+            <li><p>Level 92-96: Utilize pre-pull Rainbow Drip and Swiftcast technique before encounter downtime.</p></li>
+            <li><p>Level 96-100: Unlock and optimize Madeen, prioritizing its use within Starry Muse for superior potency.</p></li>
         </ul>
     </div>
-
-    <div id="leveling_intro">
-
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <ul>
+                <li><p>Sub-Level 30: Adapt spell sequence based on target count, transitioning from single-target to multi-target strategies.</p></li>
+                <li><p>Level 30-50: Emphasize Creature Muses and Moogle for AoE damage, preparing during inter-pull intervals.</p></li>
+                <li><p>Level 50-54: Leverage Hammer charges for widespread critical damage across multiple targets.</p></li>
+                <li><p>Level 54-60: Refine spell combinations according to target density, introducing enhanced AoE variants.</p></li>
+                <li><p>Level 60-70: Maintain consistent AoE priorities while introducing Subtractive Palette nuances.</p></li>
+                <li><p>Level 70-80: Incorporate raid buffs strategically during dungeon encounters.</p></li>
+                <li><p>Level 80-90: Prioritize Holy for superior multi-target damage potential.</p></li>
+                <li><p>Level 90-94: Integrate Comet after Muse applications when Subtractive Palette is available.</p></li>
+                <li><p>Level 94-100: Optimize spell selection for four or more targets, balancing Comet, Holy, and Subtractive Palette techniques.</p></li>
+                <li><p>Level 100: Implement Star Prism post-raid buff, following established AoE priority frameworks.</p></li>
+            </ul>
     </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
+</div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

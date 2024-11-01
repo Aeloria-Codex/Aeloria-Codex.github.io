@@ -28,23 +28,33 @@
                 <div class="nav-item has-dropdown">
                     <a href="{{ url_for('job_leveling') }}" class="main-link">Job Leveling<span class="dropdown-icon">▼</span></a>
                     <div class="dropdown-leveling-nav">
+                        <a href="job-leveling.html#tank_leveling"><h6>Tanks</h6></a>
+                        <hr>
                         <a href="{{ url_for('paladin_leveling') }}">Paladin</a>
                         <a href="{{ url_for('warrior_leveling') }}">Warrior</a>
                         <a href="{{ url_for('dark_knight_leveling') }}">Dark Knight</a>
                         <a href="{{ url_for('gunbreaker_leveling') }}">Gunbreaker</a>
+                        <a href="job-leveling.html#healer_leveling"><h6>Healers</h6></a>
+                        <hr>
                         <a href="{{ url_for('white_mage_leveling') }}">White Mage</a>
                         <a href="{{ url_for('scholar_leveling') }}">Scholar</a>
                         <a href="{{ url_for('astrologian_leveling') }}">Astrologian</a>
                         <a href="{{ url_for('sage_leveling') }}">Sage</a>
+                        <a href="job-leveling.html#melee_dps_leveling"><h6>Melee</h6></a>
+                        <hr>
                         <a href="{{ url_for('monk_leveling') }}">Monk</a>
                         <a href="{{ url_for('dragoon_leveling') }}">Dragoon</a>
                         <a href="{{ url_for('ninja_leveling') }}">Ninja</a>
                         <a href="{{ url_for('samurai_leveling') }}">Samurai</a>
                         <a href="{{ url_for('reaper_leveling') }}">Reaper</a>
                         <a href="{{ url_for('viper_leveling') }}">Viper</a>
+                        <a href="job-leveling.html#physical_range_dps_leveling"><h6>Physical Range</h6></a>
+                        <hr>
                         <a href="{{ url_for('bard_leveling') }}">Bard</a>
                         <a href="{{ url_for('machinist_leveling') }}">Machinist</a>
                         <a href="{{ url_for('dancer_leveling') }}">Dancer</a>
+                        <a href="job-leveling.html#magic_range_dps_leveling"><h6>Magic Range</h6></a>
+                        <hr>
                         <a href="{{ url_for('black_mage_leveling') }}">Black Mage</a>
                         <a href="{{ url_for('summoner_leveling') }}">Summoner</a>
                         <a href="{{ url_for('red_mage_leveling') }}">Red Mage</a>
@@ -143,7 +153,6 @@
             });
         });
     });
-
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">

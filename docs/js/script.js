@@ -145,3 +145,37 @@ function toggleDropdownById(id) {
     }
 }
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    function applyScrollOffset() {
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                const offset = window.innerHeight * 0.10; // 10% of the viewport height
+                window.scrollTo({
+                    top: target.offsetTop - offset,
+                    behavior: "smooth"
+                });
+            }
+        }
+    }
+
+    // Apply offset on page load if there’s a hash
+    applyScrollOffset();
+
+    // Apply offset on every hash link click
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(event) {
+            // Prevent default anchor behavior
+            event.preventDefault();
+
+            // Update the URL hash without jumping
+            const targetHash = this.getAttribute("href");
+            history.pushState(null, null, targetHash);
+
+            // Apply the scroll offset
+            applyScrollOffset();
+        });
+    });
+});
