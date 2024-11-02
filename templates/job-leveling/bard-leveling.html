@@ -1,59 +1,18 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Bard Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Bard in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, bard, brd, archer, arc, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#bard_intro">Getting Started</a></li>
-        <li><a href="#bard_videos">Video Resources</a></li>
-        <li><a href="#bard_gear">Gear Recommendations</a></li>
-        <li><a href="#bard_tips">General Tips</a></li>
-        <li><a href="#bard_rotation">Skill and Rotation Guide</a></li>
-    </ul>
-</div>
+{% set job_name = "Bard" %}
+{% set url1 = "https://www.youtube.com/embed/f6i8JxH6p6I" %}
+{% set url2 = "https://www.youtube.com/embed/eC4ihry1vYA?si=TLRNGYsgXXBRcqNR" %}
 
+{% include "job-leveling/-template.html" %}
 
-<div id="center-content">
-    <div id="bard_intro">
-        <h1>Getting Started</h1>
-        <div id="ast_txt">
-            <p>Welcome to the Bard leveling guide! This resource will help you get your Bard through the leveling process while forming good habits early on.</p>
-            <p>Note: This guide isn’t focused on advanced dungeons, trials, or raids, those will be left to their own specific guides. Instead, this guide introduces some foundational strategies for your job in FFXIV.</p>
-            <p>The goal is to help you grasp the mindset behind your job and to offer some useful approaches as you level.</p>
-        </div>
-    </div>
-    <div id="bard_videos">
-        <h1>Video Resources</h1>
-        <div id="ast_txt">
-            <p>These videos from various creators provide additional guidance and insight into the Bard job. They’re great tools for improving your gameplay.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/f6i8JxH6p6I"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/eC4ihry1vYA?si=TLRNGYsgXXBRcqNR"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div id="bard_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="ast_txt">
-            <p>Keeping your gear up-to-date is essential. Without proper gear, your damage contribution will suffer. Ideally, your equipment should match your current level, or be no more than a few levels behind.</p>
-            <p>If you’re progressing through the Main Scenario Quest (MSQ), you’ll regularly earn gear upgrades and coffers to keep your setup competitive.</p>
-            <p>For leveling outside the MSQ, you can acquire gear through merchants (using Gil), the Market Board, or by exchanging Tomestones and Poetics earned through roulettes and other activities.</p>
-
-            <h3>Gear Sources at Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtain from Auriana in Mor Dhona or Rowena's Representatives in the main cities.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr’s Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-    <div id="bard_tips">
+    <div id="leveling_tips">
         <h1>General Tips for Bard</h1>
         <div id="ast_txt">
             <p><strong>Starting at level 1:</strong> Keep in mind that Bard begins at level 1.</p>
@@ -65,7 +24,7 @@
         </div>
     </div>
 
-    <div id="bard_rotation">
+    <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="bard_txt">
             <p>Bard's core rotation remains consistent as you level, with added abilities and song cycles enhancing your kit. Here is a breakdown of the essential rotations you should focus on:</p>

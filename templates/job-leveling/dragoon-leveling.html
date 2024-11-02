@@ -1,61 +1,19 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Dragoon Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Dragoon in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, dragoon, lancer, drg, lnc, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#drg_intro">Getting Started</a></li>
-        <li><a href="#drg_videos">Video Resources</a></li>
-        <li><a href="#drg_gear">Gear Recommendations</a></li>
-        <li><a href="#drg_tips">General Tips</a></li>
-        <li><a href="#drg_rotation">Skill and Rotation Guide</a></li>
-    </ul>
-</div>
+{% set job_name = "Dragoon" %}
+{% set url1 = "https://www.youtube.com/embed/IeGAuOn-t_c" %}
+{% set url2 = "https://www.youtube.com/embed/1-4GYb7mkLk" %}
 
-<div id="center-content">
-    <div id="drg_intro">
-        <h1>Getting Started</h1>
-        <div id="drg_txt">
-            <p>Welcome to the Dragoon guide! This resource is designed to assist you in mastering the Dragoon job in Final Fantasy XIV, providing core strategies, essential tips, and a detailed breakdown of your rotation.</p>
-            <p>Note: This guide covers both Lancer and Dragoon, as they are functionally identical up to level 30. Remember to equip your job stone after level 30 to access Dragoon-specific abilities.</p>
-            <p>The goal is to help you grasp the mindset behind your job and to offer some useful approaches as you level.</p>
-        </div>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="drg_videos">
-        <h1>Video Resources</h1>
-        <div id="drg_txt">
-            <p>These video resources from experienced players and content creators will provide additional perspectives on the Dragoon playstyle.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/IeGAuOn-t_c"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/1-4GYb7mkLk"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 
-    <div id="drg_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="drg_txt">
-            <p>Keeping your equipment up-to-date is crucial. Insufficient gear can hinder your damage output. Aim to have gear that matches your current level or is only slightly lower.</p>
-            <p>While progressing through the Main Scenario Quest (MSQ), you will frequently acquire gear upgrades and coffers to keep your setup competitive.</p>
-            <p>For leveling outside the MSQ, gear can be obtained through vendors (using Gil), the Market Board, or by trading Tomestones and Poetics earned through roulettes and other activities.</p>
-
-            <h3>Gear Recommendations by Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Obtain from Auriana in Mor Dhona or Rowena's Representatives in the main cities.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Available from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Obtainable from Enna in Rhalgr's Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Purchase from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Obtainable from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="drg_tips">
+    <div id="leveling_tips">
         <h1>General Tips for Dragoon</h1>
         <div id="drg_txt">
             <p><strong>Positionals:</strong> Many of your abilities deal more damage from certain positions. Practice hitting these consistently to maximize your damage output.</p>
@@ -66,7 +24,7 @@
         </div>
     </div>
 
-    <div id="drg_rotation">
+    <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="drg_txt">
             <p>The Dragoon's rotation revolves around maintaining your combos, managing your jumps, and maximizing your damage during Life of the Dragon phases. The focus is on single-target and multi-target abilities, with special emphasis on positional attacks and buff alignment.</p>

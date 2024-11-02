@@ -1,61 +1,18 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Black Mage Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Black Mage in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, blm, Black Mage, BlackMage, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#blm_intro">Getting Started</a></li>
-        <li><a href="#blm_videos">Video Resources</a></li>
-        <li><a href="#blm_gear">Gear Recommendations</a></li>
-        <li><a href="#blm_tips">General Tips</a></li>
-        <li><a href="#blm_rotation">Skill and Rotation Guide</a></li>
-    </ul>
-</div>
+{% set job_name = "Black Mage" %}
+{% set url1 = "https://www.youtube.com/embed/YUYiJwu6Pgc" %}
+{% set url2 = "https://www.youtube.com/embed/0mkPgpanXPw" %}
 
-<div id="center-content">
-    <div id="blm_intro">
-        <h1>Getting Started</h1>
-        <div id="blm_txt">
-            <p>Welcome to the Black Mage guide! This guide will help you master the Black Mage job in Final Fantasy XIV by providing core strategies, useful tips, and a breakdown of spell rotations.</p>
-            <p>Note: The guide does not cover advanced dungeon, trial, or raid encounters in detail but focuses on building strong fundamentals for Black Mage gameplay as you level up.</p>
-            <p>The goal is to help you become comfortable with your rotation, understand your job’s core mechanics, and offer advice on gearing and improving performance.</p>
-        </div>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="blm_videos">
-        <h1>Video Resources</h1>
-        <div id="blm_txt">
-            <p>These video resources from seasoned players and content creators will give you additional insights into the Black Mage playstyle.</p>
-        </div>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/YUYiJwu6Pgc"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-iframe" width="560" height="315"
-                src="https://www.youtube.com/embed/0mkPgpanXPw"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="blm_gear">
-        <h1>Gear Recommendations</h1>
-        <div id="blm_txt">
-            <p>Keeping your gear up-to-date is essential. Without proper gear, your damage contribution will suffer. Ideally, your equipment should match your current level, or be no more than a few levels behind.</p>
-            <p>If you’re progressing through the Main Scenario Quest (MSQ), you’ll regularly earn gear upgrades and coffers to keep your setup competitive.</p>
-            <p>For leveling outside the MSQ, you can acquire gear through merchants (using Gil), the Market Board, or by exchanging Tomestones and Poetics earned through roulettes and other activities.</p>
-
-            <h3>Gear Recommendations by Key Levels:</h3>
-            <ul>
-                <li><p><strong>Level 50:</strong> Augmented Ironworks Gear (IL 130) – Available from Auriana in Mor Dhona.</p></li>
-                <li><p><strong>Level 60:</strong> Augmented Shire Gear (IL 270) – Purchase from Hismena in Idyllshire.</p></li>
-                <li><p><strong>Level 70:</strong> Augmented Scaevan Gear (IL 400) – Buy from Enna in Rhalgr’s Reach.</p></li>
-                <li><p><strong>Level 80:</strong> Augmented Cryptlurker Gear (IL 530) – Obtain from Aymark in Eulmore.</p></li>
-                <li><p><strong>Level 90:</strong> Augmented Credendum Gear (IL 660) – Purchase from Cihanti in Radz-at-Han.</p></li>
-                <li><p><strong>Level 100:</strong> Neo Kingdom Gear (IL 700) – Available from Zircon in Solution Nine.</p></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="blm_tips">
+    <div id="leveling_tips">
         <h1>General Tips for Black Mage</h1>
         <div id="blm_txt">
             <p><strong>Rotation Mastery:</strong> Black Mage heavily focuses on maintaining a seamless flow between your Astral Fire and Umbral Ice phases.</p>
@@ -67,7 +24,7 @@
         </div>
     </div>
 
-    <div id="blm_rotation">
+    <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="blm_txt">
             <p>Black Mage’s rotation focuses on swapping between Fire and Ice phases. In Astral Fire, you'll deal massive damage with Fire spells, while Umbral Ice restores your MP for another burst phase.</p>
