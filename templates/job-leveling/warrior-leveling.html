@@ -1,36 +1,65 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Warrior Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Warrior in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, war, Warrior, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Warrior" %}
+{% set url1 = "https://www.youtube.com/embed/2kIu-uH-3z8?si=bI6hU7wX38_7o-7T" %}
+{% set url2 = "https://www.youtube.com/embed/r2q0r3_uX3E?si=c1hU4j6wU9_9S0O-" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Warrior</h1>
+    <div>
+        <p>Warrior is a powerful melee DPS known for its high damage output and ability to tank in a pinch. It's a great choice for players who like to be in the thick of the action.</p>
+        <p>Early levels focus on building up your "Inner Beast" gauge and using your basic attacks to deal damage. </p>
+        <p>Unlocking the "Inner Release" ability at level 15 is a game-changer. It lets you unleash a burst of damage and activate your "Inner Release" mode, increasing your attack power. </p>
+        <p>Learn to weave in your combo skills between basic attacks, focusing on building up "Inner Beast" as fast as possible. </p>
+        <p>At level 30, you gain access to the powerful "Fell Cleave" ability, which is a powerful AoE attack that's great for dealing with multiple enemies.</p>
+        <p>Learn the importance of managing your "Inner Beast" gauge and using it to maximize your damage output.</p>
+        <p>Your job quests will provide valuable new abilities, including the critical "Stormblood" ability, which allows you to unleash a devastating attack and increase your attack power.</p>
+        <p>Keep an eye on your "Blood Gauge" and use it to heal yourself when necessary. </p>
+        <p>Don't be afraid to use your "Overpower" ability to deal extra damage when you need to. </p>
+    </div>    
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
         <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
+            <li><p><strong>Levels 1-14:</strong> Use your basic attacks and "Inner Release" when available. </p></li>
+            <li><p><strong>Levels 15-29:</strong> Use "Inner Release," "Heavy Swing," "Maim," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 30-39:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 40-49:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 60-69:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 70-79:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 80-90:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
         </ul>
     </div>
-
-    <div id="leveling_intro">
-
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-14:</strong> Use your basic attacks and "Inner Release" when available. </p></li>
+            <li><p><strong>Levels 15-29:</strong> Use "Inner Release," "Heavy Swing," "Maim," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 30-39:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 40-49:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 60-69:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 70-79:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 80-90:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use "Inner Release," "Heavy Swing," "Maim," "Fell Cleave," "Stormblood," and weave in your basic attacks. </p></li>
+        </ul>
     </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
+</div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

@@ -1,36 +1,60 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Samurai Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Samurai in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, sam, samurai, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Samurai" %}
+{% set url1 = "https://www.youtube.com/embed/Mz-Rjv9Bgv0" %}
+{% set url2 = "https://www.youtube.com/embed/3vQ5PyOk88s?si=4pRWYhpxyey4P-8D" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
-        </ul>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Samurai</h1>
+    <div>
+      <p>Use <strong>Gekko</strong> from the rear and <strong>Kasha</strong> from the flank to fulfill positional requirements.</p>
+      <p>Prioritize <strong>Meikyo Shisui</strong> charges for <strong>Gekko</strong> and <strong>Kasha</strong> rather than <strong>Yukikaze</strong>.</p>
+      <p>Apply <strong>Higanbana</strong> if the target will survive for at least 48 seconds to maximize DoT uptime.</p>
+      <p>Try to use <strong>Kaeshi: Setsugekka</strong> within 30 seconds of casting <strong>Midare Setsugekka</strong> without overwriting its buff.</p>
+      <p>Use <strong>Ikishoten</strong> and <strong>Ogi Namikiri</strong> every 120 seconds, ensuring you don't overcap the Kenki gauge.</p>
+      <p>Employ <strong>Hissatsu: Shinten</strong> when your Kenki gauge nears the cap to avoid overflow.</p>
+      <p>Activate <strong>Shoha</strong> after executing three Iaijutsu moves.</p>
     </div>
-
-    <div id="leveling_intro">
-
+  </div>
+  <div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
+      <ul>
+        <li><p><strong>Opener:</strong> <strong>Meikyo Shisui</strong> → <strong>Gekko</strong> → <strong>Ikishoten</strong> → <strong>Kasha</strong> → <strong>Yukikaze</strong> → <strong>Midare Setsugekka</strong> → <strong>Hissatsu: Senei</strong> → <strong>Kaeshi: Setsugekka</strong> → <strong>Meikyo Shisui</strong> → <strong>Gekko</strong> → <strong>Higanbana</strong> → <strong>Ogi Namikiri</strong> → <strong>Shoha</strong> → <strong>Kaeshi: Namikiri</strong>.</p></li>
+        <li><p>Repeat the <strong>Midare Setsugekka</strong> sequence as filler when abilities are on cooldown.</p></li>
+      </ul>
     </div>
-    <div id="leveling_videos">
-        
+    <h3>Two-Target Rotation</h3>
+    <div>
+      <ul>
+        <li><p>Follow the single-target rotation while applying <strong>Higanbana</strong> to both targets if they will survive for 48 seconds.</p></li>
+        <li><p>Utilize <strong>Hissatsu: Shinten</strong> to manage Kenki gauge overflow.</p></li>
+        <li><p>Activate <strong>Ikishoten</strong> and <strong>Ogi Namikiri</strong> every 120 seconds.</p></li>
+        <li><p>Execute <strong>Hissatsu: Guren</strong> every 60 seconds for consistent AoE damage.</p></li>
+      </ul>
     </div>
-    <div id="leveling_gear">
-
+    <h3>Three+ Target Rotation</h3>
+    <div>
+      <ul>
+        <li><p><strong>Opener:</strong> <strong>Fuko</strong> → <strong>Oka</strong>, <strong>Fuko</strong> → <strong>Mangetsu</strong>, <strong>Tenka Goken</strong>.</p></li>
+        <li><p>Use <strong>Meikyo Shisui</strong> every 55-60 seconds, prioritizing <strong>Gekko</strong> and <strong>Kasha</strong> with 3 targets, and <strong>Oka</strong> and <strong>Mangetsu</strong> with 4 or more.</p></li>
+        <li><p>Cast <strong>Hissatsu: Kyuten</strong> to manage Kenki and avoid overcap.</p></li>
+        <li><p>Utilize <strong>Kaeshi: Goken</strong> within 30 seconds of using <strong>Tenka Goken</strong> without overwriting the buff.</p></li>
+        <li><p>Activate <strong>Shoha</strong> after three Iaijutsu moves.</p></li>
+      </ul>
     </div>
-    <div id="leveling_tips">
+  </div>
 
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

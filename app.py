@@ -21,6 +21,7 @@ ext = Sitemap(app=app)
 HTMLMIN(app)
 sslify = SSLify(app)
 
+
 # Home page
 @app.route('/')
 def index():

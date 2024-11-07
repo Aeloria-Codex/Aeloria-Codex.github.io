@@ -1,36 +1,65 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV White Mage Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling White Mage in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, whm, White Mage, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "White Mage" %}
+{% set url1 = "https://www.youtube.com/embed/36-42pQ-Yjg?si=7wL3B8-0_w6668wD" %}
+{% set url2 = "https://www.youtube.com/embed/3Q_gV9435-A?si=gL1D91nW0T108x56" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
-        </ul>
-    </div>
+{% include "job-leveling/-template.html" %}
 
-    <div id="leveling_intro">
-
-    </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
-
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="leveling_tips">
+    <h1>General Tips for White Mage</h1>
+    <div>
+        <p>White Mage is a powerful healer known for its ability to heal, shield, and provide offensive support.</p>
+        <p>Early levels focus on healing and using Cure spells. </p>
+        <p>Keep an eye on your MP and use your spells strategically.</p>
+        <p>Learn to weave in your damage spells, like Stone and Aero, between healing spells. This will help you build up your "Cure" gauge for stronger heals.</p>
+        <p>Unlocking "Cure II" at level 15 is a game-changer. It lets you heal your party members for a greater amount of HP.</p>
+        <p>At level 30, you gain access to the powerful "Holy" ability, which is a powerful AoE healing spell that's great for healing multiple party members. </p>
+        <p>Learn the importance of managing your MP and using it efficiently to maximize your healing output.</p>
+        <p>Your job quests will provide valuable new abilities, including the critical "Medica II," which allows you to heal your entire party for a large amount of HP.</p>
+        <p>Always be aware of your party members' HP and use your spells to keep them topped off.</p>
+    </div>    
 </div>
 
-{% endblock %}
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-14:</strong> Use Cure/Physick, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 15-29:</strong> Use Cure II/Physick II, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 30-39:</strong> Use Cure II/Physick II, Holy, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 40-49:</strong> Use Cure II/Physick II, Holy, Medica, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Cure II/Physick II, Holy, Medica, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Cure II/Physick II, Holy, Medica, and weave in Stone/Aero when available.  </p></li>
+            <li><p><strong>Levels 70-79:</strong> Use Cure III/Physick III, Holy, Medica, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 80-90:</strong> Use Cure III/Physick III, Holy, Medica II, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Cure III/Physick III, Holy, Medica II, and weave in Stone/Aero when available. </p></li>
+        </ul>
+    </div>
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-14:</strong> Use Cure/Physick, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 15-29:</strong> Use Cure II/Physick II, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 30-39:</strong> Use Cure II/Physick II, Holy, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 40-49:</strong> Use Cure II/Physick II, Holy, Medica, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Cure II/Physick II, Holy, Medica, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Cure II/Physick II, Holy, Medica, and weave in Stone/Aero when available.  </p></li>
+            <li><p><strong>Levels 70-79:</strong> Use Cure III/Physick III, Holy, Medica, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 80-90:</strong> Use Cure III/Physick III, Holy, Medica II, and weave in Stone/Aero when available. </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Cure III/Physick III, Holy, Medica II, and weave in Stone/Aero when available. </p></li>
+        </ul>
+    </div>
+</div>
+
+<div id="bottom_pad"></div>
+</div>
+
+{% endblock %} 

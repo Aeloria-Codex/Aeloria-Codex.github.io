@@ -1,46 +1,46 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>{% block title %}The Aeloria Codex{% endblock %}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block description %}An FFXIV guide for all your needs!{% endblock %}">
-    <meta name="keywords" content="{% block keywords %}FFXIV, Final Fantasy 14, Guide, Crafing, Leveling, Job{% endblock %}">
+    <meta name="keywords" content="FFXIV, Final Fantasy 14, Guide, Crafting, Leveling, Job, FFXIV Guides, MMORPG Guides, Eorzea,  FFXIV Tips, FFXIV Strategies, FFXIV Community">
     <meta name="author" content="The Aeloria Codex">
-    <link rel="stylesheet" type="text/css" href="/css/master.scss">
-    <link rel="stylesheet" type="text/css" href="/css/index.scss">
-    <link rel="stylesheet" type="text/css" href="/css/crafter-leveling.scss">
-    <link rel="stylesheet" type="text/css" href="/css/tank-pulling.scss">
-    <link rel="stylesheet" type="text/css" href="/css/404.scss">
-    <link rel="stylesheet" type="text/css" href="/css/job-leveling.scss">
+    <link rel="stylesheet" type="text/css" href="/css/master.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/crafter-leveling.css">
+    <link rel="stylesheet" type="text/css" href="/css/tank-pulling.css">
+    <link rel="stylesheet" type="text/css" href="/css/job-leveling.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- navbar -->
-    <nav class="navBar">
+    <nav class="navBar" role="navigation" aria-label="Main Navigation">
         <div>
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 <div class="nav-item has-dropdown">
                     <a href="{{ url_for('job_leveling') }}" class="main-link">Job Leveling<span class="dropdown-icon">▼</span></a>
                     <div class="dropdown-leveling-nav">
-                        <a href="job-leveling.html#tank_leveling"><h6>Tanks</h6></a>
+                        <a href="job-leveling.html#tank_leveling"><h3>Tanks</h3></a>
                         <hr>
                         <a href="{{ url_for('paladin_leveling') }}">Paladin</a>
                         <a href="{{ url_for('warrior_leveling') }}">Warrior</a>
                         <a href="{{ url_for('dark_knight_leveling') }}">Dark Knight</a>
                         <a href="{{ url_for('gunbreaker_leveling') }}">Gunbreaker</a>
-                        <a href="job-leveling.html#healer_leveling"><h6>Healers</h6></a>
+                        <a href="job-leveling.html#healer_leveling"><h3>Healers</h3></a>
                         <hr>
                         <a href="{{ url_for('white_mage_leveling') }}">White Mage</a>
                         <a href="{{ url_for('scholar_leveling') }}">Scholar</a>
                         <a href="{{ url_for('astrologian_leveling') }}">Astrologian</a>
                         <a href="{{ url_for('sage_leveling') }}">Sage</a>
-                        <a href="job-leveling.html#melee_dps_leveling"><h6>Melee</h6></a>
+                        <a href="job-leveling.html#melee_dps_leveling"><h3>Melee</h3></a>
                         <hr>
                         <a href="{{ url_for('monk_leveling') }}">Monk</a>
                         <a href="{{ url_for('dragoon_leveling') }}">Dragoon</a>
@@ -48,12 +48,12 @@
                         <a href="{{ url_for('samurai_leveling') }}">Samurai</a>
                         <a href="{{ url_for('reaper_leveling') }}">Reaper</a>
                         <a href="{{ url_for('viper_leveling') }}">Viper</a>
-                        <a href="job-leveling.html#physical_range_dps_leveling"><h6>Physical Range</h6></a>
+                        <a href="job-leveling.html#physical_range_dps_leveling"><h3>Physical Range</h3></a>
                         <hr>
                         <a href="{{ url_for('bard_leveling') }}">Bard</a>
                         <a href="{{ url_for('machinist_leveling') }}">Machinist</a>
                         <a href="{{ url_for('dancer_leveling') }}">Dancer</a>
-                        <a href="job-leveling.html#magic_range_dps_leveling"><h6>Magic Range</h6></a>
+                        <a href="job-leveling.html#magic_range_dps_leveling"><h3>Magic Range</h3></a>
                         <hr>
                         <a href="{{ url_for('black_mage_leveling') }}">Black Mage</a>
                         <a href="{{ url_for('summoner_leveling') }}">Summoner</a>
@@ -66,9 +66,14 @@
                 <li><a href="{{ url_for('tank_pulling') }}">Tank Pulling Guide</a></li>
             </ul>
         </div>
+        <!-- theme switch -->
         <label class="switch">
             <input type="checkbox" id="modeToggle">
             <span class="slider"></span>
+            <span class="theme-icon" aria-hidden="true">
+                <i class="fa fa-sun-o light-icon"></i> 
+                <i class="fa fa-moon-o dark-icon"></i>
+            </span>
         </label>
     </nav>
 
@@ -115,46 +120,43 @@
         </div>
     </footer>
 
-</body>
-<!--script and css-->
-<link rel="stylesheet" type="text/css" href="/css/master.scss">
-<script src="/js/script.js"></script>
-<script>
-    const body = document.body;
-    const modeToggle = document.getElementById('modeToggle');
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        const body = document.body;
+        const modeToggle = document.getElementById('modeToggle');
 
-    // Check for saved mode preference or use default (dark-mode)
-    const currentMode = localStorage.getItem('mode') || 'dark-mode';
-    body.classList.add(currentMode);
+        // Check for saved mode preference or use default (dark-mode)
+        const currentMode = localStorage.getItem('mode') || 'dark-mode';
+        body.classList.add(currentMode);
 
-    // Set the switch state based on the current mode
-    modeToggle.checked = currentMode === 'dark-mode';
+        // Set the switch state based on the current mode
+        modeToggle.checked = currentMode === 'dark-mode';
 
-    modeToggle.addEventListener('change', () => {
-        if (body.classList.contains('light-mode')) {
-            body.classList.replace('light-mode', 'dark-mode');
-            localStorage.setItem('mode', 'dark-mode');
-        } else {
-            body.classList.replace('dark-mode', 'light-mode');
-            localStorage.setItem('mode', 'light-mode');
-        }
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            const savedState = localStorage.getItem(checkbox.id);
-            if (savedState !== null) {
-                checkbox.checked = savedState === 'true';
+        modeToggle.addEventListener('change', () => {
+            if (body.classList.contains('light-mode')) {
+                body.classList.replace('light-mode', 'dark-mode');
+                localStorage.setItem('mode', 'dark-mode');
+            } else {
+                body.classList.replace('dark-mode', 'light-mode');
+                localStorage.setItem('mode', 'light-mode');
             }
+        });
 
-            // Add event listener to save state on change
-            checkbox.addEventListener('change', () => {
-                localStorage.setItem(checkbox.id, checkbox.checked);
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                const savedState = localStorage.getItem(checkbox.id);
+                if (savedState !== null) {
+                    checkbox.checked = savedState === 'true';
+                }
+
+                // Add event listener to save state on change
+                checkbox.addEventListener('change', () => {
+                    localStorage.setItem(checkbox.id, checkbox.checked);
+                });
             });
         });
-    });
-</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    </script>
+</body>
+</html>

@@ -1,36 +1,64 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Summoner Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Summoner in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, smn, Summoner, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Summoner" %}
+{% set url1 = "https://www.youtube.com/embed/m9zI8-nZ3z0?si=r_7o2L355y3k4O_d" %}
+{% set url2 = "https://www.youtube.com/embed/13XwG4-K2qA?si=9j8-R_a2-N7Q-1J9" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Summoner</h1>
+    <div>
+        <p>Summoner is a powerful ranged magic DPS job, known for its unique ability to summon and control powerful Egi. </p>
+        <p>Early levels focus on using Ruin spells and managing your pet's health. You unlock your first Egi, Carbuncle, at level 10.</p>
+        <p>Use your Aetherflow stacks strategically to maximize your damage output and healing.</p>
+        <p>Keep an eye on your Egi's health and use its abilities to your advantage. Utilize abilities like Swiftcast to accelerate your actions.</p>
+        <p>At level 30, you gain access to the powerful Bahamut, allowing you to summon and control this legendary primal for even more damage. </p>
+        <p>Keep an eye on your Egi's health and use its abilities to your advantage. </p>
+        <p>Learn to weave in Ruin II between healing spells and other actions. </p>
+        <p>Gain access to your job quests as you level and unlock even more powerful abilities. </p>
+    </div>    
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
         <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
+            <li><p><strong>Levels 1-9:</strong> Use Ruin/Ruin II. Summon Carbuncle and use its abilities.</p></li>
+            <li><p><strong>Levels 10-29:</strong> Use Ruin II. Summon Carbuncle and use its abilities.</p></li>
+            <li><p><strong>Levels 30-39:</strong> Use Ruin II, Fester, and Summon Bahamut. Use its abilities.</p></li>
+            <li><p><strong>Levels 40-49:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester. </p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Ruin III, Fester, Summon Bahamut, and use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown.</p></li>
+            <li><p><strong>Levels 70-79:</strong> Use Ruin III, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown. Use the powerful Ruin IV when it becomes available.</p></li>
+            <li><p><strong>Levels 80-90:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
         </ul>
     </div>
-
-    <div id="leveling_intro">
-
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-9:</strong> Use Ruin/Ruin II. Summon Carbuncle and use its abilities.</p></li>
+            <li><p><strong>Levels 10-29:</strong> Use Ruin II. Summon Carbuncle and use its abilities.</p></li>
+            <li><p><strong>Levels 30-39:</strong> Use Ruin II, Fester, and Summon Bahamut. Use its abilities.</p></li>
+            <li><p><strong>Levels 40-49:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester. </p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Ruin III, Fester, Summon Bahamut, and use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown.</p></li>
+            <li><p><strong>Levels 70-79:</strong> Use Ruin III, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown. Use the powerful Ruin IV when it becomes available.</p></li>
+            <li><p><strong>Levels 80-90:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
+        </ul>
     </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
+</div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

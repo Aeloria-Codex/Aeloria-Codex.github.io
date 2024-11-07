@@ -1,36 +1,57 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Sage Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Sage in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, sge, sage, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Sage" %}
+{% set url1 = "https://www.youtube.com/embed/QAwxOb_hpkA?si=F5VaHYaB6znlvGPR" %}
+{% set url2 = "https://www.youtube.com/embed/0JHi_iaTcnA?si=B72x1_Y_fFW0_acg" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
-        </ul>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Sage</h1>
+    <div>
+      <p>Maintain Kardia buff on the tank to provide consistent healing throughout dungeons.</p>
+      <p>Utilize Eukrasian Diagnosis and Eukrasian Prognosis to provide shielding in addition to healing.</p>
+      <p>Weave in oGCD abilities like Soteria, Physis, and Druochole to supplement your GCD heals.</p>
+      <p>Generate Addersgall stacks to empower your single-target and AoE healing tools.</p>
+      <p>Optimize Eukrasian Dosis uptime to contribute consistent damage in single-target fights.</p>
+      <p>Leverage Dyskrasia and Toxikon for effective AoE damage during trash pulls.</p>
+      <p>Become familiar with using Haima, Panhaima, and Kerachole to mitigate incoming damage.</p>
     </div>
+</div>
+  
+<div id="leveling_rotation">
+<h1>Rotation Overview</h1>
+<h3>Single Target</h3>
+<div>
+    <ul>
+    <li><p><strong>Levels 18-29:</strong> Cast Dosis, use Phlegma charges, maintain Kardia on tank.</p></li>
+    <li><p><strong>Levels 30-44:</strong> Apply Eukrasian Dosis DoT, use Eukrasian Diagnosis for healing, weave in oGCDs like Soteria.</p></li>
+    <li><p><strong>Levels 45-65:</strong> Add Druochole and Ixochole for Addersgall-empowered healing, continue Eukrasian Dosis uptime.</p></li>
+    <li><p><strong>Levels 66-80:</strong> Utilize Haima and Panhaima for powerful single-target and AoE shielding, maintain Eukrasian Dosis.</p></li>
+    <li><p><strong>Levels 81-90:</strong> Incorporate Krasis to boost healing received, use Pneuma as a powerful healing GCD.</p></li>
+    <li><p><strong>Levels 91-100:</strong> Maximize the synergy between Philosophia, Physis, and Eukrasian Prognosis II for enhanced party survivability.</p></li>
+    </ul>
+</div>
 
-    <div id="leveling_intro">
+<h3>Multi-Target</h3>
+<div>
+    <ul>
+    <li><p><strong>Levels 18-45:</strong> Use Dyskrasia for AoE damage, supplement with Physis and Ixochole heals.</p></li>
+    <li><p><strong>Levels 46-65:</strong> Continue Dyskrasia spam, weave in Toxikon when you have Addersting stacks.</p></li>
+    <li><p><strong>Levels 66-80:</strong> Maintain Eukrasian Dyskrasia DoT, use Panhaima and Holos for AoE mitigation and healing.</p></li>
+    <li><p><strong>Levels 81-90:</strong> Leverage Pneuma for both damage and healing during trash pulls.</p></li>
+    <li><p><strong>Levels 91-100:</strong> Synergize Eukrasian Prognosis II with Philosophia and Physis to provide robust party-wide shielding.</p></li>
+    </ul>
+</div>
+</div>
 
-    </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
-
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

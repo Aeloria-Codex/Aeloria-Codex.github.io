@@ -1,36 +1,64 @@
+
+
 {% extends "base.html" %}
+
+{% block title %}FFXIV Scholar Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Scholar in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, sch, Scholar, Final Fantasy 14{% endblock %}
 
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Scholar" %}
+{% set url1 = "https://www.youtube.com/embed/u6z_b7V33-g?si=s-74h7N2G8g92j8m" %}
+{% set url2 = "https://www.youtube.com/embed/j0a4aF007g0?si=O97z-7hXj7R74-8h" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Scholar</h1>
+    <div>
+        <p>Scholar is a powerful healer known for its ability to heal, shield, and provide offensive support.</p>
+        <p>Early levels focus on healing and using Ruin spells for damage, unlocking Eos as a pet later.</p>
+        <p>Maintain your pet's health and use its abilities to your advantage.</p>
+        <p>Keep an eye on your Aetherflow stacks and use them strategically for healing and damage buffs.</p>
+        <p>Learn to weave in Ruin II between healing spells and other actions. Consider using Shadow's Kiss and Ruin III in solo situations.</p>
+        <p>At level 60, you gain access to the powerful Fey Union, allowing you to summon and control your pet for even more offensive and defensive support.</p>
+        <p>Unlock your job quests for a variety of powerful abilities, including Adloquium and Indomitable Will.</p>
+        <p>Use Aetherflow stacks to your advantage! You can also use Aetherflow stacks to damage with Ruin II.</p>
+        <p>Maintain your pet's health at all times.</p>
+        <p>Use your shields effectively. While they are not always necessary, using a shield to prevent damage can save you Aetherflow and ultimately improve your overall performance.</p>
+    </div>    
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
         <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
+            <li><p><strong>Levels 1-49:</strong> Use Cure/Physick, and weave in Ruin/Ruin II when available.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Cure II/Physick II, Ruin II, and weave in Succor and Whispering Dawn when possible. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Cure II/Physick II, Ruin II, Succor, Whispering Dawn, and weave in Shadow's Kiss/Ruin III when available. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Level 70:</strong> Use Cure II/Physick II, Ruin II, Succor, Whispering Dawn, Shadow's Kiss/Ruin III, and weave in Adloquium when possible. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Levels 71-80:</strong> Use Cure II/Physick II, Ruin III, Succor, Whispering Dawn, and Adloquium. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Levels 81-90:</strong> Use Cure III/Physick III, Ruin III, Succor, Whispering Dawn, and Adloquium. Use Eos for damage and healing. Summon Eos. Use Indomitable Will when needed. Use Aetherflow stacks to cast Ruin III after Adloquium.</p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Cure III/Physick III, Ruin III, Succor, Whispering Dawn, Adloquium, Indomitable Will. Use Eos for damage and healing. Summon Eos. Use Aetherflow stacks to cast Ruin III after Adloquium and Indomitable Will.</p></li>
         </ul>
     </div>
-
-    <div id="leveling_intro">
-
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-49:</strong> Use Cure/Physick, and weave in Ruin/Ruin II when available.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Cure II/Physick II, Ruin II, and weave in Succor and Whispering Dawn when possible. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Cure II/Physick II, Ruin II, Succor, Whispering Dawn, and weave in Shadow's Kiss/Ruin III when available. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Level 70:</strong> Use Cure II/Physick II, Ruin II, Succor, Whispering Dawn, Shadow's Kiss/Ruin III, and weave in Adloquium when possible. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Levels 71-80:</strong> Use Cure II/Physick II, Ruin III, Succor, Whispering Dawn, and Adloquium. Use Eos for damage and healing. Summon Eos.</p></li>
+            <li><p><strong>Levels 81-90:</strong> Use Cure III/Physick III, Ruin III, Succor, Whispering Dawn, and Adloquium. Use Eos for damage and healing. Summon Eos. Use Indomitable Will when needed. Use Aetherflow stacks to cast Ruin III after Adloquium.</p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Cure III/Physick III, Ruin III, Succor, Whispering Dawn, Adloquium, Indomitable Will. Use Eos for damage and healing. Summon Eos. Use Aetherflow stacks to cast Ruin III after Adloquium and Indomitable Will.</p></li>
+        </ul>
     </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
+</div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

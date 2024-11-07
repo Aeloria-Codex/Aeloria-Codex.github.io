@@ -1,0 +1,563 @@
+#top_sec{
+    padding: 5%;
+}
+
+#leveling_covers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#leveling_covers div {
+    margin: 10px;
+}
+#leveling_covers a {
+    text-decoration: none;
+}
+#leveling_covers h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#section_title h1{
+    text-shadow: none;
+}
+#tank_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#healer_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#melee_dps_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#physical_range_dps_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#magic_range_dps_leveling {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#paladin_leveling_cover {
+    background-image: url("../images/job_icons/paladin.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#paladin_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#warrior_leveling_cover {
+    background-image: url("../images/job_icons/warrior.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#warrior_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#dark_knight_leveling_cover {
+    background-image: url("../images/job_icons/darkknight.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#dark_knight_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#gunbreaker_leveling_cover {
+    background-image: url("../images/job_icons/gunbreaker.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#gunbreaker_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#white_mage_leveling_cover {
+    background-image: url("../images/job_icons/whitemage.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#white_mage_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#scholar_leveling_cover {
+    background-image: url("../images/job_icons/scholar.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#scholar_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#astrologian_leveling_cover {
+    background-image: url("../images/job_icons/astrologian.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#astrologian_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#sage_leveling_cover {
+    background-image: url("../images/job_icons/sage.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#sage_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#monk_leveling_cover {
+    background-image: url("../images/job_icons/monk.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#monk_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#dragoon_leveling_cover {
+    background-image: url("../images/job_icons/dragoon.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#dragoon_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#ninja_leveling_cover {
+    background-image: url("../images/job_icons/ninja.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#ninja_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#samurai_leveling_cover {
+    background-image: url("../images/job_icons/samurai.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#samurai_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#reaper_leveling_cover {
+    background-image: url("../images/job_icons/reaper.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#reaper_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#viper_leveling_cover {
+    background-image: url("../images/job_icons/viper.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#viper_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#black_mage_leveling_cover {
+    background-image: url("../images/job_icons/blackmage.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#black_mage_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#summoner_leveling_cover {
+    background-image: url("../images/job_icons/summoner.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#summoner_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#red_mage_leveling_cover {
+    background-image: url("../images/job_icons/redmage.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#red_mage_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#bard_leveling_cover {
+    background-image: url("../images/job_icons/bard.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#bard_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#machinist_leveling_cover {
+    background-image: url("../images/job_icons/machinist.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#machinist_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#dancer_leveling_cover {
+    background-image: url("../images/job_icons/dancer.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#dancer_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#blue_mage_leveling_cover {
+    background-image: url("../images/job_icons/bluemage.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#blue_mage_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+#pictomancer_leveling_cover {
+    background-image: url("../images/job_icons/pictomancer.png");
+    max-height: 333.33px;
+    min-height: 333.33px;
+    max-width: 200px; 
+    min-width: 200px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 75%; 
+    border-radius: 16.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 16.67px;
+    -moz-border-radius: 16.67px;
+    -ms-border-radius: 16.67px;
+    -o-border-radius: 16.67px;
+}
+#pictomancer_leveling_cover h1{
+    padding-top: 75%;
+    font-size:xx-large;
+}
+
+.video-iframe{
+    padding: 2%;
+}
+
+#leveling_txt {
+    width: 80%
+}
+
+#leveling_tips img {
+    vertical-align: middle;
+}
+#leveling_rotation img {
+    vertical-align: middle;
+}

@@ -1,36 +1,55 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Reaper Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Reaper in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, rpr, Reaper, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Reaper" %}
+{% set url1 = "https://www.youtube.com/embed/ASEi2anHZ_4?si=MbK3zrt9x4W-Ga_f" %}
+{% set url2 = "https://www.youtube.com/embed/DJQKqKWn8Zg?si=TF5h5y4tCo1LLVKD" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Reaper</h1>
+    <div>
+        <p>Maintain the Death's Design debuff on targets at all times.</p>
+        <p>Gain access to the Soul Gauge at level 50.</p>
+        <p>Gain access to Soul Reavers, spent on Gibbet, Gallows, or Guillotine. Use Arcane Circle and Gluttony on cooldown.</p>
+        <p>Unlock Enshroud ability through job quests.</p>
+        <p>Learn Soul Sow and Harvest Moon abilities. Arcane Crest shield break grants party a regen. Enshroud changes with Lemure's Slice and Lemure's Scythe. Plentiful Harvest enables instant Enshroud.</p>
+        <p>Once unlocked Communio replaces final Enshroud GCD.</p>
+        <p>Plentiful Harvest grants Perfectio Occulta and Perfectio Parata buffs. Perfectio Parata allows casting of Perfectio, a new powerful ranged attack.</p>
+    </div>    
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
         <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
+            <li><p><strong>Levels 1-49:</strong> Maintain Shadow of Death, use Slice > Waxing Slice > Infernal Slice.</p></li>
+            <li><p><strong>Levels 50-69:</strong> Maintain Shadow of Death, use Soul Slice on cooldown, Blood Stalk at 50 Soul, Slice > Waxing Slice > Infernal Slice.</p></li>
+            <li><p><strong>Levels 70-79:</strong> Maintain Shadow of Death, use Soul Slice, Gibbet > Gallows, Blood Stalk/Unveiled actions, Slice > Waxing Slice > Infernal Slice.</p></li>
+            <li><p><strong>Level 80:</strong> Maintain Death's Design, use Gluttony, Arcane Circle, Gibbet/Gallows, Soul Slice, Enshroud, Slice > Waxing Slice > Infernal Slice.</p></li>
+            <li><p><strong>Levels 81-100:</strong> Maintain Death's Design, use Gluttony, Arcane Circle, Plentiful Harvest, Gibbet/Gallows, Soul Slice, Enshroud (Void Reaping > Cross Reaping > Lemure's Slice > Void Reaping > Cross Reaping > Lemure's Slice > Communio), Harvest Moon, Slice > Waxing Slice > Infernal Slice.</p></li>
         </ul>
     </div>
-
-    <div id="leveling_intro">
-
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-49:</strong> Maintain Whorl of Death, use Spinning Scythe > Nightmare Scythe.</p></li>
+            <li><p><strong>Levels 50-69:</strong> Maintain Whorl of Death, use Soul Scythe on cooldown, Grim Swathe at 50 Soul, Spinning Scythe > Nightmare Scythe.</p></li>
+            <li><p><strong>Levels 70-79:</strong> Maintain Whorl of Death, use Soul Scythe, Guillotine, Grim Swathe, Spinning Scythe > Nightmare Scythe.</p></li>
+            <li><p><strong>Level 80:</strong> Maintain Death's Design, use Gluttony, Arcane Circle, Guillotine, Soul Scythe, Enshroud (Grim Reaping > Grim Reaping > Lemure's Scythe > Grim Reaping > Grim Reaping > Lemure's Scythe > Communio), Spinning Scythe > Nightmare Scythe.</p></li>
+            <li><p><strong>Levels 81-100:</strong> Maintain Death's Design, use Gluttony, Arcane Circle, Plentiful Harvest, Guillotine, Soul Scythe, Enshroud (Grim Reaping > Grim Reaping > Lemure's Scythe > Grim Reaping > Grim Reaping > Lemure's Scythe > Communio), Harvest Moon, Spinning Scythe > Nightmare Scythe.</p></li>
+        </ul>
     </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
+</div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

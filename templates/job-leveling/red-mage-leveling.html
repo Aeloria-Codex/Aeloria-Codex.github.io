@@ -1,36 +1,56 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Red Mage Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Red Mage in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, rdm, Red Mage, Redmage, Red, Mage, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Red Mage" %}
+{% set url1 = "https://www.youtube.com/embed/14Ygl3c9wWs" %}
+{% set url2 = "https://www.youtube.com/embed/DZtMIKhpuHY?si=6JLncpMDWVOuK7gm" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
-        </ul>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Red Mage</h1>
+    <div>
+      <p>Balance Black and White mana while casting spells to maintain effectiveness.</p>
+      <p>Utilize Dualcast procs efficiently to maximize damage output.</p>
+      <p>Learn to weave oGCD abilities between spells for optimal performance.</p>
+      <p>Make effective use of mobility tools like Corps-a-corps and Engagement.</p>
+      <p>Master the melee combo system when sufficient mana is accumulated.</p>
+      <p>Use Acceleration strategically to guarantee important procs.</p>
+      <p>Keep Embolden aligned with burst windows to maximize party damage.</p>
     </div>
-
-    <div id="leveling_intro">
-
+  </div>
+  
+  <div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
+      <ul>
+        <li><p><strong>Levels 18-25:</strong> Jolt into Verthunder/Veraero alternating, use Enchanted Riposte at 20|20 mana.</p></li>
+        <li><p><strong>Levels 26-35:</strong> Use Verfire/Verstone procs when available, otherwise Jolt into Verthunder/Veraero, Enchanted Riposte at 20|20.</p></li>
+        <li><p><strong>Levels 35-49:</strong> Add Enchanted Zwerchhau to your melee combo at 35|35 mana, continue magic rotation.</p></li>
+        <li><p><strong>Level 50:</strong> Complete melee combo with Enchanted Redoublement at 50|50 mana, use Acceleration for guaranteed procs.</p></li>
+        <li><p><strong>Levels 60-70:</strong> Add Verholy/Verflare finishers after melee combos, utilize Manafication for additional combos.</p></li>
+        <li><p><strong>Levels 71-90:</strong> Incorporate Scorch and Resolution into combo finishers, maintain buff alignment with Embolden.</p></li>
+      </ul>
     </div>
-    <div id="leveling_videos">
-        
+    
+    <h3>Multi Target (3+ enemies)</h3>
+    <div>
+      <ul>
+        <li><p><strong>Levels 18-49:</strong> Verthunder II/Veraero II into Scatter, alternate between spells.</p></li>
+        <li><p><strong>Levels 50-60:</strong> Add Acceleration usage on Scatter, begin incorporating oGCD damage abilities.</p></li>
+        <li><p><strong>Levels 61-70:</strong> Use Impact instead of Scatter, maintain balanced AoE rotation.</p></li>
+        <li><p><strong>Levels 71-90:</strong> Use Enchanted Moulinet combo at 50|50 mana, follow with Verholy/Verflare > Scorch > Resolution.</p></li>
+      </ul>
     </div>
-    <div id="leveling_gear">
+  </div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

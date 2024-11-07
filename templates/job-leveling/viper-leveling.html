@@ -1,37 +1,64 @@
 {% extends "base.html" %}
 
+{% block title %}FFXIV Viper Leveling Guide | The Aeloria Codex{% endblock %}
+{% block description %}A comprehensive guide for leveling Viper in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, rpr, Reaper, Final Fantasy 14{% endblock %}
+
 {% block content %}
 
-<div id="center-content">
+{% set job_name = "Viper" %}
+{% set url1 = "https://www.youtube.com/embed/ASEi2anHZ_4?si=MbK3zrt9x4W-Ga_f" %}
+{% set url2 = "https://www.youtube.com/embed/DJQKqKWn8Zg?si=TF5h5y4tCo1LLVKD" %}
 
-    <div id="toc">
-        <h2>Table of Contents</h2>
+{% include "job-leveling/-template.html" %}
+
+<div id="leveling_tips">
+    <h1>General Tips for Viper</h1>
+    <div>
+        <p>Viper is a powerful ranged physical DPS known for its quick, deadly strikes and potent poisons.</p>
+        <p>Early levels focus on building up your poison stacks and using your basic attacks to deal damage. </p>
+        <p>Keep an eye on your Venom gauge and use it strategically to apply poisons and unleash powerful combos.</p>
+        <p>Unlocking the "Serpent's Kiss" ability at level 15 is a game-changer. It lets you apply a potent poison that will drastically increase your damage output.</p>
+        <p>Learn to weave in your DoTs between basic attacks and combos. Your DoTs are a crucial source of your damage, especially later in the game.</p>
+        <p>At level 30, you gain access to the powerful "Serpent's Bite" ability. This ability gives you a stronger poison stack, significantly increasing your damage output. </p>
+        <p>Learn the importance of building up your venom gauge and managing your poison stacks to maximize your DPS.</p>
+        <p>Your job quests will provide valuable new abilities, including the critical "Viper's Bite," which allows you to unleash a devastating attack at the cost of some Venom.</p>
+    </div>    
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <h3>Single Target</h3>
+    <div>
         <ul>
-            <li><a href="#leveling_intro">Introduction </a></li>
-            <li><a href="#leveling_videos">Videos </a></li>
-            <li><a href="#leveling_gear">Gear </a></li>
-            <li><a href="#leveling_tips">Tips </a></li>
-            <li><a href="#leveling_rotation">Rotation </a></li>
+            <li><p><strong>Levels 1-14:</strong> Use your basic attacks and Serpent's Kiss on cooldown. </p></li>
+            <li><p><strong>Levels 15-29:</strong> Use Serpent's Kiss, Venomous Bite, and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 30-39:</strong> Use Serpent's Bite, Venomous Bite, and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 40-49:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
+            <li><p><strong>Levels 70-79:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 80-90:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
         </ul>
     </div>
-
-    <div id="leveling_intro">
-
+    <h3>Multi Target</h3>
+    <div>
+        <ul>
+            <li><p><strong>Levels 1-14:</strong> Use your basic attacks and Serpent's Kiss on cooldown. </p></li>
+            <li><p><strong>Levels 15-29:</strong> Use Serpent's Kiss, Venomous Bite, and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 30-39:</strong> Use Serpent's Bite, Venomous Bite, and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 40-49:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks.</p></li>
+            <li><p><strong>Levels 50-59:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
+            <li><p><strong>Levels 60-69:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
+            <li><p><strong>Levels 70-79:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. </p></li>
+            <li><p><strong>Levels 80-90:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
+            <li><p><strong>Levels 91-100:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
+        </ul>
     </div>
-    <div id="leveling_videos">
-        
-    </div>
-    <div id="leveling_gear">
+</div>
 
-    </div>
-    <div id="leveling_tips">
-
-    </div>
-    <div id="leveling_rotation">
-
-    </div>
-
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}
-

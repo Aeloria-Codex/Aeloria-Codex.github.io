@@ -1,0 +1,752 @@
+:root {
+  /* Light mode colors */
+  --light-background: #F8F2E9;  /* Slightly warmer background */
+  --light-secondary: #F0E6D4;   /* More contrast with background */
+  --light-accent: #FFB586;    
+  --light-primary: #F47C3C;   /* Slightly desaturated */
+  --light-text: #8C3B1D;          
+  
+  /* Dark mode colors */
+  --dark-background: #1E1E1E;
+  --dark-secondary: #292929;
+  --dark-accent: #FF7F50;
+  --dark-primary: #F39C12;
+  --dark-text: #F0E5D8;
+}
+body {
+  margin: 0;
+  font-size: 12.8px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  height: 100%;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -moz-transition: background-color 0.3s, color 0.3s;
+  -ms-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+}
+/*********************************************************************************
+
+theme switcher 
+
+*********************************************************************************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 6%;
+  right: 1%;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #4B73B5;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch .theme-icon .light-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px; /* Adjust position as needed */
+  display: flex;
+  align-items: center;
+}
+
+.switch .theme-icon .dark-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px; /* Adjust position as needed */
+  display: flex;
+  align-items: center;
+}
+
+.light-mode .switch .theme-icon .light-icon {
+  display: block;
+}
+
+.light-mode .switch .theme-icon .dark-icon {
+  display: none;
+}
+
+.dark-mode .switch .theme-icon .light-icon {
+  display: none;
+}
+
+.dark-mode .switch .theme-icon .dark-icon {
+  display: block;
+}
+/*********************************************************************************
+
+? 
+
+*********************************************************************************/
+
+.light-mode .btn-primary {
+  background-color: var(--light-primary);
+  color: var(--light-background);
+}
+
+.dark-mode .btn-primary {
+  background-color: var(--dark-primary);
+  color: var(--dark-background);
+}
+
+.light-mode .secondary-bg {
+  background-color: var(--light-secondary);
+}
+
+.dark-mode .secondary-bg {
+  background-color: var(--dark-secondary);
+}
+
+.light-mode .accent {
+  color: var(--light-accent);
+}
+
+.dark-mode .accent {
+  color: var(--dark-accent);
+}
+
+.content {
+  background: #fff;
+  padding: 1.6rem; 
+  border-radius: 12px; 
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.08); 
+}
+
+/*********************************************************************************
+
+Light mode styles 
+
+*********************************************************************************/
+body.light-mode {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3, 
+.light-mode h4, .light-mode h5, .light-mode h6 {
+  color: var(--light-primary);
+}
+
+.light-mode p {
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+.light-mode a {
+  color: var(--light-primary);
+}
+
+.light-mode a:hover {
+  color: var(--light-accent);
+}
+
+.light-mode li, ul {
+  color: var(--light-primary);
+  font-size: 14px;
+}
+
+.light-mode b,strong {
+  color: var(--light-primary);
+}
+
+.light-mode button {
+  background-color: var(--light-primary);
+  color: var(--light-background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.light-mode button:hover {
+  background-color: var(--light-accent);
+}
+
+.light-mode input[type="text"], .light-mode textarea {
+  background-color: var(--light-background);
+  border: 1px solid var(--light-primary);
+  color: var(--light-text);
+  padding: 8px;
+}
+
+.light-mode table {
+  border-collapse: collapse;
+}
+
+.light-mode th, .light-mode td {
+  border: 1px solid var(--light-text);
+  padding: 8px;
+  color: var(--light-text);
+}
+
+.light-mode th {
+  background-color: var(--light-secondary);
+}
+
+.light-mode #left {
+  background-color: var(--light-secondary);
+  border: 1px solid;
+  border-radius: 4px;
+}
+.light-mode #toc {
+  background-color: var(--light-secondary);
+}
+
+/*********************************************************************************
+
+Light Mode background for job leveling backgrounds
+
+*********************************************************************************/
+
+.light-mode #paladin_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #warrior_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #dark_knight_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #gunbreaker_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #white_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #scholar_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #astrologian_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #sage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #monk_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #dragoon_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #ninja_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #samurai_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #reaper_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #viper_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #black_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #summoner_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #red_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #bard_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #machinist_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #dancer_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #blue_mage_leveling_cover {
+  background-color: var(--light-secondary);
+}
+.light-mode #pictomancer_leveling_cover {
+  background-color: var(--light-secondary);
+}
+
+.light-mode #section_title h1 {
+  color: var(--light-primary);
+}
+/*********************************************************************************
+
+Dark mode styles 
+
+*********************************************************************************/
+
+body.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, 
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+  color: var(--dark-primary);
+}
+
+.dark-mode p {
+  color: var(--dark-text);
+  font-size: 14px;
+}
+
+.dark-mode a {
+  color: var(--dark-primary);
+}
+
+.dark-mode a:hover {
+  color: var(--dark-accent);
+}
+
+.dark-mode li, ul {
+  color: var(--dark-primary);
+  font-size: 14px;
+}
+
+.dark-mode b,strong {
+  color: var(--dark-primary);
+}
+
+.dark-mode button {
+  background-color: var(--dark-primary);
+  color: var(--dark-background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-mode button:hover {
+  background-color: var(--dark-accent);
+}
+
+.dark-mode input[type="text"], .dark-mode textarea {
+  background-color: var(--dark-secondary);
+  border: 1px solid var(--dark-primary);
+  color: var(--dark-text);
+  padding: 8px;
+}
+
+.dark-mode table {
+  border-collapse: collapse;
+}
+
+.dark-mode th, .dark-mode td {
+  border: 1px solid var(--dark-primary);
+  padding: 8px;
+  color: var(--dark-text);
+}
+
+.dark-mode th {
+  background-color: var(--dark-secondary);
+}
+
+.dark-mode #left {
+  background-color: var(--dark-secondary);
+  border: 1px solid;
+  border-radius: 4px;
+}
+.dark-mode #toc {
+  background-color: var(--dark-secondary);
+}
+
+/*********************************************************************************
+
+Dark Mode background for job leveling backgrounds
+
+*********************************************************************************/
+
+.dark-mode #paladin_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #warrior_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #dark_knight_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #gunbreaker_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #white_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #scholar_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #astrologian_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #sage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #monk_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #dragoon_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #ninja_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #samurai_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #reaper_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #viper_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #black_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #summoner_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #red_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #bard_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #machinist_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #dancer_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #blue_mage_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+.dark-mode #pictomancer_leveling_cover {
+  background-color: var(--dark-secondary);
+}
+
+.dark-mode #section_title {
+  border-bottom: 15px white;
+}
+.dark-mode #section_title h1 {
+  color: var(--dark-primary);
+  border-bottom: 15px white;
+}
+/*********************************************************************************
+
+?
+
+*********************************************************************************/
+
+button {
+  background: #69c;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: 0.24s; 
+}
+
+button:hover {
+  background: #4a8ac7;
+}
+
+/*********************************************************************************
+
+Navbar
+
+*********************************************************************************/
+
+.navBar {
+  padding: 0.8rem 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background 0.24s ease, box-shadow 0.08s ease; 
+  z-index: 1000;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navBar a {
+  text-decoration: none;
+  padding: 0.4rem 0.8rem; 
+  margin: 0 0.4rem; 
+  transition: 0.24s; 
+  font-weight: 500;
+}
+
+.light-mode .navBar {
+  background: #f5f5f5cc;
+}
+
+.dark-mode .navBar {
+  background: #292929;
+}
+
+.light-mode .navBar a {
+  color: var(--light-text);
+}
+
+.dark-mode .navBar a {
+  color: var(--dark-text);
+}
+
+.light-mode .navBar a:hover {
+  color: var(--light-primary);
+}
+
+.dark-mode .navBar a:hover {
+  color: var(--dark-primary);
+}
+
+.navBar.scrolled {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .navBar.scrolled {
+  background: #f5f5f5e6;
+}
+
+.dark-mode .navBar.scrolled {
+  background: #292929;
+}
+
+.navBar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navBar-toggle {
+  display: none;
+}
+
+.navBar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navBar-search input {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.4rem;
+}
+
+.light-mode .navBar-search input {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+.dark-mode .navBar-search input {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/*********************************************************************************
+
+Center Content
+
+*********************************************************************************/
+
+#center-content {
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  min-width: 70%;
+  padding-left: 7%;
+  padding-right: 25%;
+}
+
+#center-content-crafter-leveling {
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  min-width: 70%;
+  padding-left: 7%;
+  padding-right: 25%;
+}
+
+#center-content-jl {
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  min-width: 75%;
+  padding-left: 7%;
+  padding-right: 25%;
+}
+
+/*********************************************************************************
+
+Table of Contents
+
+*********************************************************************************/
+
+#toc {
+  left: 80%;
+  position: fixed;
+  top: 10%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+#toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#toc ul li {
+  margin-bottom: 5px;
+}
+#toc a {
+  text-decoration: none;
+}
+#toc a:hover {
+  text-decoration: underline;
+}
+
+/*********************************************************************************
+
+Footer
+
+*********************************************************************************/
+
+footer {
+  bottom: 0;
+  padding: 5%;
+  text-align: center;
+  margin-top: auto;
+}
+
+#footer-div-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer ul {
+  list-style: none;
+}
+#footer li a{
+  text-decoration: none;
+}
+
+#footer hr {
+  margin-bottom: 2%;
+}
+
+#footer-column{
+  flex: 1;
+  min-width: 200px;
+  margin: 15px;
+}
+
+#references{
+  text-decoration: none;
+}
+
+/*********************************************************************************
+
+Nav dropdown
+
+*********************************************************************************/
+.has-dropdown:hover .dropdown-leveling-nav {
+  display: block;
+}
+
+.dropdown-leveling-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10vh;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dark-mode .dropdown-leveling-nav {
+  background-color: #292929;
+}
+
+.light-mode .dropdown-leveling-nav {
+  background-color: #f5f5f5e6;
+}
+
+.has-dropdown {
+  padding-bottom: 2rem;
+  margin-bottom: -2rem;
+}
+
+.dropdown-leveling-nav a {
+  text-decoration: none;
+  display: block; 
+  padding: 0.75rem 1rem;
+}
+
+.dropdown-leveling-nav hr{
+  margin-top: -2vh;
+}
+/*********************************************************************************
+
+404
+
+*********************************************************************************/
+
+.jumbotron {
+  padding-top: 20% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
