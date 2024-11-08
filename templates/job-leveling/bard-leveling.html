@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}FFXIV Bard Leveling Guide | The Aeloria Codex{% endblock %}
-{% block description %}A comprehensive guide for leveling Bard in Final Fantasy XIV.{% endblock %}
-{% block keywords %}FFXIV, leveling, job, guide, bard, brd, archer, arc, Final Fantasy 14{% endblock %}
+{% block title %}FFXIV Bard Leveling Guide: Tips, Rotations, & Strategies | The Aeloria Codex{% endblock %}
+{% block description %}Level up your Bard fast in FFXIV! This comprehensive guide covers essential tips, rotations, card management, and advanced strategies for efficient leveling.{% endblock %}
+{% block keywords %}FFXIV, Bard, BRD, leveling, guide, tips, rotations, strategies, ranged dps, endgame, FFXIV Endwalker{% endblock %}
 
 {% block content %}
 
@@ -12,69 +12,83 @@
 
 {% include "job-leveling/-template.html" %}
 
-    <div id="leveling_tips">
-        <h1>General Tips for Bard</h1>
-        <div id="ast_txt">
-            <p><strong>Starting at level 1:</strong> Keep in mind that Bard begins at level 1.</p>
-            <p><strong>Job Quests:</strong> Always complete your job quests! They unlock essential skills and abilities as you level up.</p>
-            <p><strong>DoT Uptime:</strong> As a Bard you have a lot of Dot (Damage over Time) skills, make sure to keep your DoT up to continue doing damage.</p>
-            <p><strong>Peloton:</strong> Make sure to keep up Peloton for your party when out of combat.</p>
-            <p><strong>Role Actions:</strong> Besides Peloton you will have other Role Actions such as Second Wind and Interupts or Status Effect abilities. Make sure you are using them properly.</p>
-            <p><strong>Job Gauge:</strong> Keep an eye on your Job Gauge so you do not overcap on charges.</p>
-        </div>
+<div id="leveling_tips">
+    <h1>General Tips for Bard</h1>
+    <div id="bard_txt">
+        <ul>
+            <li><strong>Starting at level 1:</strong> Keep in mind that Bard begins at level 1.</li>
+            <li><strong>Job Quests:</strong> Always complete your job quests! They unlock essential skills and abilities as you level up.</li>
+            <li><strong>DoT Uptime:</strong> As a Bard you have a lot of Dot (Damage over Time) skills, make sure to keep your DoT up to continue doing damage.</li>
+            <li><strong>Peloton:</strong> Make sure to keep up Peloton for your party when out of combat.</li>
+            <li><strong>Role Actions:</strong> Besides Peloton, you will have other Role Actions such as Second Wind and Interupts or Status Effect abilities. Make sure you are using them properly.</li>
+            <li><strong>Job Gauge:</strong> Keep an eye on your Job Gauge so you do not overcap on charges.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <div id="bard_txt">
+        <p>Bard's core rotation remains consistent as you level, with added abilities and song cycles enhancing your kit. Here is a breakdown of the essential rotations you should focus on:</p>
     </div>
 
-    <div id="leveling_rotation">
-        <h1>Rotation Overview</h1>
-        <div id="bard_txt">
-            <p>Bard's core rotation remains consistent as you level, with added abilities and song cycles enhancing your kit. Here is a breakdown of the essential rotations you should focus on:</p>
-        </div>
-        <h3>Single Target Openers</h3>
-        <div id="bard_txt">
-            <ul>
-                <li><p><strong>Stormbite</strong> → <strong>The Wanderer’s Minuet</strong> → <strong>Empyreal Arrow</strong></p></li>
-                <li><p><strong>Caustic Bite</strong> → wait → <strong>Battle Voice</strong></p></li>
-                <li><p><strong>Burst Shot</strong> or <strong>Refulgent Arrow</strong> → <strong>Radiant Finale</strong></p></li>
-            </ul>
-        </div>
-        <h3>Song Cycle</h3>
-        <div id="bard_txt">
-            <p>Bard’s rotation revolves around its song cycle. You will alternate between <strong>The Wanderer’s Minuet</strong>, <strong>Mage’s Ballad</strong>, and <strong>Army’s Paeon</strong>, each with specific buffs to manage:</p>
-            <ul>
-                <li><p><strong>The Wanderer’s Minuet</strong>: Provides a damage buff and grants access to <strong>Refulgent Arrow</strong>.</p></li>
-                <li><p><strong>Mage’s Ballad</strong>: Reduces cooldowns on Empyreal Arrow and grants additional proc chances.</p></li>
-                <li><p><strong>Army’s Paeon</strong>: Increases attack speed and transitions into a speed buff post-use.</p></li>
-            </ul>
-        </div>
-        <h3>Single Target Rotation</h3>
-        <div id="bard_txt">
-            <p>Once your opener is complete, focus on maintaining your DoTs (Stormbite, Caustic Bite) and firing <strong>Empyreal Arrow</strong> when available. Your rotation should prioritize:</p>
-            <ul>
-                <li><p>Maintain DoTs on your target.</li>
-                <li><p>Use <strong>Empyreal Arrow</strong> on cooldown.</p></li>
-                <li><p>Fire <strong>Refulgent Arrow</strong> when it procs.</p></li>
-                <li><p>Weave <strong>Barrage</strong> with <strong>Refulgent Arrow</strong> for maximum damage.</p></li>
-            </ul>
-        </div>
-        <h3>Burst Sequence</h3>
-        <div id="bard_txt">
-            <p>During burst windows (such as party buffs), maximize your damage by stacking cooldowns:</p>
-            <ul>
-                <li><p>Use <strong>Radiant Finale</strong> after building gauge from songs.</p></li>
-                <li><p>Weave <strong>Battle Voice</strong> for party-wide damage boosts.</p></li>
-            </ul>
-        </div>
-        <h3>AoE Rotation</h3>
-        <div id="bard_txt">
-            <p>For multiple targets (3+), focus on applying your AoE DoTs and using area-of-effect abilities:</p>
-            <ul>
-                <li><p>Apply <strong>Rain of Death</strong> and <strong>Quick Nock</strong> to maximize AoE damage.</p></li>
-                <li><p>Weave <strong>Empyreal Arrow</strong> and other cooldowns into your AoE rotation.</p></li>
-            </ul>
-        </div>
+    <h3>Song Cycle</h3>
+    <div id="bard_txt">
+        <p>Bard’s rotation revolves around its song cycle. You will alternate between <strong>The Wanderer’s Minuet</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/The_Wanderers_Minuet_Icon.webp') }}" alt="The Wanderers Minuet Icon" />, <strong>Mage’s Ballad</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Mages_Ballad_Icon.webp') }}" alt="Mages Ballad Icon" />, and <strong>Army’s Paeon</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Armys_Paeon_Icon.webp') }}" alt="Armys Paeon Icon" />, each with specific buffs to manage:</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th>Icon</th>
+                    <th>Effect</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Wanderer’s Minuet</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/brd/The_Wanderers_Minuet_Icon.webp') }}" alt="The Wanderers Minuet Icon" /></td>
+                    <td>Provides a damage buff and grants access to Refulgent Arrow.</td>
+                </tr>
+                <tr>
+                    <td>Mage’s Ballad</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/brd/Mages_Ballad_Icon.webp') }}" alt="Mages Ballad Icon" /></td>
+                    <td>Reduces cooldowns on Empyreal Arrow and grants additional proc chances.</td>
+                </tr>
+                <tr>
+                    <td>Army’s Paeon</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/brd/Armys_Paeon_Icon.webp') }}" alt="Armys Paeon Icon" /></td>
+                    <td>Increases attack speed and transitions into a speed buff post-use.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
     </div>
 
-    <div id="bottom_pad"></div>
+    <h3>Single Target Rotation</h3>
+    <div id="bard_txt">
+        <ul>
+            <li><p>Start with <strong>Stormbite</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Stormbite_Icon.webp') }}" alt="Stormbite Icon" /> → <strong>The Wanderer’s Minuet</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/The_Wanderers_Minuet_Icon.webp') }}" alt="The Wanderers Minuet Icon" /> → <strong>Empyreal Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Empyreal_Arrow_Icon.webp') }}" alt="Empyreal Arrow Icon" /></p></li>
+            <li><p>Use <strong>Caustic Bite</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Caustic_Bite_Icon.webp') }}" alt="Caustic Bite Icon" /> → wait → <strong>Battle Voice</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Battle_Voice_Icon.webp') }}" alt="Battle Voice Icon" /></p></li>
+            <li><p>Maintain DoTs on your target.</p></li>
+            <li><p>Use <strong>Empyreal Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Empyreal_Arrow_Icon.webp') }}" alt="Empyreal Arrow Icon" /> on cooldown.</p></li>
+            <li><p>Fire <strong>Refulgent Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Refulgent_Arrow_Icon.webp') }}" alt="Refulgent Arrow Icon" /> when it procs.</p></li>
+            <li><p>Weave <strong>Barrage</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Barrage_Icon.webp') }}" alt="Barrage Icon" /> with <strong>Refulgent Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Refulgent_Arrow_Icon.webp') }}" alt="Refulgent Arrow Icon" /> for maximum damage.</p></li>
+            <li><p>Use <strong>Burst Shot</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Burst_Shot_Icon.webp') }}" alt="Burst Shot Icon" /> or <strong>Refulgent Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Refulgent_Arrow_Icon.webp') }}" alt="Refulgent Arrow Icon" /> → <strong>Radiant Finale</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Radiant_Finale_Icon.webp') }}" alt="Radiant Finale Icon" /> during burst windows.</p></li>
+        </ul>
+    </div>
+    <br>
+
+    <h3>Multi-Target Rotation</h3>
+    <div id="bard_txt">
+        <p>For multiple targets (3+), focus on applying your AoE DoTs and using area-of-effect abilities:</p>
+        <ul>
+            <li><p>Apply <strong>Rain of Death</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Rain_of_Death_Icon.webp') }}" alt="Rain Of Death Icon" /> and <strong>Quick Nock</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Quick_Nock_Icon.webp') }}" alt="Quick Nock Icon" /> to maximize AoE damage.</p></li>
+            <li><p>Weave <strong>Empyreal Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/brd/Empyreal_Arrow_Icon.webp') }}" alt="Empyreal Arrow Icon" /> and other cooldowns into your AoE rotation.</p></li>
+        </ul>
+    </div>
+</div>
+
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

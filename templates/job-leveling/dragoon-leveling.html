@@ -2,72 +2,92 @@
 
 {% block title %}FFXIV Dragoon Leveling Guide | The Aeloria Codex{% endblock %}
 {% block description %}A comprehensive guide for leveling Dragoon in Final Fantasy XIV.{% endblock %}
-{% block keywords %}FFXIV, leveling, job, guide, dragoon, lancer, drg, lnc, Final Fantasy 14{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, drg, Dragoon, dragoon, Final Fantasy 14{% endblock %}
 
 {% block content %}
 
 {% set job_name = "Dragoon" %}
-{% set url1 = "https://www.youtube.com/embed/IeGAuOn-t_c" %}
-{% set url2 = "https://www.youtube.com/embed/1-4GYb7mkLk" %}
+{% set url1 = "https://www.youtube.com/embed/OGRwEdBWY0A" %}
+{% set url2 = "https://www.youtube.com/embed/MzNMfUAQe0s" %}
 
 {% include "job-leveling/-template.html" %}
 
+<div id="leveling_tips">
+    <h1>General Tips for Dragoon</h1>
+    <div id="drg_txt">
+        <p>The Dragoon is a powerful melee DPS job known as the "King of the Heavens" in Final Fantasy XIV. This job excels at delivering devastating attacks while maintaining mobility through jumps and powerful AoE attacks.  Dragoons are a popular choice for both single-target and multi-target encounters, and they are a valuable asset to any team. </p>
+        <p><strong>Jump Management:</strong> Make sure to use Jump efficiently. It’s a powerful offensive tool, and you can also use Elusive Jump to reposition yourself during combat.</p>
+        <p><strong>Life Surge:</strong> Use Life Surge to maximize your damage output and negate a portion of incoming damage, but manage your charges wisely.</p>
+        <p><strong>Dragon's Flight:</strong> Use Dragonfire Dive to gain Dragon's Flight, a powerful buff that significantly boosts your damage output.</p>
+        <p><strong>Draconian Fire:</strong> The Draconian Fire buff allows you to use powerful attacks. Maintain uptime on this buff by using the correct combos and weaving in abilities such as Draconian Fury and Raiden Thrust.</p>
+        <p><strong>Managing Nastrond:</strong> Make sure to use Nastrond to capitalize on the Nastrond Ready stacks granted by Geirskogul.</p>
+        <p><strong>The Firstminds' Focus:</strong> This is your secondary resource, and it can be spent on Wyrmwind Thrust. Managing this resource effectively will boost your overall damage output.</p>
+    </div>
+</div>
 
-    <div id="leveling_tips">
-        <h1>General Tips for Dragoon</h1>
-        <div id="drg_txt">
-            <p><strong>Positionals:</strong> Many of your abilities deal more damage from certain positions. Practice hitting these consistently to maximize your damage output.</p>
-            <p><strong>Buff Management:</strong> Coordinate your Battle Litany with your party's burst windows for maximum effectiveness.</p>
-            <p><strong>Life of the Dragon:</strong> Always aim to use all three Nastrond and one Stardiver during each Life of the Dragon window.</p>
-            <p><strong>Mobility:</strong> Use Elusive Jump and Spineshatter Dive for movement without sacrificing damage. Be cautious with Elusive Jump's backwards motion.</p>
-            <p><strong>AOE Efficiency:</strong> In dungeons, save Dragonfire Dive for trash packs when possible, as it's one of your strongest AOE abilities.</p>
-        </div>
+<div id="leveling_rotation">
+    <h1>Rotation Overview</h1>
+    <div id="drg_txt">
+        <p>The Dragoon’s rotation is focused on utilizing specific skills efficiently to maximize damage output and support allies. The focus is on single-target and multi-target abilities, with a special emphasis on Jump and Dragon's Flight management.</p>
     </div>
 
-    <div id="leveling_rotation">
-        <h1>Rotation Overview</h1>
-        <div id="drg_txt">
-            <p>The Dragoon's rotation revolves around maintaining your combos, managing your jumps, and maximizing your damage during Life of the Dragon phases. The focus is on single-target and multi-target abilities, with special emphasis on positional attacks and buff alignment.</p>
-        </div>
-
-        <h3>Single Target Rotation</h3>
-        <div id="drg_txt">
-            <ul>
-                <li><p>Main Combo: <strong>Raiden Thrust</strong> → <strong>Disembowel</strong> → <strong>Chaotic Spring</strong> → <strong>Wheeling Thrust</strong> → <strong>Fang and Claw</strong></p></li>
-                <li><p>Alternate Combo: <strong>Raiden Thrust</strong> → <strong>Vorpal Thrust</strong> → <strong>Heavens' Thrust</strong> → <strong>Fang and Claw</strong> → <strong>Wheeling Thrust</strong></p></li>
-                <li><p>Use <strong>Life Surge</strong> on <strong>Heavens' Thrust</strong> or <strong>Fang and Claw</strong>, prioritizing buff windows.</p></li>
-                <li><p>Activate <strong>Lance Charge</strong> and <strong>Battle Litany</strong> on cooldown after the opener.</p></li>
-                <li><p>Use <strong>High Jump</strong>, <strong>Spineshatter Dive</strong>, and <strong>Dragonfire Dive</strong> on cooldown.</p></li>
-                <li><p>Always use <strong>Mirage Dive</strong> after jumps before its 15-second timer expires.</p></li>
-                <li><p>Use <strong>Geirskogul</strong> on cooldown, which turns into <strong>Nastrond</strong> during Life of the Dragon.</p></li>
-                <li><p>Use <strong>Stardiver</strong> once during each Life of the Dragon window, preferably under buffs.</p></li>
-            </ul>
-        </div>
-
-        <h3>Multi-Target Rotation</h3>
-        <div id="drg_txt">
-            <ul>
-                <li><p>For 3+ targets, use <strong>Doomspike</strong> → <strong>Sonic Thrust</strong> → <strong>Coerthan Torment</strong> combo.</p></li>
-                <li><p>Weave in <strong>Dragonfire Dive</strong> and <strong>Geirskogul</strong> for additional AOE damage.</p></li>
-                <li><p>Use <strong>Nastrond</strong> and <strong>Stardiver</strong> during Life of the Dragon for powerful AOE damage.</p></li>
-                <li><p>Continue using your buffs (<strong>Lance Charge</strong>, <strong>Battle Litany</strong>) on cooldown.</p></li>
-                <li><p>Use <strong>Wyrmwind Thrust</strong> when available for additional AOE damage.</p></li>
-            </ul>
-        </div>
-
-        <h3>Mobility and Utility</h3>
-        <div id="drg_txt">
-            <ul>
-                <li><p>Use <strong>Elusive Jump</strong> to quickly move away from danger or return to the boss after mechanics.</p></li>
-                <li><p><strong>Spineshatter Dive</strong> and <strong>Dragonfire Dive</strong> can be used as gap closers when needed.</p></li>
-                <li><p><strong>Piercing Talon</strong> can be used for ranged attacks when unable to reach the boss.</p></li>
-                <li><p>Use <strong>Feint</strong> to reduce physical damage from boss attacks.</p></li>
-                <li><p><strong>Second Wind</strong> provides a small self-heal when needed.</p></li>
-            </ul>
-        </div>
+    <h3>Single Target Rotation</h3>
+    <div id="drg_txt">
+        <ul>
+            <li><p>Begin your rotation with <strong>True Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/True_Thrust_Icon.webp') }}" alt="True Thrust Icon" /> → <strong>Vorpal Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Vorpal_Thrust_Icon.webp') }}" alt="Vorpal Thrust Icon" />. </p></li>
+            <li><p>Use <strong>Full Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Full_Thrust_Icon.webp') }}" alt="Full Thrust Icon" /> as it becomes available.</p></li>
+            <li><p>Use <strong>Disembowel</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Disembowel_Icon.webp') }}" alt="Disembowel Icon" />  followed by <strong>Chaos Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Chaos_Thrust_Icon.webp') }}" alt="Chaos Thrust Icon" /> to generate a DoT, maintaining uptime.</p></li>
+            <li><p>Use <strong>Fang and Claw</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Fang_and_Claw_Icon.webp') }}" alt="Fang And Claw Icon" /> and then <strong>Wheeling Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Wheeling_Thrust_Icon.webp') }}" alt="Wheeling Thrust Icon" /> to trigger Draconian Fire.</p></li>
+            <li><p>While Draconian Fire is active, use <strong>Raiden Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Raiden_Thrust_Icon.webp') }}" alt="Raiden Thrust Icon" /> as your main combo attack, followed by <strong>Draconian Fury</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Draconian_Fury_Icon.webp') }}" alt="Draconian Fury Icon" />.</p></li>
+            <li><p>When you have enough Firstminds’ Focus to use <strong>Wyrmwind Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Wyrmwind_Thrust_Icon.webp') }}" alt="Wyrmwind Thrust Icon" /> you will want to weave it in with the Heaven’s Thrust combo.</p></li>
+        </ul>
     </div>
 
-    <div id="bottom_pad"></div>
+    <h3>Multi-Target Rotation</h3>
+    <div id="drg_txt">
+        <ul>
+            <li><p>For 3+ targets, use <strong>Sonic Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Sonic_Thrust_Icon.webp') }}" alt="Sonic Thrust Icon" /> followed by <strong>Coerthan Torment</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Coerthan_Torment_Icon.webp') }}" alt="Coerthan Torment Icon" /> to deal significant damage to multiple targets. </p></li>
+            <li><p>Use <strong>Jump</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Jump_Icon.webp') }}" alt="Jump Icon" /> to reposition yourself and gain Dive Ready when you need to.</p></li>
+            <li><p>Use <strong>Wyrmwind Thrust</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Wyrmwind_Thrust_Icon.webp') }}" alt="Wyrmwind Thrust Icon" /> to spend Firstminds’ Focus when you have enough to use it.</p></li>
+            <li><p>Use <strong>Geirskogul</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Geirskogul_Icon.webp') }}" alt="Geirskogul Icon" /> on cooldown. </p></li>
+            <li><p>When you have enough stacks of Nastrond Ready, use <strong>Nastrond</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Nastrond_Icon.webp') }}" alt="Nastrond Icon" /> for increased damage.</p></li>
+        </ul>
+    </div>
+
+    <h3>Offensive Cooldowns</h3>
+    <div id="drg_txt">
+        <ul>
+            <li><p>Use <strong>Dragonfire Dive</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Dragonfire_Dive_Icon.webp') }}" alt="Dragonfire Dive Icon" /> to gain Dragon's Flight, which will increase your overall damage output.</p></li>
+            <li><p>Use <strong>Rise of the Dragon</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Rise_of_the_Dragon_Icon.webp') }}" alt="Rise Of The Dragon Icon" /> while Dragon's Flight is active to deliver a powerful AoE attack to enemies.</p></li>
+            <li><p>Use <strong>Stardiver</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Stardiver_Icon.webp') }}" alt="Stardiver Icon" /> while Life of the Dragon is active to deliver a powerful AoE attack to enemies.</p></li>
+            <li><p>Use <strong>Starcross</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Starcross_Icon.webp') }}" alt="Starcross Icon" /> to deliver a powerful single-target attack and gain a buff.</p></li>
+        </ul>
+    </div>
+
+    <h3>Defensive Cooldowns</h3>
+    <div id="drg_txt">
+        <ul>
+            <li><p>Use <strong>Jump</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Jump_Icon.webp') }}" alt="Jump Icon" /> to reposition yourself or gain Dive Ready. </p></li>
+            <li><p>Use <strong>Elusive Jump</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Elusive_Jump_Icon.webp') }}" alt="Elusive Jump Icon" /> to reposition yourself quickly when needed.</p></li>
+            <li><p>Use <strong>Life Surge</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Life_Surge_Icon.webp') }}" alt="Life Surge Icon" /> to increase your damage output and absorb a portion of incoming damage. Be sure to conserve your Life Surge charges as they are limited.</p></li>
+            <li><p>Use <strong>High Jump</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/High_Jump_Icon.webp') }}" alt="High Jump Icon" /> on cooldown for single-target damage.</p></li>
+            <li><p>Use <strong>Mirage Dive</strong> <img src="{{ url_for('static', filename='images/job_icons/drg/Mirage_Dive_Icon.webp') }}" alt="Mirage Dive Icon" /> to evade attacks.</p></li>
+        </ul>
+    </div>
+
+    <h3>Gameplay Tips</h3>
+    <div id="drg_txt">
+        <ul>
+            <li><p><strong>Maximize Dragon's Flight Uptime:</strong> Dragon's Flight significantly increases your damage output, so keep it active whenever possible. Use your Dragonfire Dive to refresh it on cooldown. </p></li>
+            <li><p><strong>Manage Firstminds' Focus:</strong> Firstminds' Focus is your secondary resource. Use it effectively for Wyrmwind Thrust to maximize your damage output. </p></li>
+            <li><p><strong>Position Yourself for Maximum Damage:</strong>  The Dragoon's rear attacks deal increased damage. Use repositioning abilities like Jump or Elusive Jump to maximize your damage output.  </p></li>
+            <li><p><strong>Avoid Overcapping Blood:</strong>  When you use an ability that generates Blood, you will want to make sure you're using Bloodspiller frequently enough to avoid overcapping. This is crucial for maximizing damage output.</p></li>
+            <li><p><strong>Use Your Cooldowns Strategically: </strong> The Dragoon has a variety of cooldowns that can be used strategically in combination with raid buffs for maximum impact.  For example, using Dragonfire Dive, Stardiver, and Starcross during a raid buff phase.</p></li> 
+        </ul>
+    </div>
+</div>
+
+<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}FFXIV Astrologian Leveling Guide | The Aeloria Codex{% endblock %}
-{% block description %}A comprehensive guide for leveling Astrologian in Final Fantasy XIV.{% endblock %}
-{% block keywords %}FFXIV, leveling, jobs, guide, astro, astrologian, ast, Final Fantasy 14{% endblock %}
+{% block title %}FFXIV Astrologian Leveling Guide: Tips, Rotations, & Strategies | The Aeloria Codex{% endblock %}
+{% block description %}Level up your Astrologian fast in FFXIV! This comprehensive guide covers essential tips, rotations, card management, and advanced strategies for efficient leveling.{% endblock %}
+{% block keywords %}FFXIV, Astrologian, AST, leveling, guide, tips, rotations, strategies, healer, endgame, card management, FFXIV Endwalker{% endblock %}
 
 {% block content %}
 
@@ -12,70 +12,146 @@
 
 {% include "job-leveling/-template.html" %}
 
-    <div id="leveling_tips">
-        <h1>General Tips for Astrologian</h1>
+<div id="leveling_tips">
+    <h2>General Tips for Astrologian</h2>
+    <ul>
+        <li><strong>Starting at level 30:</strong> Keep in mind that Astrologian begins at level 30, but your level may and will be synced down in lower-level content.</li>
+        <li><strong>Job Quests:</strong> Always complete your job quests! They unlock essential skills and abilities as you level up.</li>
+        <li><strong>Keep casting:</strong> Even as a healer, you should always aim to deal damage when healing isn’t required.</li>
+        <li><strong>Lucid Dreaming:</strong> Manage your MP by using Lucid Dreaming at around 80-85% MP.</li>
+        <li><strong>Lightspeed:</strong> Use Lightspeed to maintain uptime while moving or to cast faster in tight situations.</li>
+        <li><strong>Esuna:</strong> Keep an eye on debuffs and use Esuna to remove them when necessary.</li>
+        <li><strong>Swiftcast and Revives:</strong> Use Swiftcast to revive allies, but if it’s on cooldown, don’t hesitate to hard-cast Ascend.</li>
+    </ul>
+</div>
+
+<div id="leveling_rotation">
+    <h2>Rotation Overview</h2>
+    <div id="ast_txt">
+        <h3>Card Management and Gauge Usage</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Card</th>
+                    <th>Icon</th>
+                    <th>Effect</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Astral Draw/Umbral Draw</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/Astral_Draw_Icon.webp') }}" alt="Astral Draw Icon" />/<img src="{{ url_for('static', filename='images/job_icons/ast/Umbral_Draw_Icon.webp') }}" alt="Umbral Draw Icon" /></td>
+                    <td>Draws cards and replenishes MP.</td>
+                </tr>
+                <tr>
+                    <td>Play I, II, III</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/Play_I_Icon.webp') }}" alt="Play I Icon" />/<img src="{{ url_for('static', filename='images/job_icons/ast/Play_II_Icon.webp') }}" alt="Play II Icon" />/<img src="{{ url_for('static', filename='images/job_icons/ast/Play_III_Icon.webp') }}" alt="Play III Icon" /></td>
+                    <td>Boost damage, defense, or healing for party members.</td>
+                </tr>
+                <tr>
+                    <td>The Balance</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/The_Balance_Icon.webp') }}" alt="The Balance Icon" /></td>
+                    <td>Increases party member damage for a short time.</td>
+                </tr>
+                <tr>
+                    <td>The Arrow</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/The_Arrow_Icon.webp') }}" alt="The Arrow Icon" /></td>
+                    <td>Provides healing buffs.</td>
+                </tr>
+                <tr>
+                    <td>The Spire</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/The_Spire_Icon.webp') }}" alt="The Spire Icon" /></td>
+                    <td>Grants shielding.</td>
+                </tr>
+                <tr>
+                    <td>Lord of Crowns</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/Lord_of_Crowns_Icon.webp') }}" alt="Lord of Crowns Icon" /></td>
+                    <td>Use for strong AoE damage.</td>
+                </tr>
+                <tr>
+                    <td>Lady of Crowns</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/Lady_of_Crowns_Icon.webp') }}" alt="Lady of Crowns Icon" /></td>
+                    <td>Offers a group heal.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3>Important Cooldowns</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Icon</th>
+                    <th>Cooldown</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Swiftcast</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/role_actions/Swiftcast_Icon.webp') }}" alt="Swiftcast Icon" /></td>
+                    <td>60 sec</td>
+                    <td>Reduce cast time of any spell.</td>
+                </tr>
+                <tr>
+                    <td>Lucid Dreaming</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/role_actions/Lucid_Dreaming_Icon.webp') }}" alt="Lucid Dreaming Icon" /></td>
+                    <td>120 sec</td>
+                    <td>Restore MP.</td>
+                </tr>
+                <tr>
+                    <td>Lightspeed</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/Lightspeed_Icon.webp') }}" alt="Lightspeed Icon" /></td>
+                    <td>120 sec</td>
+                    <td>Increase casting speed.</td>
+                </tr>
+                <tr>
+                    <td>Exaltation</td>
+                    <td><img src="{{ url_for('static', filename='images/job_icons/ast/Exaltation_Icon.webp') }}" alt="Exaltation Icon" /></td>
+                    <td>180 sec</td>
+                    <td>Reduce damage taken.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3>Single-Target Healing</h3>
         <div id="ast_txt">
-            <p><strong>Starting at level 30:</strong> Keep in mind that Astrologian begins at level 30, but your level may and will be synced down in lower-level content.</p>
-            <p><strong>Job Quests:</strong> Always complete your job quests! They unlock essential skills and abilities as you level up.</p>
-            <p><strong>Keep casting:</strong> Even as a healer, you should always aim to deal damage when healing isn’t required.</p>
-            <p><strong>Lucid Dreaming:</strong> Manage your MP by using Lucid Dreaming at around 80-85% MP.</p>
-            <p><strong>Lightspeed:</strong> Use Lightspeed to maintain uptime while moving or to cast faster in tight situations.</p>
-            <p><strong>Esuna:</strong> Keep an eye on debuffs and use Esuna to remove them when necessary.</p>
-            <p><strong>Swiftcast and Revives:</strong> Use Swiftcast to revive allies, but if it’s on cooldown, don’t hesitate to hard-cast Ascend.</p>
+            <p>Use <strong>The Spire</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/The_Spire_Icon.webp') }}" alt="The Spire Icon" />, <strong>The Bole</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/The_Bole_Icon.webp') }}" alt="The Bole Icon" />, and <strong>The Ewer</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/The_Ewer_Icon.webp') }}" alt="The Ewer Icon" /> on the tank when they’re taking damage.</p>
+            <p><strong>The Arrow</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/The_Arrow_Icon.webp') }}" alt="The Arrow Icon" /> can boost healing on the tank or another target, especially if timed with regens or shields.</p>
+            <p>Use <strong>Exaltation</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Exaltation_Icon.webp') }}" alt="Exaltation Icon" /> on the tank during pulls to reduce damage, but avoid overlapping it with their strongest cooldowns or invulnerability.</p>
+            <p><strong>Essential Dignity</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Essential_Dignity_Icon.webp') }}" alt="Essential Dignity Icon" /> is your go-to single-target heal. Use it freely rather than saving it for emergencies.</p>
+            <p>With three charges, <strong>Essential Dignity</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Essential_Dignity_Icon.webp') }}" alt="Essential Dignity Icon" /> allows more flexibility for emergencies while keeping the other charges in use.</p>
+            <p><strong>Celestial Intersection</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Celestial_Intersection_Icon.webp') }}" alt="Celestial Intersection Icon" /> is best for tank upkeep thanks to its shield and short cooldown. Use it whenever possible.</p>
+        </div>
+        <br>
+        <h3>AoE Healing</h3>
+        <div id="ast_txt">
+            <p><strong>Earthly Star</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Earthly_Star_Icon.webp') }}" alt="Earthly Star Icon" /> primarily serves as a damage source in dungeons but also provides AoE healing when detonated strategically.</p>
+            <p><strong>Collective Unconscious</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Collective_Unconscious_Icon.webp') }}" alt="Collective Unconscious Icon" /> offers instant mitigation and healing, allowing you to keep casting while moving.</p>
+            <p><strong>Celestial Opposition</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Celestial_Opposition_Icon.webp') }}" alt="Celestial Opposition Icon" /> offers higher potency than Collective Unconscious. Use it when party-wide healing is needed.</p>
+            <p><b>Lady of Crowns</b> <img src="{{ url_for('static', filename='images/job_icons/ast/Lady_of_Crowns_Icon.webp') }}" alt="Lady of Crowns Icon" /> provides instant healing, equaling <b>Helios</b> in potency but lacks the additional benefits offered by <b>Celestial Opposition</b> <img src="{{ url_for('static', filename='images/job_icons/ast/Celestial_Opposition_Icon.webp') }}" alt="Celestial Opposition Icon" />.</p>
+            <p><b>Horoscope</b> <img src="{{ url_for('static', filename='images/job_icons/ast/Horoscope_Icon.webp') }}" alt="Horoscope Icon" /> delivers a 200-potency heal on a short cooldown. While modest, it effectively bridges healing gaps between other off-global cooldown abilities.</p>
+            <p><b>Macrocosmos</b> <img src="{{ url_for('static', filename='images/job_icons/ast/Macrocosmos_Icon.webp') }}" alt="Macrocosmos Icon" /> functions as both a multi-target DPS increase and a potent AoE heal, capable of fully restoring a tank’s HP when under heavy damage.</p>
+        </div>
+        <br>
+        <h3>Single-Target Damage</h3>
+        <div id="ast_txt">
+            <p><strong>Combust III:</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Combust_III_Icon.webp') }}" alt="Combust III Icon" /> Maintain DoT on your target whenever it will tick for at least 12 seconds.</p>
+            <p><strong>Fall Malefic:</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Fall_Malefic_Icon.webp') }}" alt="Fall Malefic Icon" /> Cast this regularly to maximize damage output.</p>
+            <p><strong>Divination:</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Divination_Icon.webp') }}" alt="Divination Icon" /> Use during burst windows to amplify party damage.</p>
+        </div>
+        <br>
+        <h3>AoE Damage</h3>
+        <div id="ast_txt">
+            <p><strong>Combust III:</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Combust_III_Icon.webp') }}" alt="Combust III Icon" /> Apply this DoT on multiple targets for prolonged engagements.</p>
+            <p><strong>Gravity II:</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Gravity_II_Icon.webp') }}" alt="Gravity II Icon" /> Use on 3 or more targets; otherwise, cast Fall Malefic.</p>
+            <p><strong>Divination + Lord of Crowns:</strong> <img src="{{ url_for('static', filename='images/job_icons/ast/Divination_Icon.webp') }}" alt="Divination Icon" /> + <img src="{{ url_for('static', filename='images/job_icons/ast/Lord_of_Crowns_Icon.webp') }}" alt="Lord of Crowns Icon" /> Combine these for a potent AoE burst during large pulls.</p>
         </div>
     </div>
+</div>
 
-    <div id="leveling_rotation">
-        <h1>Rotation Overview</h1>
-        <div id="ast_txt">
-            <h3>Card Management and Gauge Usage</h3>
-            <ul>
-                <li><p><strong>Astral Draw/Umbral Draw:</strong> Regularly use these to draw cards and replenish MP.</p></li>
-                <li><p><strong>Play I, II, III:</strong> Use these cards to boost damage, defense, or healing for your party members.</p></li>
-                <li><p><strong>The Balance:</strong> Increases party member damage for a short time.</p></li>
-                <li><p><strong>The Arrow:</strong> Provides healing buffs.</p></li>
-                <li><p><strong>The Spire:</strong> Grants shielding.</p></li>
-                <li><p><strong>Lord of Crowns:</strong> Use for strong AoE damage.</p></li>
-                <li><p><strong>Lady of Crowns:</strong> Offers a group heal.</p></li>
-            </ul>
+<div id="bottom_pad"></div>
 
-            <h3>Single-Target Damage Tips</h3>
-            <ul>
-                <li><p><strong>Combust III:</strong> Maintain DoT on your target whenever it will tick for at least 12 seconds.</p></li>
-                <li><p><strong>Fall Malefic:</strong> Cast this regularly to maximize damage output.</p></li>
-                <li><p><strong>Divination:</strong> Use during burst windows to amplify party damage.</p></li>
-            </ul>
-
-            <h3>AoE Damage Tips</h3>
-            <ul>
-                <li><p><strong>Combust III:</strong> Apply this DoT on multiple targets for prolonged engagements.</p></li>
-                <li><p><strong>Gravity II:</strong> Use on 3 or more targets; otherwise, cast Fall Malefic.</p></li>
-                <li><p><strong>Divination + Lord of Crowns:</strong> Combine these for a potent AoE burst during large pulls.</p></li>
-            </ul>
-
-            <h3>Single-Target Healing Tips</h3>
-            <ul>
-                <li><p>Use <strong>The Spire</strong>, <strong>The Bole</strong>, and <strong>The Ewer</strong> on the tank when they’re taking damage.</p></li>
-                <li><p><strong>The Arrow</strong> can boost healing on the tank or another target, especially if timed with regens or shields.</p></li>
-                <li><p>Use <strong>Exaltation</strong> on the tank during pulls to reduce damage, but avoid overlapping it with their strongest cooldowns or invulnerability.</p></li>
-                <li><p><strong>Essential Dignity</strong> is your go-to single-target heal. Use it freely rather than saving it for emergencies.</p></li>
-                <li><p>With three charges, <strong>Essential Dignity</strong> allows more flexibility for emergencies while keeping the other charges in use.</p></li>
-                <li><p><strong>Celestial Intersection</strong> is best for tank upkeep thanks to its shield and short cooldown. Use it whenever possible.</p></li>
-            </ul>
-
-            <h3>AoE Healing Tips</h3>
-            <ul>
-                <li><p><strong>Earthly Star</strong> primarily serves as a damage source in dungeons but also provides AoE healing when detonated strategically.</p></li>
-                <li><p><strong>Collective Unconscious</strong> offers instant mitigation and healing, allowing you to keep casting while moving.</p></li>
-                <li><p><strong>Celestial Opposition</strong> offers higher potency than Collective Unconscious. Use it when party-wide healing is needed.</p></li>
-                <li><p><b>Lady of Crowns</b> provides instant healing, equaling <b>Helios</b> in potency but lacks the additional benefits offered by <b>Celestial Opposition</b>.</p></li>
-                <li><p><b>Horoscope</b> delivers a 200-potency heal on a short cooldown. While modest, it effectively bridges healing gaps between other off-global cooldown abilities.</p></li>
-                <li><p><b>Macrocosmos</b> functions as both a multi-target DPS increase and a potent AoE heal, capable of fully restoring a tank’s HP when under heavy damage.</p></li>                
-            </ul> 
-        </div>
-    </div>
-    <div id="bottom_pad"></div>
-    
 </div>
 
 {% endblock %}

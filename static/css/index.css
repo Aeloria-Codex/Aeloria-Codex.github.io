@@ -29,7 +29,7 @@
 }
 
 #job_leveling_cover {
-    background-image: url("../images/job_leveling_cover.png");
+    background-image: url("../images/job_leveling_cover.webp");
     max-height: 500px;
     min-height: 500px;
     max-width: 300px;
@@ -42,7 +42,7 @@
 }
 
 #crafter_leveling_cover {
-    background-image: url("../images/crafter-leveling-cover.png");
+    background-image: url("../images/crafter-leveling-cover.webp");
     max-height: 500px;
     min-height: 500px;
     max-width: 300px;
@@ -55,7 +55,7 @@
 }
 
 #tank_cover {
-    background-image: url("../images/tank_pull_cover.png");
+    background-image: url("../images/tank_pull_cover.webp");
     max-height: 500px;
     min-height: 500px;
     max-width: 300px;

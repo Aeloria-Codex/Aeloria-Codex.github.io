@@ -1,71 +1,70 @@
 {% extends "base.html" %}
 
 {% block title %}FFXIV Gunbreaker Leveling Guide | The Aeloria Codex{% endblock %}
-{% block description %}A comprehensive guide for leveling Dragoon in Final Fantasy XIV.{% endblock %}
-{% block keywords %}FFXIV, leveling, job, guide, gun, breaker, gnb, Gun Breaker, Final Fantasy 14{% endblock %}
+{% block description %}A comprehensive guide for leveling Gunbreaker in Final Fantasy XIV.{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, gnb, Gunbreaker, gunbreaker, gun, breaker, Final Fantasy 14{% endblock %}
 
 {% block content %}
 
 {% set job_name = "Gunbreaker" %}
-{% set url1 = "https://www.youtube.com/embed/KKhwT5nVgEg" %}
-{% set url2 = "https://www.youtube.com/embed/sOM3XR8JYrc?si=0CkGcL_2hwVBm7Hp" %}
+{% set url1 = "https://www.youtube.com/embed/OGRwEdBWY0A" %}
+{% set url2 = "https://www.youtube.com/embed/MzNMfUAQe0s" %}
 
 {% include "job-leveling/-template.html" %}
 
     <div id="leveling_tips">
         <h1>General Tips for Gunbreaker</h1>
         <div id="gnb_txt">
-            <p><strong>Tank Stance:</strong> Always activate Royal Guard when main tanking to maintain aggro.</p>
-            <p><strong>Cartridge Management:</strong> Avoid overcapping on cartridges. Use them efficiently with Gnashing Fang combo and Burst Strike.</p>
-            <p><strong>No Mercy Windows:</strong> Align your strongest abilities with No Mercy for maximum damage output.</p>
-            <p><strong>Defensive Cooldowns:</strong> Rotate through your defensive abilities to maintain consistent damage mitigation.</p>
-            <p><strong>Aurora Usage:</strong> Use Aurora proactively to mitigate incoming damage or to recover health over time.</p>
+            <p><strong>Tank Stance:</strong> Always ensure No Mercy <img src="{{ url_for('static', filename='images/job_icons/gnb/No_Mercy_Icon.webp') }}" alt="No Mercy Icon" /> is active when tanking in dungeons or holding aggro in raids.</p>
+            <p><strong>Cartridge Management:</strong> Gunbreaker's damage output is tied to Cartridge usage. Utilize your abilities to maximize Cartridge generation and minimize waste.</p>
+            <p><strong>Defensive Cooldowns:</strong> Optimize your use of  Nebula <img src="{{ url_for('static', filename='images/job_icons/gnb/Nebula_Icon.webp') }}" alt="Nebula Icon" /> and Heart of Stone <img src="{{ url_for('static', filename='images/job_icons/gnb/Heart_of_Stone_Icon.webp') }}" alt="Heart of Stone Icon" /> for mitigation, while saving Superbolide <img src="{{ url_for('static', filename='images/job_icons/gnb/Superbolide_Icon.webp') }}" alt="Superbolide Icon" /> for tankbusters.</p>
+            <p><strong>Gunbreaker Rotation:</strong> The Gunbreaker's rotation focuses on weaving weaponskills and abilities for sustained damage. You'll constantly be looking to create and spend Cartridges.</p>
         </div>
     </div>
 
     <div id="leveling_rotation">
         <h1>Rotation Overview</h1>
         <div id="gnb_txt">
-            <p>The Gunbreaker's rotation revolves around managing your cartridge gauge, aligning your strongest abilities with No Mercy, and balancing damage output with defensive cooldowns. The focus is on single-target and multi-target abilities, with special emphasis on the Gnashing Fang combo and cartridge management.</p>
+            <p>The Gunbreaker's rotation revolves around maintaining threat, managing Cartridges, and maximizing damage output while staying alive. The focus is on single-target and multi-target abilities, with special emphasis on maximizing the effectiveness of your Cartridge-consuming attacks. </p>
         </div>
 
         <h3>Single Target Rotation</h3>
         <div id="gnb_txt">
             <ul>
-                <li><p>Activate <strong>Royal Guard</strong> when tanking.</p></li>
-                <li><p>Use <strong>No Mercy</strong> in your opener and every 60 seconds thereafter.</p></li>
-                <li><p>Main combo: <strong>Keen Edge</strong> → <strong>Brutal Shell</strong> → <strong>Solid Barrel</strong></p></li>
-                <li><p>Spend two cartridges on <strong>Double Down</strong> every minute.</p></li>
-                <li><p>Use <strong>Gnashing Fang</strong> combo and <strong>Burst Strike</strong> for remaining cartridges.</p></li>
-                <li><p>Use <strong>Sonic Break</strong> and <strong>Bow Shock</strong> during every No Mercy window.</p></li>
-                <li><p>Weave <strong>Continuation</strong> after each part of the Gnashing Fang combo and after Burst Strike.</p></li>
-                <li><p>Use <strong>Danger Zone</strong> (upgrades to <strong>Blasting Zone</strong> at level 80) on cooldown.</p></li>
-                <li><p>Use <strong>Bloodfest</strong> on cooldown, ensuring you've spent cartridges first.</p></li>
+                <li><p>Start with <strong>No Mercy</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/No_Mercy_Icon.webp') }}" alt="No Mercy Icon" /> activated to maintain aggro.</p></li>
+                <li><p>Use <strong>Keen Edge</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Keen_Edge_Icon.webp') }}" alt="Keen Edge Icon" /> → <strong>Brutal Shell</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Brutal_Shell_Icon.webp') }}" alt="Brutal Shell Icon" /> → <strong>Solid Barrel</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Solid_Barrel_Icon.webp') }}" alt="Solid Barrel Icon" /> as your main combo.</p></li>
+                <li><p>Use <strong>Burst Strike</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Burst_Strike_Icon.webp') }}" alt="Burst Strike Icon" /> when you have a Cartridge available. You'll need to weave in <strong>Brutal Shell</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Brutal_Shell_Icon.webp') }}" alt="Brutal Shell Icon" /> and <strong>Solid Barrel</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Solid_Barrel_Icon.webp') }}" alt="Solid Barrel Icon" /> to get another Cartridge to keep Burst Strike on cooldown.</p></li>
+                <li><p>Activate <strong>Gnashing Fang</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Gnashing_Fang_Icon.webp') }}" alt="Gnashing Fang Icon" /> every 30 seconds for sustained damage.</p></li>
+                <li><p>Employ <strong>Savage Claw</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Savage_Claw_Icon.webp') }}" alt="Savage Claw Icon" /> → <strong>Wicked Talon</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Wicked_Talon_Icon.webp') }}" alt="Wicked Talon Icon" /> as your continuation combo, leading into <strong>Jugular Rip</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Jugular_Rip_Icon.webp') }}" alt="Jugular Rip Icon" />, <strong>Abdomen Tear</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Abdomen_Tear_Icon.webp') }}" alt="Abdomen Tear Icon" />, or <strong>Eye Gouge</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Eye_Gouge_Icon.webp') }}" alt="Eye Gouge Icon" />.</p></li>
+                <li><p>Use <strong>Fated Circle</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Fated_Circle_Icon.webp') }}" alt="Fated Circle Icon" /> as needed to generate Cartridges for your Burst Strike, with <strong>Fated Brand</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Fated_Brand_Icon.webp') }}" alt="Fated Brand Icon" /> as the continuation.</p></li>
+                <li><p>When you have 3 Cartridges, activate <strong>Bloodfest</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Bloodfest_Icon.webp') }}" alt="Bloodfest Icon" /> and execute <strong>Blasting Zone</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Blasting_Zone_Icon.webp') }}" alt="Blasting Zone Icon" />. This should give you enough Cartridges for another Blasting Zone when you have 3 again.</p></li>
+                <li><p>Utilize <strong>Double Down</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Double_Down_Icon.webp') }}" alt="Double Down Icon" /> when available for burst damage.</p></li>
+                <li><p>Use <strong>Heart of Corundum</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Heart_of_Corundum_Icon.webp') }}" alt="Heart of Corundum Icon" /> on a party member for damage reduction and additional heals.</p></li>
             </ul>
         </div>
 
         <h3>Multi-Target Rotation</h3>
         <div id="gnb_txt">
             <ul>
-                <li><p>For 3+ targets, use <strong>Demon Slice</strong> → <strong>Demon Slaughter</strong> combo.</p></li>
-                <li><p>Spend cartridges on <strong>Fated Circle</strong> for 4+ targets.</p></li>
-                <li><p>Use <strong>No Mercy</strong>, <strong>Bow Shock</strong>, and <strong>Sonic Break</strong> on cooldown.</p></li>
-                <li><p>Weave <strong>Continuation</strong> after Fated Circle.</p></li>
-                <li><p>Use <strong>Bloodfest</strong> on cooldown to generate cartridges.</p></li>
+                <li><p>Use <strong>Demon Slice</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Demon_Slice_Icon.webp') }}" alt="Demon Slice Icon" /> → <strong>Demon Slaughter</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Demon_Slaughter_Icon.webp') }}" alt="Demon Slaughter Icon" /> to generate Cartridges and AoE damage.</p></li>
+                <li><p>Employ <strong>Bow Shock</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Bow_Shock_Icon.webp') }}" alt="Bow Shock Icon" /> to deal additional AoE damage.</p></li>
+                <li><p>Use <strong>Fated Circle</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Fated_Circle_Icon.webp') }}" alt="Fated Circle Icon" /> for AoE Cartridges and sustained damage.</p></li>
+                <li><p>When you have 3 Cartridges, activate <strong>Bloodfest</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Bloodfest_Icon.webp') }}" alt="Bloodfest Icon" /> and execute <strong>Reign of Beasts</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Reign_of_Beasts_Icon.webp') }}" alt="Reign Of Beasts Icon" /> to deal massive AoE damage.</p></li>
+                <li><p>You'll want to alternate between <strong>Fated Circle</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Fated_Circle_Icon.webp') }}" alt="Fated Circle Icon" /> and <strong>Reign of Beasts</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Reign_of_Beasts_Icon.webp') }}" alt="Reign Of Beasts Icon" /> to maintain a steady Cartridges and AoE damage stream.</p></li>
             </ul>
         </div>
 
         <h3>Defensive Cooldowns and Utility</h3>
         <div id="gnb_txt">
             <ul>
-                <li><p>Use <strong>Heart of Corundum</strong> frequently for active mitigation.</p></li>
-                <li><p><strong>Rampart</strong> and <strong>Nebula</strong> (upgrades to <strong>Great Nebula</strong>) for heavy incoming damage.</p></li>
-                <li><p><strong>Superbolide</strong> for emergency invulnerability (reduces HP to 1).</p></li>
-                <li><p><strong>Aurora</strong> for healing over time (has two charges).</p></li>
-                <li><p><strong>Heart of Light</strong> to mitigate party-wide magic damage.</p></li>
-                <li><p><strong>Reprisal</strong> to reduce damage from nearby enemies.</p></li>
-                <li><p><strong>Arm's Length</strong> to prevent knockbacks or slow enemies.</p></li>
-                <li><p><strong>Low Blow</strong> to stun and <strong>Interject</strong> to interrupt enemy abilities.</p></li>
+                <li><p>Use <strong>Nebula</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Nebula_Icon.webp') }}" alt="Nebula Icon" /> frequently to mitigate damage.</p></li>
+                <li><p>Rotate through <strong>Rampart</strong> <img src="{{ url_for('static', filename='images/job_icons/role_actions/Rampart_Icon.webp') }}" alt="Rampart Icon" />, and <strong>Heart of Stone</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Heart_of_Stone_Icon.webp') }}" alt="Heart of Stone Icon" /> for sustained mitigation.</p></li>
+                <li><p>Employ <strong>Superbolide</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Superbolide_Icon.webp') }}" alt="Superbolide Icon" /> for situations requiring invulnerability, especially tankbusters.</p></li>
+                <li><p>Use <strong>Reprisal</strong> <img src="{{ url_for('static', filename='images/job_icons/role_actions/Reprisal_Icon.webp') }}" alt="Reprisal Icon" /> and <strong>Heart of Stone</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Heart_of_Stone_Icon.webp') }}" alt="Heart of Stone Icon" /> to mitigate raid-wide damage.</p></li>
+                <li><p>Utilize <strong>Low Blow</strong> <img src="{{ url_for('static', filename='images/job_icons/role_actions/Low_Blow_Icon.webp') }}" alt="Low Blow Icon" /> and <strong>Interject</strong> <img src="{{ url_for('static', filename='images/job_icons/role_actions/Interject_Icon.webp') }}" alt="Interject Icon" /> to stun and interrupt enemy abilities.</p></li>
+                <li><p>Employ <strong>Royal Guard</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Royal_Guard_Icon.webp') }}" alt="Royal Guard Icon" /> to increase enmity generation during pulls.</p></li>
+                <li><p>Use <strong>Aurora</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Aurora_Icon.webp') }}" alt="Aurora Icon" /> to grant Regen to party members.</p></li>
+                <li><p>Remember to use <strong>Trajectory</strong> <img src="{{ url_for('static', filename='images/job_icons/gnb/Trajectory_Icon.webp') }}" alt="Trajectory Icon" /> to reposition yourself.</p></li>
             </ul>
         </div>
     </div>

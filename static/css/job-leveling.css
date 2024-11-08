@@ -63,7 +63,7 @@
 }
 
 #paladin_leveling_cover {
-    background-image: url("../images/job_icons/paladin.png");
+    background-image: url("../images/job_icons/paladin.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -85,7 +85,7 @@
     font-size:xx-large;
 }
 #warrior_leveling_cover {
-    background-image: url("../images/job_icons/warrior.png");
+    background-image: url("../images/job_icons/warrior.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -107,7 +107,7 @@
     font-size:xx-large;
 }
 #dark_knight_leveling_cover {
-    background-image: url("../images/job_icons/darkknight.png");
+    background-image: url("../images/job_icons/darkknight.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -129,7 +129,7 @@
     font-size:xx-large;
 }
 #gunbreaker_leveling_cover {
-    background-image: url("../images/job_icons/gunbreaker.png");
+    background-image: url("../images/job_icons/gunbreaker.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -151,7 +151,7 @@
     font-size:xx-large;
 }
 #white_mage_leveling_cover {
-    background-image: url("../images/job_icons/whitemage.png");
+    background-image: url("../images/job_icons/whitemage.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -173,7 +173,7 @@
     font-size:xx-large;
 }
 #scholar_leveling_cover {
-    background-image: url("../images/job_icons/scholar.png");
+    background-image: url("../images/job_icons/scholar.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -195,7 +195,7 @@
     font-size:xx-large;
 }
 #astrologian_leveling_cover {
-    background-image: url("../images/job_icons/astrologian.png");
+    background-image: url("../images/job_icons/astrologian.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -217,7 +217,7 @@
     font-size:xx-large;
 }
 #sage_leveling_cover {
-    background-image: url("../images/job_icons/sage.png");
+    background-image: url("../images/job_icons/sage.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -239,7 +239,7 @@
     font-size:xx-large;
 }
 #monk_leveling_cover {
-    background-image: url("../images/job_icons/monk.png");
+    background-image: url("../images/job_icons/monk.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -261,7 +261,7 @@
     font-size:xx-large;
 }
 #dragoon_leveling_cover {
-    background-image: url("../images/job_icons/dragoon.png");
+    background-image: url("../images/job_icons/dragoon.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -283,7 +283,7 @@
     font-size:xx-large;
 }
 #ninja_leveling_cover {
-    background-image: url("../images/job_icons/ninja.png");
+    background-image: url("../images/job_icons/ninja.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -305,7 +305,7 @@
     font-size:xx-large;
 }
 #samurai_leveling_cover {
-    background-image: url("../images/job_icons/samurai.png");
+    background-image: url("../images/job_icons/samurai.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -327,7 +327,7 @@
     font-size:xx-large;
 }
 #reaper_leveling_cover {
-    background-image: url("../images/job_icons/reaper.png");
+    background-image: url("../images/job_icons/reaper.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -349,7 +349,7 @@
     font-size:xx-large;
 }
 #viper_leveling_cover {
-    background-image: url("../images/job_icons/viper.png");
+    background-image: url("../images/job_icons/viper.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -371,7 +371,7 @@
     font-size:xx-large;
 }
 #black_mage_leveling_cover {
-    background-image: url("../images/job_icons/blackmage.png");
+    background-image: url("../images/job_icons/blackmage.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -393,7 +393,7 @@
     font-size:xx-large;
 }
 #summoner_leveling_cover {
-    background-image: url("../images/job_icons/summoner.png");
+    background-image: url("../images/job_icons/summoner.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -415,7 +415,7 @@
     font-size:xx-large;
 }
 #red_mage_leveling_cover {
-    background-image: url("../images/job_icons/redmage.png");
+    background-image: url("../images/job_icons/redmage.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -437,7 +437,7 @@
     font-size:xx-large;
 }
 #bard_leveling_cover {
-    background-image: url("../images/job_icons/bard.png");
+    background-image: url("../images/job_icons/bard.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -459,7 +459,7 @@
     font-size:xx-large;
 }
 #machinist_leveling_cover {
-    background-image: url("../images/job_icons/machinist.png");
+    background-image: url("../images/job_icons/machinist.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -481,7 +481,7 @@
     font-size:xx-large;
 }
 #dancer_leveling_cover {
-    background-image: url("../images/job_icons/dancer.png");
+    background-image: url("../images/job_icons/dancer.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -503,7 +503,7 @@
     font-size:xx-large;
 }
 #blue_mage_leveling_cover {
-    background-image: url("../images/job_icons/bluemage.png");
+    background-image: url("../images/job_icons/bluemage.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -525,7 +525,7 @@
     font-size:xx-large;
 }
 #pictomancer_leveling_cover {
-    background-image: url("../images/job_icons/pictomancer.png");
+    background-image: url("../images/job_icons/pictomancer.webp");
     max-height: 333.33px;
     min-height: 333.33px;
     max-width: 200px; 
@@ -557,7 +557,15 @@
 
 #leveling_tips img {
     vertical-align: middle;
+    max-width: 40px;
+    max-height: 40px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
 }
 #leveling_rotation img {
     vertical-align: middle;
+    max-width: 40x;
+    max-height: 40px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
 }
