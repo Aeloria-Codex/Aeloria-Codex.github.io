@@ -2,7 +2,7 @@
 
 {% block title %}FFXIV Viper Leveling Guide | The Aeloria Codex{% endblock %}
 {% block description %}A comprehensive guide for leveling Viper in Final Fantasy XIV.{% endblock %}
-{% block keywords %}FFXIV, leveling, job, guide, rpr, Reaper, Final Fantasy 14{% endblock %}
+{% block keywords %}FFXIV, leveling, job, guide, vpr, Reaper, Final Fantasy 14{% endblock %}
 
 {% block content %}
 
@@ -13,47 +13,43 @@
 {% include "job-leveling/-template.html" %}
 
 <div id="leveling_tips">
-    <h1>General Tips for Viper</h1>
-    <div>
-        <p>Viper is a powerful ranged physical DPS known for its quick, deadly strikes and potent poisons.</p>
-        <p>Early levels focus on building up your poison stacks and using your basic attacks to deal damage. </p>
-        <p>Keep an eye on your Venom gauge and use it strategically to apply poisons and unleash powerful combos.</p>
-        <p>Unlocking the "Serpent's Kiss" ability at level 15 is a game-changer. It lets you apply a potent poison that will drastically increase your damage output.</p>
-        <p>Learn to weave in your DoTs between basic attacks and combos. Your DoTs are a crucial source of your damage, especially later in the game.</p>
-        <p>At level 30, you gain access to the powerful "Serpent's Bite" ability. This ability gives you a stronger poison stack, significantly increasing your damage output. </p>
-        <p>Learn the importance of building up your venom gauge and managing your poison stacks to maximize your DPS.</p>
-        <p>Your job quests will provide valuable new abilities, including the critical "Viper's Bite," which allows you to unleash a devastating attack at the cost of some Venom.</p>
-    </div>    
+    <h1>Tips</h1>
+    <p>Viper is a unique job with a strong focus on positioning and maximizing damage. This is achieved through its various stance-based abilities and venom effects.</p>
+    <ul>
+        <li><p>Prioritize flanking and rear attacks for significant potency bonuses with abilities like <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Flanksbane_Fang_Icon.webp') }}"> Flanksbane Fang</strong> and <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Hindsbane_Fang_Icon.webp') }}"> Hindsbane Fang</strong>.</p></li>
+        <li><p>Utilize <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Slither_Icon.webp') }}"> Slither</strong> to reposition strategically and capitalize on flank or rear positioning for higher damage output.</p></li>
+        <li><p>Keep track of your Venom effects and utilize them to increase your potency. Viper venom effects are applied by landing specific weaponskills or abilities, and they can stack for even greater damage.</p></li>
+        <li><p>Build your Serpent Offerings Gauge to unlock powerful attacks like <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reawaken_Icon.webp') }}"> Reawaken</strong>, which can be used to significantly increase your overall damage output.</p></li>
+    </ul>
 </div>
 
 <div id="leveling_rotation">
-    <h1>Rotation Overview</h1>
-    <h3>Single Target</h3>
+    <h1>Leveling Rotations</h1>
+    <h2>Single Target Rotation</h2>
     <div>
+        <p>The main goal of your single target rotation is to maximize your damage output by utilizing your venom effects and stance bonuses effectively.</p>
         <ul>
-            <li><p><strong>Levels 1-14:</strong> Use your basic attacks and Serpent's Kiss on cooldown. </p></li>
-            <li><p><strong>Levels 15-29:</strong> Use Serpent's Kiss, Venomous Bite, and weave in your basic attacks. </p></li>
-            <li><p><strong>Levels 30-39:</strong> Use Serpent's Bite, Venomous Bite, and weave in your basic attacks. </p></li>
-            <li><p><strong>Levels 40-49:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks.</p></li>
-            <li><p><strong>Levels 50-59:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
-            <li><p><strong>Levels 60-69:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
-            <li><p><strong>Levels 70-79:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. </p></li>
-            <li><p><strong>Levels 80-90:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
-            <li><p><strong>Levels 91-100:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
+            <li><p>Begin by landing <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Steel_Fangs_Icon.webp') }}"> Steel Fangs</strong> to gain Honed Reavers, which increases the potency of <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reaving_Fangs_Icon.webp') }}"> Reaving Fangs</strong>.</p></li>
+            <li><p>Follow with <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reaving_Fangs_Icon.webp') }}"> Reaving Fangs</strong> to gain Honed Steel, which increases the potency of <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Steel_Fangs_Icon.webp') }}"> Steel Fangs</strong>.</p></li>
+            <li><p>Continue cycling between <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Steel_Fangs_Icon.webp') }}"> Steel Fangs</strong> and <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reaving_Fangs_Icon.webp') }}"> Reaving Fangs</strong>, maintaining the buffs for maximum potency.</p></li>
+            <li><p>When available, utilize <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Serpents_Tail_Icon.webp') }}"> Serpent's Tail</strong> to unleash powerful attacks like <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Death_Rattle_Icon.webp') }}"> Death Rattle</strong>, which can significantly boost your damage output.</p></li>
+            <li><p>Once you have enough Serpent Offerings Gauge, use <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reawaken_Icon.webp') }}"> Reawaken</strong> to unleash a burst of damage and gain more Anguine Tribute stacks for future attacks.</p></li>
+            <li><p>Use your Vicewinder charges to execute <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Hunters_Coil_Icon.webp') }}"> Hunter's Coil</strong> or <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Swiftskins_Coil_Icon.webp') }}"> Swiftskin's Coil</strong>, further boosting your potency and generating Serpent Offerings Gauge.</p></li>
+            <li><p>Continue to cycle between your high potency weaponskills and abilities, maintaining your buffs and utilizing your positioning to maximize damage output.</p></li>
         </ul>
     </div>
-    <h3>Multi Target</h3>
+
+    <h2>Multi-Target Rotation</h2>
     <div>
+        <p>When facing multiple targets, your goal is to distribute damage evenly across the group while still prioritizing your venom effects.</p>
         <ul>
-            <li><p><strong>Levels 1-14:</strong> Use your basic attacks and Serpent's Kiss on cooldown. </p></li>
-            <li><p><strong>Levels 15-29:</strong> Use Serpent's Kiss, Venomous Bite, and weave in your basic attacks. </p></li>
-            <li><p><strong>Levels 30-39:</strong> Use Serpent's Bite, Venomous Bite, and weave in your basic attacks. </p></li>
-            <li><p><strong>Levels 40-49:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks.</p></li>
-            <li><p><strong>Levels 50-59:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
-            <li><p><strong>Levels 60-69:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. Use your job quests to unlock new abilities, including "Viper's Bite."</p></li>
-            <li><p><strong>Levels 70-79:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks. </p></li>
-            <li><p><strong>Levels 80-90:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
-            <li><p><strong>Levels 91-100:</strong> Use Serpent's Bite, Venomous Bite, Serpent's Fang, Viper's Bite, and weave in your basic attacks.  Use your job quests to unlock new abilities.  </p></li>
+            <li><p>Use <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Steel_Maw_Icon.webp') }}"> Steel Maw</strong> or <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reaving_Maw_Icon.webp') }}"> Reaving Maw</strong> to apply initial damage and venom effects to multiple enemies.</p></li>
+            <li><p>Utilize your <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Slither_Icon.webp') }}"> Slither</strong> ability to reposition and maximize your damage output by flanking or attacking from the rear.</p></li>
+            <li><p>Prioritize high potency abilities that deal damage to all enemies in the area, like <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Bloodied_Maw_Icon.webp') }}"> Bloodied Maw</strong> or <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Jagged_Maw_Icon.webp') }}"> Jagged Maw</strong>, while maintaining your venom effects.</p></li>
+            <li><p>Utilize <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Uncoiled_Fury_Icon.webp') }}"> Uncoiled Fury</strong> to deal significant damage to the first enemy in the area, as well as a decent amount of damage to surrounding targets.</p></li>
+            <li><p>Build Serpent Offerings Gauge and use <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Reawaken_Icon.webp') }}"> Reawaken</strong> to unleash a powerful burst of AoE damage.</p></li>
+            <li><p>Utilize your Vicewinder charges to execute <strong><img src="{{ url_for('static', filename='images/job_icons/vpr/Vicepit_Icon.webp') }}"> Vicepit</strong>, dealing high AoE damage and generating Serpent Offerings Gauge.</p></li>
+            <li><p>Continue cycling between your high potency AoE weaponskills and abilities, maintaining your venom effects and maximizing damage output across the group.</p></li>
         </ul>
     </div>
 </div>

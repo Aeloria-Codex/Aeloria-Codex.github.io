@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}FFXIV Astrologian Ninja Leveling Guide | The Aeloria Codex{% endblock %}
+{% block title %}FFXIV Ninja Leveling Guide | The Aeloria Codex{% endblock %}
 {% block description %}A comprehensive guide for leveling Ninja in Final Fantasy XIV.{% endblock %}
 {% block keywords %}FFXIV, leveling, jobs, guide, nin, ninja, Final Fantasy 14{% endblock %}
 
 {% block content %}
 
 {% set job_name = "Ninja" %}
-{% set job_name1 = "Ninja" %}
 {% set url1 = "https://www.youtube.com/embed/l06GHjyxi-c" %}
 {% set url2 = "https://www.youtube.com/embed/Uby5VR-Vhuw?si=y14JSuGvONaLb8Vu" %}
 
@@ -16,11 +15,11 @@
     <h2>General tips for Ninja</h2>
     <div id="leveling_tips">
         <ul>
-            <li><p><strong>Kuani Gauge</strong> unlocks at level 45. Use <strong>Armor Crush</strong> to gain <strong>Kuani</strong> and <strong>Aeolian Edge</strong> to spend them.</p></li>
-            <li><p><strong>Ninki Gauge</strong> unlocks at level 62. Utilize abilities during <strong>Mug</strong>, Dokumori, Trick Attack, and Kunai's Bane</strong> buffs, try to avvoid exceeding the gauge limit.</p></li>
-            <li><p>Use <strong>Hellfrog Medium</strong> when there is 3 more enemies.</p></li>
-            <li><p>Cast <strong>Meisui</strong> on cooldown.</p></li>
-            <li><p>Your best way to gain <strong>Kunai</strong> is to use <strong>Armor Crush</strong>. Each use will give you 2 stacks up to 5.</p></li>
+            <li><p><strong>Kuani Gauge</strong> unlocks at level 45. Use <strong>Armor Crush</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Armor_Crush_Icon.webp') }}" alt="Armor Crush Icon" /> to gain <strong>Kuani</strong> and <strong>Aeolian Edge</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Aeolian_Edge_Icon.webp') }}" alt="Aeolian Edge Icon" /> to spend them.</p></li>
+            <li><p><strong>Ninki Gauge</strong> unlocks at level 62. Utilize abilities during <strong>Mug</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Mug_Icon.webp') }}" alt="Mug Icon" />, Dokumori <img src="{{ url_for('static', filename='images/job_icons/nin/Dokumori_Icon.webp') }}" alt="Dokumori Icon" />, Trick Attack <img src="{{ url_for('static', filename='images/job_icons/nin/Trick_Attack_Icon.webp') }}" alt="Trick Attack Icon" />, and Kunai's Bane <img src="{{ url_for('static', filename='images/job_icons/nin/Kunais_Bane_Icon.webp') }}" alt="Kunai's Bane Icon" /> buffs, try to avoid exceeding the gauge limit.</p></li>
+            <li><p>Use <strong>Hellfrog Medium</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Hellfrog_Medium_Icon.webp') }}" alt="Hellfrog Medium Icon" /> when there is 3 or more enemies.</p></li>
+            <li><p>Cast <strong>Meisui</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Meisui_Icon.webp') }}" alt="Meisui Icon" /> on cooldown.</p></li>
+            <li><p>Your best way to gain <strong>Kunai</strong> is to use <strong>Armor Crush</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Armor_Crush_Icon.webp') }}" alt="Armor Crush Icon" />. Each use will give you 2 stacks up to 5.</p></li>
         </ul>
     </div>
 
@@ -28,22 +27,22 @@
         <h3>Single Target Priority</h3>
         <div id="leveling_txt">
             <ul>
-                <li><p>Start with <strong>Suiton</strong> so you will enable the use of <strong>Kuani's Bane</strong></p></li>
-                <li><p>Next use <strong>Ration</strong> and make sure to spend the reamining charges during buffs</p></li>
-                <li><p>If <strong>Kassatsu</strong> is avaliale priorities using <strong>Hyosho Ranryu</strong></p></li>
-                <li><p><strong>Execute Ten Chi Jin:</strong> Follow the sequence of <strong>Ten &gt; Chi &gt; Jin</strong> to perform <strong>Fuma Shuriken &gt; Raiton &gt; Suiton</strong>. This will form your standard single-target rotation.</p></li>
-                <li><p><strong>Generate Kunai:</strong> Use <strong>Spinning Edge &gt; Gust Slash &gt; Armor Crush</strong> to build <strong>Kunai</strong>.</p></li>
-                <li><p><strong>Damage Combo:</strong> If you have <strong>Kunai</strong> available, execute <strong>Spinning Edge &gt; Gust Slash &gt; Aeolian Edge</strong>.</p></li>
-                <li><p><strong>Use Phantom Kamaitachi:</strong> Activate this within your buffs whenever possible, or when you need to reposition away from your target.</p></li>
+                <li><p>Start with <strong>Suiton</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Suiton_Icon.webp') }}" alt="Suiton Icon" /> so you will enable the use of <strong>Kunai's Bane</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Kunais_Bane_Icon.webp') }}" alt="Kunai's Bane Icon" /></p></li>
+                <li><p>Next use <strong>Ration</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Raiton_Icon.webp') }}" alt="Ration Icon" /> and make sure to spend the remaining charges during buffs</p></li>
+                <li><p>If <strong>Kassatsu</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Kassatsu_Icon.webp') }}" alt="Kassatsu Icon" /> is available priorities using <strong>Hyosho Ranryu</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Hyosho_Ranryu_Icon.webp') }}" alt="Hyosho Ranryu Icon" /></p></li>
+                <li><p><strong>Execute Ten Chi Jin:</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Ten_Chi_Jin_Icon.webp') }}" alt="Ten Chi Jin Icon" /> Follow the sequence of <strong>Ten</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Ten_Icon.webp') }}" alt="Ten Icon" /> &gt; <strong>Chi</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Chi_Icon.webp') }}" alt="Chi Icon" /> &gt; <strong>Jin</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Jin_Icon.webp') }}" alt="Jin Icon" /> to perform <strong>Fuma Shuriken</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Fuma_Shuriken_Icon.webp') }}" alt="Fuma Shuriken Icon" /> &gt; <strong>Raiton</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Raiton_Icon.webp') }}" alt="Raiton Icon" /> &gt; <strong>Suiton</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Suiton_Icon.webp') }}" alt="Suiton Icon" />. This will form your standard single-target rotation.</p></li>
+                <li><p><strong>Generate Kunai:</strong> Use <strong>Spinning Edge</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Spinning_Edge_Icon.webp') }}" alt="Spinning Edge Icon" /> &gt; <strong>Gust Slash</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Gust_Slash_Icon.webp') }}" alt="Gust Slash Icon" /> &gt; <strong>Armor Crush</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Armor_Crush_Icon.webp') }}" alt="Armor Crush Icon" /> to build <strong>Kunai</strong>.</p></li>
+                <li><p><strong>Damage Combo:</strong> If you have <strong>Kunai</strong> available, execute <strong>Spinning Edge</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Spinning_Edge_Icon.webp') }}" alt="Spinning Edge Icon" /> &gt; <strong>Gust Slash</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Gust_Slash_Icon.webp') }}" alt="Gust Slash Icon" /> &gt; <strong>Aeolian Edge</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Aeolian_Edge_Icon.webp') }}" alt="Aeolian Edge Icon" />.</p></li>
+                <li><p><strong>Use Phantom Kamaitachi:</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Phantom_Kamaitachi_Icon.webp') }}" alt="Phantom Kamaitachi Icon" /> Activate this within your buffs whenever possible, or when you need to reposition away from your target.</p></li>
             </ul>
         </div>
         <h3>Multi-Target Priority</h3>
         <div id="leveling_txt"> 
-            <p><strong>Combo Sequence:</strong> For encounters with 3 or more targets, start with <strong>Death Blossom</strong> followed by <strong>Hakke Mujinsatsu</strong> as your main combo.</p>
+            <p><strong>Combo Sequence:</strong> For encounters with 3 or more targets, start with <strong>Death Blossom</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Death_Blossom_Icon.webp') }}" alt="Death Blossom Icon" /> followed by <strong>Hakke Mujinsatsu</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Hakke_Mujinsatsu_Icon.webp') }}" alt="Hakke Mujinsatsu Icon" /> as your main combo.</p>
             <ul>
-                <li><p><strong>Katon:</strong>Use <strong>Katon</strong> while ensuring <strong>Doton</strong> is maintained over <strong>Raiton</strong> when facing 3 or more enemies.</p></li>
-                <li><p><strong>Goka Mekkyaku:</strong>Prioritize using <strong>Goka Mekkyaku</strong> over <strong>Hyosho Ranryu</strong> in multi-target situations.</p></li>
-                <li><p><strong>Set Up for Kunai's Bane:</strong>Utilize <strong>Huton</strong> to prepare for <strong>Kunai's Bane</strong>.</p></li>
+                <li><p><strong>Katon:</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Katon_Icon.webp') }}" alt="Katon Icon" /> Use <strong>Katon</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Katon_Icon.webp') }}" alt="Katon Icon" /> while ensuring <strong>Doton</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Doton_Icon.webp') }}" alt="Doton Icon" /> is maintained over <strong>Raiton</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Raiton_Icon.webp') }}" alt="Raiton Icon" /> when facing 3 or more enemies.</p></li>
+                <li><p><strong>Goka Mekkyaku:</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Goka_Mekkyaku_Icon.webp') }}" alt="Goka Mekkyaku Icon" /> Prioritize using <strong>Goka Mekkyaku</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Goka_Mekkyaku_Icon.webp') }}" alt="Goka Mekkyaku Icon" /> over <strong>Hyosho Ranryu</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Hyosho_Ranryu_Icon.webp') }}" alt="Hyosho Ranryu Icon" /> in multi-target situations.</p></li>
+                <li><p><strong>Set Up for Kunai's Bane:</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Kunais_Bane_Icon.webp') }}" alt="Kunai's Bane Icon" /> Utilize <strong>Huton</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Huton_Icon.webp') }}" alt="Huton Icon" /> to prepare for <strong>Kunai's Bane</strong> <img src="{{ url_for('static', filename='images/job_icons/nin/Kunais_Bane_Icon.webp') }}" alt="Kunai's Bane Icon" />.</p></li>
             </ul>
         </div>
     </div>

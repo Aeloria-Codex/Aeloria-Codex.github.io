@@ -13,52 +13,36 @@
 {% include "job-leveling/-template.html" %}
 
 <div id="leveling_tips">
-    <h1>General Tips for Summoner</h1>
-    <div>
-        <p>Summoner is a powerful ranged magic DPS job, known for its unique ability to summon and control powerful Egi. </p>
-        <p>Early levels focus on using Ruin spells and managing your pet's health. You unlock your first Egi, Carbuncle, at level 10.</p>
-        <p>Use your Aetherflow stacks strategically to maximize your damage output and healing.</p>
-        <p>Keep an eye on your Egi's health and use its abilities to your advantage. Utilize abilities like Swiftcast to accelerate your actions.</p>
-        <p>At level 30, you gain access to the powerful Bahamut, allowing you to summon and control this legendary primal for even more damage. </p>
-        <p>Keep an eye on your Egi's health and use its abilities to your advantage. </p>
-        <p>Learn to weave in Ruin II between healing spells and other actions. </p>
-        <p>Gain access to your job quests as you level and unlock even more powerful abilities. </p>
-    </div>    
+    <h1>Rotation Overview</h1>
+    <p>Summoners wield primal power to decimate foes and support allies. Keep these strategies in mind:</p>
+    <ul>
+        <li><p><strong>Summon Carbuncle:</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Carbuncle_Icon.webp') }}" alt="Summon Carbuncle Icon" /> Available at level 10, Carbuncle assists with damage and utility.</p></li>
+        <li><p><strong>Aetherflow Stacks:</strong> Use these wisely for Fester <img src="{{ url_for('static', filename='images/job_icons/smn/Fester_Icon.webp') }}" alt="Fester Icon" /> and Energy Drain <img src="{{ url_for('static', filename='images/job_icons/smn/Energy_Drain_Icon.webp') }}" alt="Energy Drain Icon" /> to enhance your damage and sustain MP.</p></li>
+        <li><p><strong>Ruin II:</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Ruin_II_Icon.webp') }}" alt="Ruin II Icon" /> Utilize this instant-cast spell to weave abilities and reposition effectively.</p></li>
+        <li><p><strong>Bahamut and Phoenix:</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Bahamut_Icon.webp') }}" alt="Summon Bahamut Icon" /> <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Phoenix_Icon.webp') }}" alt="Summon Phoenix Icon" /> Unlocked at levels 30 and 80, respectively, these summons drastically increase your damage potential.</p></li>
+    </ul>
 </div>
 
 <div id="leveling_rotation">
-    <h1>Rotation Overview</h1>
-    <h3>Single Target</h3>
+    <h1>Leveling Rotations</h1>
+    <h2>Single Target Rotation</h2>
     <div>
         <ul>
-            <li><p><strong>Levels 1-9:</strong> Use Ruin/Ruin II. Summon Carbuncle and use its abilities.</p></li>
-            <li><p><strong>Levels 10-29:</strong> Use Ruin II. Summon Carbuncle and use its abilities.</p></li>
-            <li><p><strong>Levels 30-39:</strong> Use Ruin II, Fester, and Summon Bahamut. Use its abilities.</p></li>
-            <li><p><strong>Levels 40-49:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.</p></li>
-            <li><p><strong>Levels 50-59:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester. </p></li>
-            <li><p><strong>Levels 60-69:</strong> Use Ruin III, Fester, Summon Bahamut, and use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown.</p></li>
-            <li><p><strong>Levels 70-79:</strong> Use Ruin III, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown. Use the powerful Ruin IV when it becomes available.</p></li>
-            <li><p><strong>Levels 80-90:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
-            <li><p><strong>Levels 91-100:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
+            <li><p><strong>Levels 1-29:</strong> Spam <strong>Ruin</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Ruin_Icon.webp') }}" alt="Ruin Icon" />. Summon Carbuncle <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Carbuncle_Icon.webp') }}" alt="Summon Carbuncle Icon" /> and use its abilities.</p></li>
+            <li><p><strong>Levels 30-49:</strong> Use <strong>Ruin II</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Ruin_II_Icon.webp') }}" alt="Ruin II Icon" />, <strong>Fester</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Fester_Icon.webp') }}" alt="Fester Icon" /> (with Aetherflow, and <strong>Summon Bahamut</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Bahamut_Icon.webp') }}" alt="Summon Bahamut Icon" /> abilities.</p></li>
+            <li><p><strong>Levels 50-79:</strong> Cast <strong>Ruin III</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Ruin_III_Icon.webp') }}" alt="Ruin III Icon" />, <strong>Fester</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Fester_Icon.webp') }}" alt="Fester Icon" />, and <strong>Summon Bahamut</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Bahamut_Icon.webp') }}" alt="Summon Bahamut Icon" />. Use <strong>Swiftcast</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Swiftcast_Icon.webp') }}" alt="Swiftcast Icon" /> to maximize mobility.</p></li>
+            <li><p><strong>Levels 80-90:</strong> Incorporate <strong>Phoenix Summon</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Phoenix_Icon.webp') }}" alt="Summon Phoenix Icon" />. Use <strong>Ruin IV</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Ruin_IV_Icon.webp') }}" alt="Ruin IV Icon" /> when available.</p></li>
         </ul>
     </div>
-    <h3>Multi Target</h3>
+    <h2>Multi-Target Rotation</h2>
     <div>
         <ul>
-            <li><p><strong>Levels 1-9:</strong> Use Ruin/Ruin II. Summon Carbuncle and use its abilities.</p></li>
-            <li><p><strong>Levels 10-29:</strong> Use Ruin II. Summon Carbuncle and use its abilities.</p></li>
-            <li><p><strong>Levels 30-39:</strong> Use Ruin II, Fester, and Summon Bahamut. Use its abilities.</p></li>
-            <li><p><strong>Levels 40-49:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.</p></li>
-            <li><p><strong>Levels 50-59:</strong> Use Ruin III, Fester, and Summon Bahamut. Use its abilities. Use Aetherflow stacks to cast Ruin III after Fester. </p></li>
-            <li><p><strong>Levels 60-69:</strong> Use Ruin III, Fester, Summon Bahamut, and use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown.</p></li>
-            <li><p><strong>Levels 70-79:</strong> Use Ruin III, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin III after Fester.  Use Swiftcast on cooldown. Use the powerful Ruin IV when it becomes available.</p></li>
-            <li><p><strong>Levels 80-90:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
-            <li><p><strong>Levels 91-100:</strong> Use Ruin IV, Fester, Summon Bahamut, use its abilities. Use Aetherflow stacks to cast Ruin IV after Fester. Use Swiftcast on cooldown. </p></li>
+            <li><p><strong>Levels 1-29:</strong> Spam <strong>Ruin</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Ruin_Icon.webp') }}" alt="Ruin Icon" />. Use Carbuncle abilities.</p></li>
+            <li><p><strong>Levels 30-49:</strong> Use <strong>Fester</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Fester_Icon.webp') }}" alt="Fester Icon" /> and Carbuncle AOE abilities when available.</p></li>
+            <li><p><strong>Levels 50-79:</strong> Use <strong>Tri-Disaster</strong> <img src="{{ url_for('static', filename='images/job_icons/smn/Tri-disaster_Icon.webp') }}" alt="Tri-disaster Icon" /> for DOTs and AOE damage. Summon Bahamut <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Bahamut_Icon.webp') }}" alt="Summon Bahamut Icon" /> to finish enemies.</p></li>
+            <li><p><strong>Levels 80-90:</strong> Summon Phoenix <img src="{{ url_for('static', filename='images/job_icons/smn/Summon_Phoenix_Icon.webp') }}" alt="Summon Phoenix Icon" /> and use its AOE abilities to burn through large packs.</p></li>
         </ul>
     </div>
-</div>
-
-<div id="bottom_pad"></div>
 </div>
 
 {% endblock %}
