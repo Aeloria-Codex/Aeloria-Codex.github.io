@@ -17,7 +17,7 @@ app.config['MINIFY_HTML'] = True
 app.config['MINIFY_PAGE'] = True
 freezer = Freezer(app)
 Session(app)
-ext = Sitemap(app=app)
+ext = Sitemap(app)
 HTMLMIN(app)
 sslify = SSLify(app)
 
@@ -139,6 +139,7 @@ def blue_mage_leveling():
 
 @ext.register_generator
 def sitemap():
+    # Static pages
     yield 'index', {}
     yield 'job_leveling', {}
     yield 'crafter_leveling', {}
@@ -167,6 +168,7 @@ def sitemap():
     yield 'viper_leveling', {}
     yield 'warrior_leveling', {}
     yield 'white_mage_leveling', {}
+
 
 if __name__ == '__main__':
     freezer.freeze()
