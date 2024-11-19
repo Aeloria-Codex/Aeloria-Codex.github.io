@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ url_for('static', filename='favicon.webp') }}" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
 </head>
 <body>
 
     <!-- navbar -->
     <nav class="navBar" role="navigation" aria-label="Main Navigation">
-        <div>
+        <div class="leftside-nav">
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 <div class="nav-item has-dropdown">
@@ -66,6 +67,11 @@
                 <li><a href="{{ url_for('tank_pulling') }}">Tank Pulling Guide</a></li>
             </ul>
         </div>
+        <div class="rightside-nav">
+        <!-- search box -->
+        <input type="text" id="searchInput" placeholder="Search guides...">
+        <div class="searchResults" id="searchResults"></div>
+    
         <!-- theme switch -->
         <label class="switch">
             <input type="checkbox" id="modeToggle">
@@ -75,6 +81,7 @@
                 <i class="fa fa-moon-o dark-icon"></i>
             </span>
         </label>
+        </div>
     </nav>
 
     {% block content %}
@@ -155,6 +162,48 @@
                 checkbox.addEventListener('change', () => {
                     localStorage.setItem(checkbox.id, checkbox.checked);
                 });
+            });
+        });
+        
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Search 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        fetch('/search')
+        .then(response => response.json())
+        .then(guides => {
+            // Ensure each guide has a tags property
+            const processedGuides = guides.map(guide => ({
+                ...guide,
+                tags: guide.tags || [] // Default to empty array if tags is undefined
+            }));
+    
+            const fuse = new Fuse(processedGuides, {
+                keys: [
+                    'title', 
+                    'description', 
+                    'keywords', 
+                    'url'
+                ],
+                threshold: 0.3
+            });
+    
+            document.getElementById('searchInput').addEventListener('input', (event) => {
+                const searchTerm = event.target.value;
+                const resultsContainer = document.getElementById('searchResults');
+                resultsContainer.innerHTML = ''; // Clear previous results
+    
+                if (searchTerm.length > 1) {
+                    const results = fuse.search(searchTerm);
+                    
+                    results.forEach(result => {
+                        const guideElement = document.createElement('div');
+                        guideElement.innerHTML = `
+                            <a href='${result.item.url}'>${result.item.title.slice(6, -19)}</a>
+                        `;
+                        resultsContainer.appendChild(guideElement);
+                    });
+                }
             });
         });
     </script>

@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template, request, make_response, url_for, jsonify
 from flask_frozen import Freezer
 from flask_session import Session
-from flask_sitemap import Sitemap
 from flask_htmlmin import HTMLMIN
 from flask_sslify import SSLify
+import json, os, re
 
 app = Flask(__name__,
             static_url_path='',
@@ -17,16 +17,14 @@ app.config['MINIFY_HTML'] = True
 app.config['MINIFY_PAGE'] = True
 freezer = Freezer(app)
 Session(app)
-ext = Sitemap(app)
 HTMLMIN(app)
 sslify = SSLify(app)
-
 
 # Home page
 @app.route('/')
 def index():
     mode = request.cookies.get('mode', 'light-mode')
-    return render_template('index.html', mode=mode)
+    return render_template('index.html', guides=GUIDES, mode=mode)
 
 # Crafter Leveling page
 @app.route('/job-leveling.html')
@@ -136,39 +134,119 @@ def blue_mage_leveling():
 ##################################################################################################################################
 # Sitemap
 ##################################################################################################################################
-
-@ext.register_generator
+@app.route('/sitemap.xml')
 def sitemap():
-    # Static pages
-    yield 'index', {}
-    yield 'job_leveling', {}
-    yield 'crafter_leveling', {}
-    yield 'tank_pulling', {}
-    
-    # Job Leveling Sitemap
-    yield 'astrologian_leveling', {}
-    yield 'bard_leveling', {}
-    yield 'black_mage_leveling', {}
-    yield 'blue_mage_leveling', {}
-    yield 'dancer_leveling', {}
-    yield 'dark_knight_leveling', {}
-    yield 'dragoon_leveling', {}
-    yield 'gunbreaker_leveling', {}
-    yield 'machinist_leveling', {}
-    yield 'monk_leveling', {}
-    yield 'ninja_leveling', {}
-    yield 'paladin_leveling', {}
-    yield 'pictomancer_leveling', {}
-    yield 'reaper_leveling', {}
-    yield 'red_mage_leveling', {}
-    yield 'sage_leveling', {}
-    yield 'samurai_leveling', {}
-    yield 'scholar_leveling', {}
-    yield 'summoner_leveling', {}
-    yield 'viper_leveling', {}
-    yield 'warrior_leveling', {}
-    yield 'white_mage_leveling', {}
+    routes = [
+        {'loc': url_for('index', _external=True)},
+        {'loc': url_for('job_leveling', _external=True)},
+        {'loc': url_for('crafter_leveling', _external=True)},
+        {'loc': url_for('tank_pulling', _external=True)},
+        {'loc': url_for('astrologian_leveling', _external=True)},
+        {'loc': url_for('bard_leveling', _external=True)},
+        {'loc': url_for('black_mage_leveling', _external=True)},
+        {'loc': url_for('blue_mage_leveling', _external=True)},
+        {'loc': url_for('dancer_leveling', _external=True)},
+        {'loc': url_for('dark_knight_leveling', _external=True)},
+        {'loc': url_for('dragoon_leveling', _external=True)},
+        {'loc': url_for('gunbreaker_leveling', _external=True)},
+        {'loc': url_for('machinist_leveling', _external=True)},
+        {'loc': url_for('monk_leveling', _external=True)},
+        {'loc': url_for('ninja_leveling', _external=True)},
+        {'loc': url_for('paladin_leveling', _external=True)},
+        {'loc': url_for('pictomancer_leveling', _external=True)},
+        {'loc': url_for('reaper_leveling', _external=True)},
+        {'loc': url_for('red_mage_leveling', _external=True)},
+        {'loc': url_for('sage_leveling', _external=True)},
+        {'loc': url_for('samurai_leveling', _external=True)},
+        {'loc': url_for('scholar_leveling', _external=True)},
+        {'loc': url_for('summoner_leveling', _external=True)},
+        {'loc': url_for('viper_leveling', _external=True)},
+        {'loc': url_for('warrior_leveling', _external=True)},
+        {'loc': url_for('white_mage_leveling', _external=True)}
+    ]
+    response = make_response(render_template('sitemap.xml', urlset=routes))
+    response.headers['Content-Type'] = 'application/xml'
+    return response
 
+##################################################################################################################################
+# Auto Json
+##################################################################################################################################
+# Path to your rendered HTML files
+html_files = [
+    "templates/crafter-leveling.html",
+    "templates/job-leveling.html",
+    "templates/tank-pulling.html",
+    "templates/job-leveling/astrologian-leveling.html",
+    "templates/job-leveling/bard-leveling.html",
+    "templates/job-leveling/black-mage-leveling.html",
+    "templates/job-leveling/blue-mage-leveling.html",
+    "templates/job-leveling/dancer-leveling.html",
+    "templates/job-leveling/dark-knight-leveling.html",
+    "templates/job-leveling/dragoon-leveling.html",
+    "templates/job-leveling/gunbreaker-leveling.html",
+    "templates/job-leveling/machinist-leveling.html",
+    "templates/job-leveling/monk-leveling.html",
+    "templates/job-leveling/paladin-leveling.html",
+    "templates/job-leveling/ninja-leveling.html",
+    "templates/job-leveling/pictomancer-leveling.html",
+    "templates/job-leveling/reaper-leveling.html",
+    "templates/job-leveling/red-mage-leveling.html",
+    "templates/job-leveling/sage-leveling.html",
+    "templates/job-leveling/samurai-leveling.html",
+    "templates/job-leveling/scholar-leveling.html",
+    "templates/job-leveling/summoner-leveling.html",
+    "templates/job-leveling/viper-leveling.html",
+    "templates/job-leveling/warrior-leveling.html",
+    "templates/job-leveling/white-mage-leveling.html",
+]
+
+# Function to extract information from an HTML file
+def extract_info(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+        # Extract title from block tag
+        title_match = re.search(r'{%\s*block\s+title\s*%}(.*?){%\s*endblock\s*%}', content)
+        title = title_match.group(1).strip() if title_match else 'Untitled'
+        
+        description_match = re.search(r'{%\s*block\s+description\s*%}(.*?){%\s*endblock\s*%}', content)
+        description = description_match.group(1).strip() if title_match else 'Untitled'
+        
+        keywords_match = re.search(r'{%\s*block\s+keywords\s*%}(.*?){%\s*endblock\s*%}', content)
+        keywords = keywords_match.group(1).strip() if title_match else 'Untitled'
+        
+        # Generate the URL based on file name or template logic
+        url = f"/{os.path.basename(file_path)}"
+        
+        return {
+            "id": str(html_files.index(file_path) + 1),  # Simple ID based on index
+            "title": title,
+            "description": description[:500],
+            "keywords": keywords,
+            "url": url
+        }
+
+# List to hold all the search data
+search_data = []
+
+# Loop through all HTML files and extract info
+for html_file in html_files:
+    search_data.append(extract_info(html_file))
+
+# Save the JSON to a file
+with open('search.json', 'w', encoding='utf-8') as json_file:
+    json.dump(search_data, json_file, indent=2)
+
+##################################################################################################################################
+# Search
+##################################################################################################################################
+
+with open('search.json', 'r', encoding='utf-8') as file:
+    GUIDES = json.load(file)
+
+@app.route('/search')
+def search():
+    # This route will return search results as JSON
+    return jsonify(GUIDES)
 
 if __name__ == '__main__':
     freezer.freeze()
