@@ -11,6 +11,7 @@ app = Flask(__name__,
             template_folder='templates')
 
 app.config['SECRET_KEY'] = 'your_secret_key_here'
+#app.config['SERVER_NAME'] = 'aeloria-codex.github.io'
 app.config['FREEZER_DESTINATION'] = 'docs'
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['MINIFY_HTML'] = True
@@ -137,32 +138,32 @@ def blue_mage_leveling():
 @app.route('/sitemap.xml')
 def sitemap():
     routes = [
-        {'loc': url_for('index', _external=True)},
-        {'loc': url_for('job_leveling', _external=True)},
-        {'loc': url_for('crafter_leveling', _external=True)},
-        {'loc': url_for('tank_pulling', _external=True)},
-        {'loc': url_for('astrologian_leveling', _external=True)},
-        {'loc': url_for('bard_leveling', _external=True)},
-        {'loc': url_for('black_mage_leveling', _external=True)},
-        {'loc': url_for('blue_mage_leveling', _external=True)},
-        {'loc': url_for('dancer_leveling', _external=True)},
-        {'loc': url_for('dark_knight_leveling', _external=True)},
-        {'loc': url_for('dragoon_leveling', _external=True)},
-        {'loc': url_for('gunbreaker_leveling', _external=True)},
-        {'loc': url_for('machinist_leveling', _external=True)},
-        {'loc': url_for('monk_leveling', _external=True)},
-        {'loc': url_for('ninja_leveling', _external=True)},
-        {'loc': url_for('paladin_leveling', _external=True)},
-        {'loc': url_for('pictomancer_leveling', _external=True)},
-        {'loc': url_for('reaper_leveling', _external=True)},
-        {'loc': url_for('red_mage_leveling', _external=True)},
-        {'loc': url_for('sage_leveling', _external=True)},
-        {'loc': url_for('samurai_leveling', _external=True)},
-        {'loc': url_for('scholar_leveling', _external=True)},
-        {'loc': url_for('summoner_leveling', _external=True)},
-        {'loc': url_for('viper_leveling', _external=True)},
-        {'loc': url_for('warrior_leveling', _external=True)},
-        {'loc': url_for('white_mage_leveling', _external=True)}
+        {'loc': 'https://aeloria-codex.github.io/'},
+        {'loc': 'https://aeloria-codex.github.io/job-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/crafter-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/tank-pulling.html'},
+        {'loc': 'https://aeloria-codex.github.io/astrologian-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/bard-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/black-mage-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/blue-mage-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/dancer-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/dark-knight-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/dragoon-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/gunbreaker-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/machinist-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/monk-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/ninja-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/paladin-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/pictomancer-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/reaper-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/red-mage-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/sage-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/samurai-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/scholar-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/summoner-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/viper-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/warrior-leveling.html'},
+        {'loc': 'https://aeloria-codex.github.io/white-mage-leveling.html'},
     ]
     response = make_response(render_template('sitemap.xml', urlset=routes))
     response.headers['Content-Type'] = 'application/xml'
