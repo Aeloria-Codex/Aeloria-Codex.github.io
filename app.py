@@ -56,6 +56,10 @@ def toggle_mode():
 def references():
     return render_template('references.html')
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return render_template("sitemap.xml")
+
 # 404 page
 @app.errorhandler(404)
 def page_not_found(e):
@@ -131,43 +135,6 @@ def pictomancer_leveling():
 @app.route('/blue-mage-leveling.html')
 def blue_mage_leveling():
     return render_template('job-leveling/blue-mage-leveling.html')
-
-##################################################################################################################################
-# Sitemap
-##################################################################################################################################
-@app.route('/sitemap.xml')
-def sitemap():
-    routes = [
-        {'loc': 'https://aeloria-codex.github.io/'},
-        {'loc': 'https://aeloria-codex.github.io/job-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/crafter-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/tank-pulling.html'},
-        {'loc': 'https://aeloria-codex.github.io/astrologian-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/bard-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/black-mage-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/blue-mage-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/dancer-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/dark-knight-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/dragoon-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/gunbreaker-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/machinist-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/monk-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/ninja-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/paladin-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/pictomancer-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/reaper-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/red-mage-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/sage-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/samurai-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/scholar-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/summoner-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/viper-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/warrior-leveling.html'},
-        {'loc': 'https://aeloria-codex.github.io/white-mage-leveling.html'},
-    ]
-    response = make_response(render_template('sitemap.xml', urlset=routes))
-    response.headers['Content-Type'] = 'application/xml'
-    return response
 
 ##################################################################################################################################
 # Auto Json
