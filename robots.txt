@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://aeloria-codex.github.io/sitemap.xml
