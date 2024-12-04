@@ -58,7 +58,7 @@ def references():
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return render_template("sitemap.xml")
+    return render_template("sitemap.xml"), 200, {'Content-Type': 'application/xml'}
 
 # 404 page
 @app.errorhandler(404)
